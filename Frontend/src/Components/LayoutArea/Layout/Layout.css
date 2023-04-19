@@ -1,0 +1,33 @@
+.Layout {
+    height: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-rows: 10% 85% 5%;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.Layout>* {
+    border: 1px solid rgba(0, 0, 0, 0.301);
+}
+
+.Layout>header,
+.Layout>footer {
+    grid-column: span 5;
+    background-color: white;
+    border-left: none;
+}
+
+.Layout>main {
+    grid-column: span 5;
+    background-color: #dadada;
+    overflow-y: auto;
+}
+
+.Layout>aside {
+    grid-row: span 5;
+    grid-column: 1;
+    background-color: #132f68;
+    border: 1px solid black;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
