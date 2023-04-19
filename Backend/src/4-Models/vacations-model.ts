@@ -1,0 +1,38 @@
+import Joi from "joi"
+
+class VacationsModel {
+    public id: number
+    public destination: string
+    public description: string
+    public startDate: string
+    public endDate: string
+    public price: number
+    public photoName: string
+
+    public constructor(vacation: VacationsModel) {
+        this.id = vacation.id
+        this.destination = vacation.destination
+        this.description = vacation.description
+        this.startDate = vacation.startDate
+        this.endDate = vacation.endDate
+        this.price = vacation.price
+        this.photoName = vacation.photoName
+    }
+
+    public static validationSchema = Joi.object({
+        id: Joi.number().optional().integer().positive(),
+        destination: Joi.string().required().min(3).max(500),
+        description: Joi.string().required().min(10).max(10000),
+        startDate: Joi.string().required(),
+        endDate: Joi.string().required(),
+        price: Joi.number().required().min(10),
+        photoName: Joi.string().required(),
+    })
+
+    public validate(): string {
+        const result = VacationsModel.validationSchema.validate(this)
+        return result.error?.message
+    }
+}
+
+export default VacationsModel
