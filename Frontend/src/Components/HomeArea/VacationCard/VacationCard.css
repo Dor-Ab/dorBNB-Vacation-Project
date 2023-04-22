@@ -1,0 +1,53 @@
+.VacationCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    max-width: 15rem;
+    overflow: hidden;
+}
+
+.VacationCard>::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+.VacationCard:hover>::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+.VacationCard>::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0.2rem;
+}
+
+.VacationCard:hover ::-webkit-scrollbar-thumb {
+    border-right: 0.3rem solid #0745b0;
+    /* border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0.5rem; */
+    background: #0745b0;
+}
+
+.VacationCard>h2 {
+    background-color: #165cd6;
+    grid-column: span 3;
+}
+
+.VacationCard>.vacationDescription {
+    height: 3.3rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    grid-column: span 3;
+    overflow-y: auto;
+}
+
+.VacationCard>button {
+    transform: scale(0.7);
+    /* background-color: #0745b0; */
+    color: white;
+    border-radius: 0.3rem;
+    border: solid;
+}
