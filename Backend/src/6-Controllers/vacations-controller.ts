@@ -2,6 +2,7 @@ import express, { Request, Response, NextFunction } from "express";
 import vacationsLogic from "../5-Logic/vacations-logic";
 import VacationsModel from "../4-Models/vacations-model";
 import verifyAdmin from "../3-Middleware/verify-admin";
+import path from "path";
 
 const router = express.Router()
 
@@ -20,6 +21,18 @@ router.get("/vacations/:id([0-9]+)", async (request: Request, response: Response
         const id = +request.params.id
         const vacation = await vacationsLogic.getOneVacation(id)
         response.json(vacation)
+    }
+    catch (err: any) {
+        next(err)
+    }
+})
+
+router.get("/vacations/images/:id([0-9]+)", async (request: Request, response: Response, next: NextFunction) => {
+    try {
+        const id = +request.params.id
+        const imageName = await vacationsLogic.getVacationImageName(id)
+        const absulotePath = path.join(__dirname, "..", "1-Assets", "Images", "Vacations Images", imageName)
+        response.sendFile(absulotePath)
     }
     catch (err: any) {
         next(err)

@@ -241,3 +241,39 @@
 ----------------------------
 22.4.2023, 21:02:23 	 Route /api not exist
 ----------------------------
+22.4.2023, 21:15:46 	 Route /api/vacation not exist
+----------------------------
+22.4.2023, 21:16:04 	 Route /api/vacations/images not exist
+----------------------------
+22.4.2023, 21:26:19 	 Cannot read properties of undefined (reading 'vacationPhotoName')
+----------------------------
+22.4.2023, 21:30:04 	 path must be a string to res.sendFile
+----------------------------
+22.4.2023, 21:31:09 	 path must be absolute or specify root to res.sendFile
+----------------------------
+22.4.2023, 21:36:59 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\amsterdamneighborhood1.jpg'
+----------------------------
+22.4.2023, 21:39:20 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 21:39:20 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 21:39:51 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 21:40:04 	 Cannot read properties of undefined (reading 'vacationPhotoName')
+----------------------------
+22.4.2023, 21:40:46 	 Cannot read properties of undefined (reading 'vacationPhotoName')
+----------------------------
+22.4.2023, 21:41:01 	 id 5 not exist
+----------------------------
+22.4.2023, 21:41:21 	 id 5 not exist
+----------------------------
+22.4.2023, 21:42:37 	 Route /api/vacations/imagesamsterdamneighborhood1.jpg not exist
+----------------------------
+22.4.2023, 21:42:59 	 Route /api/vacations/images3 not exist
+----------------------------
+22.4.2023, 21:43:25 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 21:43:27 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+22.4.2023, 21:45:28 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------

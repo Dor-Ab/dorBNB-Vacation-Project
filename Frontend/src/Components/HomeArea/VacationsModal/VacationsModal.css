@@ -1,1 +1,3 @@
-.popup-content {}
+.VacationsModal>.popupArea {
+    height: 1rem;
+}

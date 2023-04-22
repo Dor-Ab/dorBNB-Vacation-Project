@@ -2,6 +2,7 @@ import { OkPacket } from "mysql";
 import dal from "../2-Utils/dal";
 import { ResourceNotFoundErrorModel, ValidationErrorModel } from "../4-Models/error-model";
 import VacationsModel from "../4-Models/vacations-model";
+import fsPromise from "fs/promises"
 
 async function getAllVacations(): Promise<VacationsModel[]> {
     const sql = `
@@ -87,10 +88,31 @@ async function deleteVacation(id: number): Promise<void> {
     if (info.affectedRows === 0) throw new ResourceNotFoundErrorModel(id)
 }
 
+async function getVacationImageName(id: number): Promise<string> {
+
+    const sql = `
+    SELECT vacationPhotoName FROM vacations
+    WHERE vacationID = ${id};
+    `
+
+    const info = await dal.execute(sql)
+
+    console.log("----------------")
+    console.log(info)
+    console.log("----------------")
+
+    if (info.length === 0) throw new ResourceNotFoundErrorModel(id)
+
+    const imageName = info[0].vacationPhotoName
+
+    return imageName
+}
+
 export default {
     getAllVacations,
     getOneVacation,
     addVacation,
     updateVacation,
-    deleteVacation
+    deleteVacation,
+    getVacationImageName
 }
