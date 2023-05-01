@@ -14,7 +14,7 @@ function Login(): JSX.Element {
         try {
             await authService.login(credentials)
             notify.success("Welcome Back")
-            navTo("/home")
+            navTo("/vacations")
         }
         catch (err: any) {
             notify.error(err)

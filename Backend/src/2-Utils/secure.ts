@@ -6,6 +6,9 @@ import { RoleModel } from "../4-Models/role-model";
 const secretKey = "DorAbJb"
 
 function getNewToken(user: UserModel): string {
+
+    delete user.password
+
     const container = { user }
     const token = jwt.sign(container, secretKey)
     return token

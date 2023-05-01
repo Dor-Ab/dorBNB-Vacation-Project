@@ -97,10 +97,6 @@ async function getVacationImageName(id: number): Promise<string> {
 
     const info = await dal.execute(sql)
 
-    console.log("----------------")
-    console.log(info)
-    console.log("----------------")
-
     if (info.length === 0) throw new ResourceNotFoundErrorModel(id)
 
     const imageName = info[0].vacationPhotoName

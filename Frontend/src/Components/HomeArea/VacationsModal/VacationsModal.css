@@ -1,3 +1,26 @@
-.VacationsModal>.popupArea {
-    height: 1rem;
+.popup-content {
+    background-color: black;
+    border-radius: 1rem;
+    opacity: 0;
+    animation: modalAppear 0.5s forwards;
+}
+
+.modalRow>img {
+    /* height: 100%;
+    width: 100%; */
+    margin: auto;
+    padding: 0.5rem;
+    max-width: 20rem;
+    border-radius: 1rem;
+}
+
+.popup-content>h2 {
+    border-radius: 1rem;
+    background-color: #1a5dd2;
+}
+
+@keyframes modalAppear {
+    to {
+        opacity: 100;
+    }
 }

@@ -277,3 +277,147 @@
 ----------------------------
 22.4.2023, 21:45:28 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
 ----------------------------
+22.4.2023, 22:35:01 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:36:48 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:37:50 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:38:38 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:40:39 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:40:51 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:41:37 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:43:16 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:43:38 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+22.4.2023, 22:43:44 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:44:53 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:45:39 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+22.4.2023, 22:46:00 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:46:07 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+22.4.2023, 22:50:17 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:12:15 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:22:07 	 Route /api/vacations/images/ not exist
+----------------------------
+23.4.2023, 17:22:14 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:22:14 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:22:50 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:22:50 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:22:57 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:22:57 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:24:17 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:24:17 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:27:15 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:27:15 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:27:50 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:27:50 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:29:19 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:29:19 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:29:31 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:29:31 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:30:13 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:30:13 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:30:33 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:30:33 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:30:43 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:30:43 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:30:54 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 17:30:54 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:31:34 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 17:31:34 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 19:46:45 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 19:46:48 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 19:47:04 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 19:47:04 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 19:49:30 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 19:49:30 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 19:50:25 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 19:50:25 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 20:02:05 	 Route /api/vacations/images/ not exist
+----------------------------
+23.4.2023, 20:02:12 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 20:02:12 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 20:02:29 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 20:02:29 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 20:02:40 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 20:02:40 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 20:02:49 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 20:02:49 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 20:03:15 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 20:03:15 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 20:05:02 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 20:05:02 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+23.4.2023, 22:16:22 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+23.4.2023, 22:16:22 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+30.4.2023, 19:46:19 	 connect ECONNREFUSED ::1:3306
+----------------------------
+30.4.2023, 19:46:23 	 connect ECONNREFUSED ::1:3306
+----------------------------
+30.4.2023, 19:48:11 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .jpg'
+----------------------------
+30.4.2023, 19:48:12 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\testing testing.jpg'
+----------------------------
+1.5.2023, 9:50:47 	 Incorrect email or password.
+----------------------------
+1.5.2023, 9:50:51 	 Incorrect email or password.
+----------------------------

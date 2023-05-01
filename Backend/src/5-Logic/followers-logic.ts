@@ -32,10 +32,10 @@ async function getOneFollowerInfo(id: number): Promise<FollowerModel> {
     FROM followers
         JOIN users ON followers.userID = users.userID 
         JOIN vacations ON followers.vacationID = vacations.vacationID
-    WHERE followers.userID = ${id}
+    WHERE followers.userID = ?
     `
 
-    const followerInfo = await dal.execute(sql)
+    const followerInfo = await dal.execute(sql, [id])
 
     return followerInfo
 }
@@ -46,18 +46,18 @@ async function addFollower(follower: FollowerModel) {
 
     const checkIfExist = `
     SELECT * FROM followers
-    WHERE userID = ${follower.userID} AND vacationID = ${follower.vacationID}
+    WHERE userID = ? AND vacationID = ?
     `
 
-    const response = await dal.execute(checkIfExist)
+    const response = await dal.execute(checkIfExist, [follower.userID, follower.vacationID])
 
     if (response[0]) throw new ValidationErrorModel("Already exist")
 
     const sql = `
-    INSERT INTO followers(userID, vacationID) VALUES ('${follower.userID}','${follower.vacationID}')
+    INSERT INTO followers(userID, vacationID) VALUES (?,?)
     `
 
-    const info: OkPacket = await dal.execute(sql)
+    const info: OkPacket = await dal.execute(sql, [follower.userID, follower.vacationID])
 
     if (info.affectedRows === 0) throw new ErrorModel("Something went wrong", 400)
 
@@ -70,11 +70,11 @@ async function removeFollower(follower: FollowerModel): Promise<void> {
 
     const sql = `
     DELETE FROM followers
-    WHERE userID = ${follower.userID}
-    AND vacationID = ${follower.vacationID}
+    WHERE userID = ?
+    AND vacationID = ?
     `
 
-    const info: OkPacket = await dal.execute(sql)
+    const info: OkPacket = await dal.execute(sql, [follower.userID, follower.vacationID])
 
     if (info.affectedRows === 0) throw new ResourceNotFoundErrorModel(follower.userID)
 }
