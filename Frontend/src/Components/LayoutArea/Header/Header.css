@@ -1,5 +1,20 @@
 .Header {
+    height: 100%;
+
+}
+
+.Header h2 {
+    background-color: rgb(250, 235, 215);
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.Header .authBtns {
+    margin: auto 0.5rem auto auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1rem;
 }

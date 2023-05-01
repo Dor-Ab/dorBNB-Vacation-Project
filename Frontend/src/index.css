@@ -6,6 +6,7 @@ body,
   height: 100%;
   text-align: center;
   background-color: rgb(220, 235, 248);
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 

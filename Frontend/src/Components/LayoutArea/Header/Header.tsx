@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
 import { authStore } from "../../../Redux/authState";
+import { Col, Row } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function Header(): JSX.Element {
 
@@ -43,10 +45,21 @@ function Header(): JSX.Element {
 
     return (
         <div className="Header">
-            {isMorning() && <h2>Good Morning{name}</h2>}
-            {isAfterNoon() && <h2>Have A Good Afternoon{name}</h2>}
-            {isEvening() && <h2>Have A Lovely Evening{name}</h2>}
-            {isNight() && <h2>Don't Forget To Get Some Sleep{name}💤</h2>}
+            <Row>
+                <Col xs={'11'} sm={'8'} md={'7'} lg={'6'} xl={'5'} xxl={'4'}>
+                    {isMorning() && <h2>Good Morning{name}🌞</h2>}
+                    {isAfterNoon() && <h2>Good Afternoon{name}😀</h2>}
+                    {isEvening() && <h2>Lovely Evening{name}🌙</h2>}
+                    {isNight() && <h2>Don't Forget To Get Some Sleep{name}🌙💤</h2>}
+                </Col>
+                <Col>
+                </Col>
+                <Col xs={'1'} className="authBtns">
+                    <NavLink className={"link"} to={"/login"}>Login</NavLink>
+                    <NavLink className={"link"} to={"/Register"}>Register</NavLink>
+                </Col>
+            </Row>
+
         </div>
     );
 }
