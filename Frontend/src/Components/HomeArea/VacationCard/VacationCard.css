@@ -11,12 +11,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    filter: brightness(0.8);
+    filter: brightness(0.7);
 }
 
 .VacationCard:hover {
     transform: scale(1.1);
-    filter: none;
+    filter: brightness(1.1);
 }
 
 /* Vacation content hidden */
@@ -59,7 +59,7 @@
 
 .VacationCard .vacationHead {
     filter: brightness(1.5);
-    -webkit-text-stroke: 0.3px white;
+    -webkit-text-stroke: 0.09px white;
     background-color: rgba(0, 0, 0, 0.568);
 }
 

@@ -46,11 +46,11 @@ function Header(): JSX.Element {
     return (
         <div className="Header">
             <Row>
-                <Col xs={'11'} sm={'8'} md={'7'} lg={'6'} xl={'5'} xxl={'4'}>
+                <Col >
                     {isMorning() && <h2>Good Morning{name}🌞</h2>}
                     {isAfterNoon() && <h2>Good Afternoon{name}😀</h2>}
                     {isEvening() && <h2>Lovely Evening{name}🌙</h2>}
-                    {isNight() && <h2>Don't Forget To Get Some Sleep{name}🌙💤</h2>}
+                    {isNight() && <h2>Good Night{name}🌙💤</h2>}
                 </Col>
                 <Col>
                 </Col>

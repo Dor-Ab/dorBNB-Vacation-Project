@@ -26,7 +26,8 @@
 .Layout>aside {
     grid-row: span 5;
     grid-column: 1;
-    background-color: #0745b0;
+    /* background-color: #0745b0; */
+    background-color: #eb8f51;
     border: 1px solid black;
     border-top-right-radius: 2%;
     border-bottom-right-radius: 2%;

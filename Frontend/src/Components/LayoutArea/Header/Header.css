@@ -4,11 +4,15 @@
 }
 
 .Header h2 {
+    text-align: start;
+    max-width: fit-content;
+    min-width: 15rem;
     background-color: rgb(250, 235, 215);
     border-radius: 1rem;
     margin-top: 0.5rem;
     padding-left: 1rem;
     padding-bottom: 0.3rem;
+    font-weight: bold;
 }
 
 .Header .authBtns {
