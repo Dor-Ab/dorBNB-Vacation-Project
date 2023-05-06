@@ -1,3 +1,25 @@
 .VacationsDetails {
-	
+    margin: 0.5rem;
+}
+
+.VacationsDetails>h2 {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: white;
+}
+
+
+.VacationsDetails>img {
+    transition: all 0.2s;
+    border-radius: 1rem;
+    filter: drop-shadow(30px 30px 20px #000);
+    width: min(50vw, 35rem);
+}
+
+.VacationsDetails>img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(30px 45px 40px #000);
 }

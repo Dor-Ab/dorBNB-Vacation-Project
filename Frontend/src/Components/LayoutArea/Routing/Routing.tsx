@@ -8,6 +8,7 @@ import PageNotFound from "../PageNotFound/PageNotFound";
 import VacationsDetails from "../../HomeArea/VacationsDetails/VacationsDetails";
 
 function Routing(): JSX.Element {
+
     return (
         <div className="Routing">
             <Routes>

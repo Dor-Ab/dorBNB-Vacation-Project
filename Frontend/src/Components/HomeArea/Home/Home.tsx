@@ -5,8 +5,10 @@ import vacationService from "../../../Services/vacationService";
 import notify from "../../../Services/notifyService";
 import VacationsModel from "../../../Models/vacationModel";
 import { Col, Row } from "react-bootstrap";
+import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
 
 function Home(): JSX.Element {
+    useVerifyLoggedIn()
 
     const [vacations, setVacations] = useState<VacationsModel[]>([])
 
