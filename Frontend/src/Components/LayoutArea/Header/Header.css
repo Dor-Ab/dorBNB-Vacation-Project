@@ -3,22 +3,48 @@
 
 }
 
+.Header .row {
+    height: 100%;
+    margin: auto;
+}
+
 .Header h2 {
     text-align: start;
     max-width: fit-content;
-    min-width: 15rem;
     background-color: rgb(250, 235, 215);
     border-radius: 1rem;
     margin-top: 0.5rem;
     padding-left: 1rem;
     padding-bottom: 0.3rem;
     font-weight: bold;
+    white-space: nowrap;
+    font-size: min(5vw, 2rem)
 }
 
 .Header .authBtns {
-    margin: auto 0.5rem auto auto;
+    margin: auto 1rem auto auto;
     display: flex;
     flex-direction: row;
     justify-content: end;
     gap: 1rem;
+    z-index: 999;
+}
+
+.Header .authBtns .link {
+    transition: all 0.2s;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    font-weight: bold;
+    color: #eb8f51;
+    text-decoration: none;
+}
+
+.Header .authBtns .link:hover {
+    background-color: #eb8f51;
+    color: #252525;
+}
+
+.darkBackground {
+    background-color: #6e6e6e;
 }

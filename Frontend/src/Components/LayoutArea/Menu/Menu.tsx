@@ -1,6 +1,6 @@
 import "./Menu.css";
 import logo from "../../../Assets/Images/logo-no-background.png"
-import { Col, Image, Row } from "react-bootstrap";
+import { Image, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 

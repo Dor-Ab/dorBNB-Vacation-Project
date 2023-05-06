@@ -3,6 +3,8 @@ import "./Header.css";
 import { authStore } from "../../../Redux/authState";
 import { Col, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+
 
 function Header(): JSX.Element {
 
@@ -22,7 +24,6 @@ function Header(): JSX.Element {
         }
     }, [])
 
-    // hey
     function isMorning(): boolean {
         const now = new Date()
         return now.getHours() > 5 && now.getHours() <= 12
@@ -43,24 +44,48 @@ function Header(): JSX.Element {
         return now.getHours() > 20 || now.getHours() <= 5
     }
 
+    // const darkBackground = `darkBackground`
+    const [darkBackground, setDarkBackground] = useState<string | null>("")
+
+    function isClicked() {
+        const currentBackground = "darkBackground"
+        setDarkBackground(currentBackground)
+    }
+
+    function isBlur() {
+        const btn = document.getElementById("clicker")
+        btn.click()
+        const currentBackground = ""
+        setDarkBackground(currentBackground)
+    }
+
     return (
         <div className="Header">
-            <Row>
-                <Col >
+            <Row className="row">
+                <Col className="greetingCol" xs={"9"} sm={"9"}>
                     {isMorning() && <h2>Good Morning{name}🌞</h2>}
                     {isAfterNoon() && <h2>Good Afternoon{name}😀</h2>}
                     {isEvening() && <h2>Lovely Evening{name}🌙</h2>}
                     {isNight() && <h2>Good Night{name}🌙💤</h2>}
                 </Col>
-                <Col>
-                </Col>
-                <Col xs={'1'} className="authBtns">
-                    <NavLink className={"link"} to={"/login"}>Login</NavLink>
-                    <NavLink className={"link"} to={"/Register"}>Register</NavLink>
+                <Col className="authBtns" xs={"2"}>
+                    <Navbar collapseOnSelect expand="sm" bg="none" variant="light">
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" id="clicker" onFocus={isClicked} onBlur={isBlur} />
+                        <Navbar.Collapse id="responsive-navbar-nav" className={`${darkBackground}`}>
+                            <Nav className={`mr-auto`} >
+                                {/* <Nav.Item> */}
+                                <NavLink className={"link"} to={"/login"}>Login</NavLink>
+                                {/* </Nav.Item> */}
+                                {/* <Nav.Item> */}
+                                <NavLink className={"link"} to={"/Register"}>Register</NavLink>
+                                {/* </Nav.Item> */}
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
                 </Col>
             </Row>
 
-        </div>
+        </div >
     );
 }
 
