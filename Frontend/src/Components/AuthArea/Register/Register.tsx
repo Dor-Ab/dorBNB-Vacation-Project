@@ -14,7 +14,7 @@ function Register(): JSX.Element {
         try {
             await authService.register(user)
             notify.success(`Register Succeeded ! <br> Welcome`)
-            navTo("/home")
+            navTo("/vacations")
         }
         catch (err: any) {
             notify.error(err)

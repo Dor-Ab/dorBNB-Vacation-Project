@@ -81,15 +81,17 @@
 
 .VacationCard>.modalBtnContainer button {
     transition: all 0.2s;
-    background-color: #0745b0;
-    color: white;
+    background-color: white;
+    color: #eb8f51;
+    font-weight: bold;
     border-radius: 0.3rem;
-    border: solid;
+    border: 1px solid black;
 }
 
 .VacationCard>.modalBtnContainer button:hover {
     transform: scale(1.1);
-    background-color: #1556c6;
+    background-color: #eb8f51;
+    color: #252525;
 }
 
 .VacationCard>.modalBtnContainer {
