@@ -20,3 +20,77 @@
 ----------------------------
 6.5.2023, 22:37:38 	 Incorrect email or password.
 ----------------------------
+7.5.2023, 17:18:28 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'םרג12'' at line 10
+----------------------------
+7.5.2023, 17:20:58 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'םרג12'' at line 10
+----------------------------
+7.5.2023, 17:21:49 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'םרג12'' at line 10
+----------------------------
+7.5.2023, 17:27:16 	 Incorrect email or password.
+----------------------------
+7.5.2023, 17:42:52 	 Incorrect email or password.
+----------------------------
+7.5.2023, 17:43:03 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'םרג12'' at line 10
+----------------------------
+7.5.2023, 17:43:13 	 "email" is not allowed to be empty
+----------------------------
+7.5.2023, 17:45:29 	 Incorrect email or password.
+----------------------------
+7.5.2023, 17:45:37 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'םרג12'' at line 10
+----------------------------
+7.5.2023, 17:45:48 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'םרג12'' at line 10
+----------------------------
+7.5.2023, 17:45:57 	 Incorrect email or password.
+----------------------------
+8.5.2023, 15:47:53 	 connect ECONNREFUSED ::1:3306
+----------------------------
+8.5.2023, 15:58:44 	 "email" is not allowed to be empty
+----------------------------
+8.5.2023, 15:58:50 	 connect ECONNREFUSED ::1:3306
+----------------------------
+8.5.2023, 15:58:57 	 connect ECONNREFUSED ::1:3306
+----------------------------
+8.5.2023, 15:59:07 	 connect ECONNREFUSED ::1:3306
+----------------------------
+8.5.2023, 19:25:55 	 Email already in use.
+----------------------------
+8.5.2023, 19:27:05 	 Incorrect email or password.
+----------------------------
+8.5.2023, 19:27:13 	 Incorrect email or password.
+----------------------------
+8.5.2023, 19:27:19 	 Incorrect email or password.
+----------------------------
+8.5.2023, 19:46:53 	 Route /favicon.ico not exist
+----------------------------
+8.5.2023, 19:47:41 	 id 4 not exist
+----------------------------
+8.5.2023, 20:12:49 	 Incorrect email or password.
+----------------------------
+8.5.2023, 20:12:56 	 Incorrect email or password.
+----------------------------
+8.5.2023, 20:18:39 	 Incorrect email or password.
+----------------------------
+8.5.2023, 20:18:43 	 Incorrect email or password.
+----------------------------
+8.5.2023, 20:26:24 	 Cannot convert undefined or null to object
+----------------------------
+8.5.2023, 20:26:34 	 Cannot convert undefined or null to object
+----------------------------
+8.5.2023, 20:26:39 	 Cannot convert undefined or null to object
+----------------------------
+8.5.2023, 20:27:27 	 Cannot convert undefined or null to object
+----------------------------
+8.5.2023, 20:28:28 	 Cannot convert undefined or null to object
+----------------------------
+8.5.2023, 20:29:29 	 Cannot convert undefined or null to object
+----------------------------
+8.5.2023, 20:32:17 	 secretOrPrivateKey must have a value
+----------------------------
+8.5.2023, 20:36:29 	 Cannot set properties of undefined (setting 'password')
+----------------------------
+8.5.2023, 20:36:48 	 Cannot set properties of undefined (setting 'password')
+----------------------------
+8.5.2023, 20:36:57 	 Cannot set properties of undefined (setting 'password')
+----------------------------
+8.5.2023, 20:37:12 	 Cannot read properties of undefined (reading 'password')
+----------------------------

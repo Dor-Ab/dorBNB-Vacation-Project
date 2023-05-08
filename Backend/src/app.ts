@@ -6,13 +6,20 @@ import vacationsController from "./6-Controllers/vacations-controller"
 import authController from "./6-Controllers/auth-controller"
 import followersController from "./6-Controllers/followers-controller"
 import cors from "cors"
+import expressRateLimit from "express-rate-limit"
 
 const server = express()
-server.use(cors())
+
+server.use("/api", expressRateLimit({
+    max: 10,
+    windowMs: 500
+}))
+
+server.use(cors({ origin: appConfig.frontEndUrl }))
 server.use(express.json())
 
-server.use("/api", vacationsController)
 server.use("/api", authController)
+server.use("/api", vacationsController)
 server.use("/api", followersController)
 
 server.use("*", routeNotFound)

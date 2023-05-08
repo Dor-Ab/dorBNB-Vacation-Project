@@ -31,9 +31,9 @@ async function getOneVacation(id: number): Promise<VacationsModel> {
         vacationPrice AS price,
         vacationPhotoName AS photoName
     FROM vacations
-    WHERE vacationID = ${id}
+    WHERE vacationID = ?
     `
-    const vacations = await dal.execute(sql)
+    const vacations = await dal.execute(sql, [id])
 
     const vacation = vacations[0]
     if (!vacation) throw new ResourceNotFoundErrorModel(id)
@@ -46,9 +46,9 @@ async function addVacation(vacation: VacationsModel): Promise<VacationsModel> {
 
     const sql = `
     INSERT INTO vacations(vacationDestination,vacationDescription,vacationStartDate,vacationEndDate,vacationPrice,vacationPhotoName) 
-    VALUES('${vacation.destination}','${vacation.description}','${vacation.startDate}','${vacation.endDate}',${vacation.price},'${vacation.photoName}')
+    VALUES(?,?,?,?,?,?)
     `
-    const info: OkPacket = await dal.execute(sql)
+    const info: OkPacket = await dal.execute(sql, [vacation.destination, vacation.description, vacation.startDate, vacation.endDate, vacation.price, vacation.photoName])
 
     vacation.id = info.insertId
 
@@ -61,16 +61,16 @@ async function updateVacation(vacation: VacationsModel): Promise<VacationsModel>
 
     const sql = `
     UPDATE vacations SET
-        vacationDestination = '${vacation.destination}',
-        vacationDescription = '${vacation.description}',
-        vacationStartDate = '${vacation.startDate}',
-        vacationEndDate = '${vacation.endDate}',
-        vacationPrice = ${vacation.price},
-        vacationPhotoName = '${vacation.photoName}'
-    WHERE vacationID = ${vacation.id};
+        vacationDestination = ?,
+        vacationDescription = ?,
+        vacationStartDate = ?,
+        vacationEndDate = ?,
+        vacationPrice = ?,
+        vacationPhotoName = ?
+    WHERE vacationID = ?;
     `
 
-    const info: OkPacket = await dal.execute(sql)
+    const info: OkPacket = await dal.execute(sql, [vacation.destination, vacation.description, vacation.startDate, vacation.endDate, vacation.price, vacation.photoName, vacation.id])
 
     if (info.affectedRows === 0) throw new ResourceNotFoundErrorModel(vacation.id)
 
@@ -80,10 +80,10 @@ async function updateVacation(vacation: VacationsModel): Promise<VacationsModel>
 async function deleteVacation(id: number): Promise<void> {
     const sql = `
     DELETE FROM vacations 
-    WHERE vacationID = ${id}
+    WHERE vacationID = ?
     `
 
-    const info: OkPacket = await dal.execute(sql)
+    const info: OkPacket = await dal.execute(sql, [id])
 
     if (info.affectedRows === 0) throw new ResourceNotFoundErrorModel(id)
 }
@@ -92,10 +92,10 @@ async function getVacationImageName(id: number): Promise<string> {
 
     const sql = `
     SELECT vacationPhotoName FROM vacations
-    WHERE vacationID = ${id};
+    WHERE vacationID = ?;
     `
 
-    const info = await dal.execute(sql)
+    const info = await dal.execute(sql, [id])
 
     if (info.length === 0) throw new ResourceNotFoundErrorModel(id)
 

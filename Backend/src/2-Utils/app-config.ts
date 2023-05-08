@@ -7,6 +7,9 @@ class AppConfig {
 
     // Server Port
     public port = 3001
+
+    // Frontend URL
+    public frontEndUrl = "http://localhost:3000"
 }
 
 const appConfig = new AppConfig()

@@ -7,7 +7,7 @@ import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 
 function Header(): JSX.Element {
-
+    
     const [name, setName] = useState<string>("")
     const [loggedIn, setLoggedIn] = useState<boolean>(false)
     const [loggedOut, setLoggedOut] = useState<boolean>(true)
@@ -17,11 +17,15 @@ function Header(): JSX.Element {
         const name = authStore.getState().user?.firstName
         if (name) setName(", " + name)
 
-        // Conditional rendering for auth btns
+        // Conditional rendering for auth btns using short circuit:
+        // Get token from redux
         const token = authStore.getState().token
+
+        // If token exist -> display logout
         if (token) setLoggedIn(true)
         else setLoggedIn(false)
 
+        // If token not exist -> display login & register
         if (!token) setLoggedOut(true)
         else setLoggedOut(false)
 
@@ -31,7 +35,7 @@ function Header(): JSX.Element {
             if (name) setName(", " + name)
             else setName("")
 
-            // Subscribe to token
+            // Subscribe to token state and change conditinal rendering if needed
             const token = authStore.getState().token
             if (token) setLoggedIn(true)
             else setLoggedIn(false)
@@ -45,26 +49,31 @@ function Header(): JSX.Element {
         }
     }, [])
 
+    // Return true if time is between 05:00 - 12:00
     function isMorning(): boolean {
         const now = new Date()
         return now.getHours() > 5 && now.getHours() <= 12
     }
 
+    // Return true if time is between 12:00 - 18:00
     function isAfterNoon(): boolean {
         const now = new Date()
         return now.getHours() > 12 && now.getHours() <= 18
     }
 
+    // Return true if time is between 18:00 - 20:00
     function isEvening(): boolean {
         const now = new Date()
         return now.getHours() > 18 && now.getHours() <= 20;
     }
 
+    // Return true if time is between 20:00 - 05:00
     function isNight(): boolean {
         const now = new Date()
         return now.getHours() > 20 || now.getHours() <= 5
     }
 
+    // Change background of auth btns only when hmburger exist:
     const [darkBackground, setDarkBackground] = useState<string | null>("")
 
     function isClicked() {

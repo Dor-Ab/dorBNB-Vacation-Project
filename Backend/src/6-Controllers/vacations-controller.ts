@@ -27,7 +27,7 @@ router.get("/vacations/:id([0-9]+)", async (request: Request, response: Response
     }
 })
 
-router.get("/vacations/images/:id([0-9]+)", async (request: Request, response: Response, next: NextFunction) => {
+router.get("/vacations/images/:id", async (request: Request, response: Response, next: NextFunction) => {
     try {
         const id = +request.params.id
         const imageName = await vacationsLogic.getVacationImageName(id)
