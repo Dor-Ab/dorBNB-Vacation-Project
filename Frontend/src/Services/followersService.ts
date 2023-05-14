@@ -9,10 +9,9 @@ class FollowerService {
         const data = (await result).data
     }
 
-    // public async removeFollower(follower: FollowerModel): Promise<void> {
-    //     const result = axios.delete
-
-    // }
+    public async removeFollower(follower: FollowerModel): Promise<void> {
+        const result = axios.delete(`${appConfig.followersUrl}${follower.userID}/${follower.vacationID}`)
+    }
 
 }
 

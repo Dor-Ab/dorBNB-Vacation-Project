@@ -64,19 +64,16 @@ async function addFollower(follower: FollowerModel) {
     return follower
 }
 
-async function removeFollower(follower: FollowerModel): Promise<void> {
-    const errors = follower.validate()
-    if (errors) throw new ValidationErrorModel(errors)
-
+async function removeFollower(userId: number, vacationId: number): Promise<void> {
     const sql = `
     DELETE FROM followers
     WHERE userID = ?
     AND vacationID = ?
     `
 
-    const info: OkPacket = await dal.execute(sql, [follower.userID, follower.vacationID])
+    const info: OkPacket = await dal.execute(sql, [userId, vacationId])
 
-    if (info.affectedRows === 0) throw new ResourceNotFoundErrorModel(follower.userID)
+    if (info.affectedRows === 0) throw new ResourceNotFoundErrorModel(userId)
 }
 
 export default {

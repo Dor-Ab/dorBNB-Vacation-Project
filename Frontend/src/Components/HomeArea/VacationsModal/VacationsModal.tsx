@@ -30,11 +30,12 @@ function VacationsModal(props: VacationsModalProps): JSX.Element {
 
         try {
             if (heartState) {
-                await followerService.addFollower(follower)
+                await followerService.removeFollower(follower)
                 setHeart(<Heart />)
                 setHeartState(false)
             }
             else {
+                await followerService.addFollower(follower)
                 setHeart(<HeartFill />)
                 setHeartState(true)
             }

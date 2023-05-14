@@ -40,9 +40,11 @@ router.post("/followers", verifyLoggedIn, async (request: Request, response: Res
     }
 })
 
-router.delete("/followers", verifyLoggedIn, async (request: Request, response: Response, next: NextFunction) => {
+router.delete("/followers/:userId/:vacationId", verifyLoggedIn, async (request: Request, response: Response, next: NextFunction) => {
     try {
-        await followersLogic.removeFollower(new FollowerModel(request.body))
+        const userId = +request.params.userId
+        const vacationId = +request.params.vacationId
+        await followersLogic.removeFollower(userId, vacationId)
         response.sendStatus(204)
     }
     catch (err: any) {
