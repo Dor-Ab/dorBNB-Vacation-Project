@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Footer.css";
+import { Row } from "react-bootstrap";
 
 function Footer(): JSX.Element {
 
@@ -12,7 +13,9 @@ function Footer(): JSX.Element {
 
     return (
         <div className="Footer">
-            <p>All Rights Reserved To Dor Abutbul {currentYear} &copy;</p>
+            <Row className="row">
+                <p>All Rights Reserved To Dor Abutbul {currentYear} &copy;</p>
+            </Row>
         </div>
     );
 }

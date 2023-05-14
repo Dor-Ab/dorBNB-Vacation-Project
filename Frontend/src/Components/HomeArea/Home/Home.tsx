@@ -20,7 +20,7 @@ function Home(): JSX.Element {
 
     return (
         <div className="Home">
-            <h2>Home</h2>
+            <h2>Current Vacations</h2>
             <Row className="row">
                 {vacations.map(vacation => <Col key={vacation.id}><VacationCard vacation={vacation} /></Col>)}
             </Row>

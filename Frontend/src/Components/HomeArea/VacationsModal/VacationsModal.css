@@ -5,19 +5,55 @@
     animation: modalAppear 0.5s forwards;
 }
 
-.modalRow>img {
+.modalRow>.col>img {
     /* height: 100%;
     width: 100%; */
     margin: auto;
     padding: 0.5rem;
-    max-width: 20rem;
+    width: min(30vw, 25rem);
     border-radius: 1rem;
 }
 
 .popup-content>h2 {
     border-radius: 1rem;
-    background-color: #1a5dd2;
+    background-color: #eb8f51;
 }
+
+.modalRow>.col>a,
+.modalRow>.btnsCol>button {
+    transition: all 0.2s;
+    text-decoration: none;
+    color: black;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    font-size: min(2vw, 1rem);
+}
+
+.modalRow>.col>a:hover,
+.modalRow>.btnsCol>button:hover {
+    background-color: bisque;
+    transform: scale(1.1);
+}
+
+.modalRow>.btnsCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .modalRow>.btnsCol>button {
+    transition: all 0.2s;
+    text-decoration: none;
+    color: black;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    font-size: min(2vw, 1rem);
+} */
 
 @keyframes modalAppear {
     to {
