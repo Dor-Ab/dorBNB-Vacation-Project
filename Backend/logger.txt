@@ -108,3 +108,43 @@
 ----------------------------
 14.5.2023, 20:56:40 	 Already exist
 ----------------------------
+14.5.2023, 21:17:52 	 Already exist
+----------------------------
+15.5.2023, 7:20:29 	 connect ECONNREFUSED ::1:3306
+----------------------------
+15.5.2023, 7:21:00 	 Route /api/specific-follower not exist
+----------------------------
+15.5.2023, 7:21:37 	 Already exist
+----------------------------
+15.5.2023, 7:33:21 	 Route /api/specific-follower/undefined/undefined not exist
+----------------------------
+15.5.2023, 7:33:21 	 Route /api/specific-follower/undefined/undefined not exist
+----------------------------
+15.5.2023, 7:33:21 	 Route /api/specific-follower/undefined/undefined not exist
+----------------------------
+15.5.2023, 7:33:48 	 Route /api/specific-follower/1/undefined not exist
+----------------------------
+15.5.2023, 7:33:48 	 Route /api/specific-follower/1/undefined not exist
+----------------------------
+15.5.2023, 7:33:48 	 Route /api/specific-follower/1/undefined not exist
+----------------------------
+15.5.2023, 7:33:49 	 Route /api/specific-follower/1/undefined not exist
+----------------------------
+15.5.2023, 7:33:49 	 Route /api/specific-follower/1/undefined not exist
+----------------------------
+15.5.2023, 7:33:49 	 Route /api/specific-follower/1/undefined not exist
+----------------------------
+15.5.2023, 7:33:59 	 Route /api/specific-follower/1/1 not exist
+----------------------------
+15.5.2023, 7:33:59 	 Route /api/specific-follower/1/3 not exist
+----------------------------
+15.5.2023, 7:33:59 	 Route /api/specific-follower/1/2 not exist
+----------------------------
+15.5.2023, 7:34:23 	 Route /api/specific-follower/1/1 not exist
+----------------------------
+15.5.2023, 7:34:23 	 Route /api/specific-follower/1/2 not exist
+----------------------------
+15.5.2023, 7:35:01 	 Route /api/specific-follower not exist
+----------------------------
+15.5.2023, 7:35:06 	 Route /api/specific-follower/1/2 not exist
+----------------------------

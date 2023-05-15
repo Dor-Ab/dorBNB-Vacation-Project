@@ -5,12 +5,18 @@ import FollowerModel from "../Models/followerModel"
 class FollowerService {
 
     public async addFollower(follower: FollowerModel) {
-        const result = axios.post(appConfig.followersUrl, follower)
-        const data = (await result).data
+        const result = await axios.post(appConfig.followersUrl, follower)
+        const data = result.data
     }
 
     public async removeFollower(follower: FollowerModel): Promise<void> {
-        const result = axios.delete(`${appConfig.followersUrl}${follower.userID}/${follower.vacationID}`)
+        axios.delete(`${appConfig.followersUrl}${follower.userID}/${follower.vacationID}`)
+    }
+
+    public async getSpecificVacationByUserIdAndVacationId(userId: number, vacationId: number): Promise<boolean> {
+        const result = await axios.get(`${appConfig.specificFollower}${userId}/${vacationId}`)
+        const data = result.data
+        return data
     }
 
 }

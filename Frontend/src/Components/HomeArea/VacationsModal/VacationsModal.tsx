@@ -6,7 +6,7 @@ import appConfig from "../../../Utils/appConfig";
 import { Col, Row, Image } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { HeartFill, Heart } from "react-bootstrap-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import notify from "../../../Services/notifyService";
 import { authStore } from "../../../Redux/authState";
 import followerService from "../../../Services/followersService";
@@ -22,6 +22,23 @@ function VacationsModal(props: VacationsModalProps): JSX.Element {
     const [heart, setHeart] = useState(<Heart />)
 
     const userId = authStore.getState().user.id
+
+    useEffect(() => {
+        followerService.getSpecificVacationByUserIdAndVacationId(userId, props.vacation.id)
+            .then(result => handleLikedVacation(result))
+            .catch(err => notify.error(err))
+    }, [])
+
+    function handleLikedVacation(result: boolean) {
+        if (result) {
+            setHeart(<HeartFill />)
+            setHeartState(true)
+        }
+        else {
+            setHeart(<Heart />)
+            setHeartState(false)
+        }
+    }
 
     async function handleButtonFav() {
         const follower = new FollowerModel()

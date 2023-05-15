@@ -30,6 +30,18 @@ router.get("/followers/:id([0-9]+)", verifyAdmin, async (request: Request, respo
     }
 })
 
+router.get("/specific-follower/:userId/:vacationId", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
+    try {
+        const userId = +request.params.userId
+        const vacationId = +request.params.vacationId
+        const specificFollower = await followersLogic.getSpecificVacationByUserIdAndVacationId(userId, vacationId)
+        response.json(specificFollower)
+    }
+    catch (err: any) {
+        next(err)
+    }
+})
+
 router.post("/followers", verifyLoggedIn, async (request: Request, response: Response, next: NextFunction) => {
     try {
         const follower = await followersLogic.addFollower(new FollowerModel(request.body))

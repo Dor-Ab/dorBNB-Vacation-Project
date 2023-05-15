@@ -29,6 +29,7 @@
     padding: 0.5rem;
     white-space: nowrap;
     font-size: min(2vw, 1rem);
+    border: none;
 }
 
 .modalRow>.col>a:hover,

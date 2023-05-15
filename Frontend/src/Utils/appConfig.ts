@@ -4,6 +4,7 @@ class AppConfig {
     public loginUrl = `http://localhost:3001/api/auth/login/`
     public vacationImagesUrl = `http://localhost:3001/api/vacations/images/`
     public followersUrl = `http://localhost:3001/api/followers/`
+    public specificFollower = `http://localhost:3001/api/specific-follower/`
 }
 
 const appConfig = new AppConfig()
