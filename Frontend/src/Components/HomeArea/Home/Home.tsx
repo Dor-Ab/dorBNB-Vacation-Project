@@ -14,7 +14,16 @@ function Home(): JSX.Element {
 
     useEffect(() => {
         vacationService.getAllVacations()
-            .then(v => setVacations(v))
+            .then(v => {
+                v.sort((a, b) => {
+                    const datePartsA = a.startDate.split('/').map(Number);
+                    const datePartsB = b.startDate.split('/').map(Number);
+                    const dateA = new Date(datePartsA[2], datePartsA[1] - 1, datePartsA[0]);
+                    const dateB = new Date(datePartsB[2], datePartsB[1] - 1, datePartsB[0]);
+                    return dateA.getTime() - dateB.getTime();
+                });
+                setVacations(v)
+            })
             .catch(err => notify.error(err))
     }, [])
 

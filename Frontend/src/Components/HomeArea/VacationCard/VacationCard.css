@@ -92,6 +92,7 @@
     transform: scale(1.1);
     background-color: #eb8f51;
     color: #252525;
+    font-weight: bolder;
 }
 
 .VacationCard>.modalBtnContainer {
@@ -105,20 +106,29 @@
     position: absolute;
     display: grid;
     place-content: center;
-    right: -0.2rem;
-    bottom: -0.2rem;
-    background-color: aliceblue;
+    right: -0.3rem;
+    bottom: -0.3rem;
     z-index: 999;
     border-radius: 50%;
     padding: 0.5rem;
     width: 2rem;
     height: 2rem;
+    background-color: white;
+    border: 0.1rem solid;
 }
 
 .VacationCard:hover>.followersCount {
     transform: scale(1);
     right: 0;
     bottom: 0;
+    background-color: #eb8f51;
+    shape-outside: circle();
+}
+
+.VacationCard>.followersCount:hover {
+    transform: scale(2);
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .VacationCard>.followersCount>.count {
@@ -133,4 +143,18 @@
     justify-self: center;
     top: -0.4rem;
     transform: scale(0.7);
+}
+
+.VacationCard>.followersCount>.text {
+    display: none;
+    font-size: 0.2rem;
+    font-weight: bolder;
+    transform: scale(1.4);
+}
+
+.VacationCard>.followersCount:hover>.text {
+    position: absolute;
+    right: 25%;
+    bottom: 0.2rem;
+    display: flex;
 }

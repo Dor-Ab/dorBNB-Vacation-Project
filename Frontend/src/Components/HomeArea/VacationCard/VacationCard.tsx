@@ -22,7 +22,6 @@ function VacationCard(props: VacationCardProps): JSX.Element {
         followerService.getFollowers()
             .then(followers => {
                 followersStore.dispatch({ type: FollowersActionType.FetchFollowers, payload: followers })
-                // console.log(followersStore.getState().followers)
             })
             .catch(err => notify.error(err))
 
@@ -52,6 +51,7 @@ function VacationCard(props: VacationCardProps): JSX.Element {
             <div className="followersCount">
                 <span className="count">{followersCount}</span>
                 <span className="icon">{<PersonHeart />}</span>
+                <span className="text">Followers</span>
             </div>
             <Row className="row">
                 <h3 className="vacationHead">{props.vacation.destination}</h3>
