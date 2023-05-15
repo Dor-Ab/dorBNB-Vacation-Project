@@ -29,6 +29,7 @@ function Menu(): JSX.Element {
             </Row>
             <Row className="searchRow">
                 <input type="text" placeholder={placeholder} onFocus={changePlaceholder} onBlur={changePlaceholder} />
+                <NavLink to='/followed-vacations'>Followed Vacations</NavLink>
             </Row>
         </div>
     );
