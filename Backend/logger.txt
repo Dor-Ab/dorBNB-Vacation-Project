@@ -148,3 +148,63 @@
 ----------------------------
 15.5.2023, 7:35:06 	 Route /api/specific-follower/1/2 not exist
 ----------------------------
+15.5.2023, 9:16:51 	 "password" length must be at least 8 characters long
+----------------------------
+15.5.2023, 9:17:39 	 "password" length must be at least 8 characters long
+----------------------------
+15.5.2023, 9:17:41 	 Email already in use.
+----------------------------
+15.5.2023, 9:27:51 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:27:53 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:28:15 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:28:16 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:28:22 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:28:23 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:28:24 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:28:28 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:28:29 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:29:07 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:29:09 	 "email" is not allowed to be empty
+----------------------------
+15.5.2023, 9:29:14 	 "firstName" is not allowed to be empty
+----------------------------
+15.5.2023, 9:54:08 	 You Are Not An Admin
+----------------------------
+15.5.2023, 9:54:08 	 You Are Not An Admin
+----------------------------
+15.5.2023, 9:54:08 	 You Are Not An Admin
+----------------------------
+15.5.2023, 9:54:19 	 You Are Not An Admin
+----------------------------
+15.5.2023, 9:54:19 	 You Are Not An Admin
+----------------------------
+15.5.2023, 9:54:19 	 You Are Not An Admin
+----------------------------
+15.5.2023, 9:55:14 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+15.5.2023, 9:55:14 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+15.5.2023, 9:55:14 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+15.5.2023, 9:55:44 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+15.5.2023, 9:55:44 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+15.5.2023, 9:55:44 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+15.5.2023, 10:05:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+15.5.2023, 10:05:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+15.5.2023, 10:05:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------

@@ -23,5 +23,21 @@ body,
   background-color: white;
   grid-column: 2;
   box-shadow: 1px 2px 4px 2px grey;
-  width: 14rem;
+  width: min(20vw, 14rem);
+  min-width: 9rem;
+}
+
+.myForm>button {
+  transition: all 0.1s;
+  border-radius: 0.5rem;
+  background-color: #eb8f51;
+  font-weight: bold;
+}
+
+.myForm>button:hover {
+  background-color: #eaa476;
+}
+
+.myForm>button:active {
+  background-color: #c17f53;
 }

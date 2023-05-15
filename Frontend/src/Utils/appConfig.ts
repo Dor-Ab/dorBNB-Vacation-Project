@@ -5,6 +5,7 @@ class AppConfig {
     public vacationImagesUrl = `http://localhost:3001/api/vacations/images/`
     public followersUrl = `http://localhost:3001/api/followers/`
     public specificFollower = `http://localhost:3001/api/specific-follower/`
+    public followerForVacation = `http://localhost:3001/api/followers-by-vacation/`
 }
 
 const appConfig = new AppConfig()

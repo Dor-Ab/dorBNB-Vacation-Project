@@ -53,6 +53,17 @@ async function getSpecificVacationByUserIdAndVacationId(userId: number, vacation
     return true
 }
 
+async function getFollowersForVacation(id: number): Promise<FollowerModel[]> {
+    const sql = `
+    SELECT * FROM followers
+    WHERE vacationID = ?
+    `
+
+    const followersArray = await dal.execute(sql, [id])
+
+    return followersArray
+}
+
 async function addFollower(follower: FollowerModel) {
     const errors = follower.validate()
     if (errors) throw new ValidationErrorModel(errors)
@@ -94,5 +105,6 @@ export default {
     getOneFollowerInfo,
     addFollower,
     removeFollower,
+    getFollowersForVacation,
     getSpecificVacationByUserIdAndVacationId
 }

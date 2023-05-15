@@ -1,1 +1,10 @@
-.Login {}
+.Login>form>h2 {
+    text-align: center;
+}
+
+.Login>form>.registerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

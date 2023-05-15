@@ -9,7 +9,7 @@ import verifyLoggedIn from "../3-Middleware/verify-loggedIn"
 
 const router = express.Router()
 
-router.get("/followers", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
+router.get("/followers", async (request: Request, response: Response, next: NextFunction) => {
     try {
         const followers = await followersLogic.getFollowers()
         response.json(followers)
@@ -19,7 +19,7 @@ router.get("/followers", verifyAdmin, async (request: Request, response: Respons
     }
 })
 
-router.get("/followers/:id([0-9]+)", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
+router.get("/followers/:id([0-9]+)", async (request: Request, response: Response, next: NextFunction) => {
     try {
         const id = +request.params.id
         const followerInfo = await followersLogic.getOneFollowerInfo(id)
@@ -30,11 +30,22 @@ router.get("/followers/:id([0-9]+)", verifyAdmin, async (request: Request, respo
     }
 })
 
-router.get("/specific-follower/:userId/:vacationId", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
+router.get("/specific-follower/:userId/:vacationId", async (request: Request, response: Response, next: NextFunction) => {
     try {
         const userId = +request.params.userId
         const vacationId = +request.params.vacationId
         const specificFollower = await followersLogic.getSpecificVacationByUserIdAndVacationId(userId, vacationId)
+        response.json(specificFollower)
+    }
+    catch (err: any) {
+        next(err)
+    }
+})
+
+router.get("/followers-by-vacation/:vacationId", async (request: Request, response: Response, next: NextFunction) => {
+    try {
+        const vacationId = +request.params.vacationId
+        const specificFollower = await followersLogic.getFollowersForVacation(vacationId)
         response.json(specificFollower)
     }
     catch (err: any) {

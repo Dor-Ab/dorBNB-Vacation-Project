@@ -4,6 +4,7 @@ import CredentialsModel from "../../../Models/credentialsModel";
 import notify from "../../../Services/notifyService";
 import authService from "../../../Services/authService";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Login(): JSX.Element {
 
@@ -30,6 +31,10 @@ function Login(): JSX.Element {
                 <label>Password:</label>
                 <input type="password" {...register("password")} /><br />
                 <button>Login</button>
+                <div className="registerContainer">
+                    <span>Don't have an account?</span>
+                    <NavLink to={"/register"}>register here</NavLink>
+                </div>
             </form>
         </div >
     );

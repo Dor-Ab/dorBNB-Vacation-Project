@@ -19,6 +19,12 @@ class FollowerService {
         return data
     }
 
+    public async getFollowersForVacation(id: number): Promise<FollowerModel[]> {
+        const result = await axios.get(appConfig.followerForVacation + id)
+        const data = result.data
+        return data
+    }
+
 }
 
 const followerService = new FollowerService()

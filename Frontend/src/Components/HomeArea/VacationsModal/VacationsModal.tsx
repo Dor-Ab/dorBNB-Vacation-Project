@@ -71,8 +71,8 @@ function VacationsModal(props: VacationsModalProps): JSX.Element {
                 <p>{props.vacation.description}</p>
                 <Row className="modalRow">
                     <Col className="col btnsCol">
-                        <NavLink to={`/vacations/details/${props.vacation.id}`}>Open</NavLink>
                         <button onClick={handleButtonFav}>{heart}</button>
+                        <NavLink to={`/vacations/details/${props.vacation.id}`}>Open</NavLink>
                     </Col>
                     <Col className="col">
                         <Image src={appConfig.vacationImagesUrl + props.vacation.id} />
