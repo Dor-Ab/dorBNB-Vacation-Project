@@ -10,10 +10,10 @@ import expressRateLimit from "express-rate-limit"
 
 const server = express()
 
-server.use("/api", expressRateLimit({
-    max: 20,
-    windowMs: 1000
-}))
+// server.use("/api", expressRateLimit({
+//     max: 20,
+//     windowMs: 1000
+// }))
 
 server.use(cors({ origin: appConfig.frontEndUrl }))
 server.use(express.json())

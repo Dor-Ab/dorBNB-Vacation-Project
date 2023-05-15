@@ -8,6 +8,7 @@ import { PersonHeart } from "react-bootstrap-icons";
 import { useEffect, useState } from "react";
 import followerService from "../../../Services/followersService";
 import notify from "../../../Services/notifyService";
+import { FollowersActionType, followersStore } from "../../../Redux/followersState";
 
 interface VacationCardProps {
     vacation: VacationsModel
@@ -18,12 +19,32 @@ function VacationCard(props: VacationCardProps): JSX.Element {
     const [followersCount, setFollowersCount] = useState<number>(0)
 
     useEffect(() => {
+        followerService.getFollowers()
+            .then(followers => {
+                followersStore.dispatch({ type: FollowersActionType.FetchFollowers, payload: followers })
+                // console.log(followersStore.getState().followers)
+            })
+            .catch(err => notify.error(err))
+
         followerService.getFollowersForVacation(props.vacation.id)
             .then(f => {
                 const count = f.length
                 setFollowersCount(count)
             })
             .catch(err => notify.error(err))
+
+        const unSubscribe = followersStore.subscribe(() => {
+            followerService.getFollowersForVacation(props.vacation.id)
+                .then(f => {
+                    const count = f.length
+                    setFollowersCount(count)
+                })
+                .catch(err => notify.error(err))
+        })
+
+        return () => {
+            unSubscribe()
+        }
     }, [])
 
     return (

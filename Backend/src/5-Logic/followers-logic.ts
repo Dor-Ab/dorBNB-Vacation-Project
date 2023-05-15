@@ -6,14 +6,8 @@ import { ErrorModel, ResourceNotFoundErrorModel, ValidationErrorModel } from "..
 async function getFollowers(): Promise<FollowerModel[]> {
     const sql = `
     SELECT
-        users.userFirstName AS 'firstName',
-        users.userLastName AS 'lastName',
-        vacations.vacationDestination AS 'destination', 
-        users.userID ,
-        vacations.vacationID 
+        *
     FROM followers
-        JOIN users ON followers.userID = users.userID 
-        JOIN vacations ON followers.vacationID = vacations.vacationID;
     `
 
     const followers = await dal.execute(sql)
