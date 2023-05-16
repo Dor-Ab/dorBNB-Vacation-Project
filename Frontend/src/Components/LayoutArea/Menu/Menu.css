@@ -50,6 +50,7 @@
 }
 
 .Menu>.navs {
+    gap: 0.5vw;
     padding: 1rem;
 }
 
@@ -60,6 +61,7 @@
     font-weight: bold;
     background-color: #252525;
     border-radius: 0.5rem;
+    font-size: min(1vw, 10rem) max(10rem, 1vw);
 }
 
 .Menu>.navs>a:hover {

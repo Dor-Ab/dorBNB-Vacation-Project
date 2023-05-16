@@ -6,6 +6,7 @@
 
 .FollowedVacations>.row {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding: 1rem;
 }

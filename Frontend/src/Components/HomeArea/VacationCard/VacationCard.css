@@ -45,9 +45,6 @@
 
 .vacationDescription:hover::-webkit-scrollbar-thumb {
     border-right: 0.3rem solid #0745b0;
-    /* border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0.5rem; */
     background: #0745b0;
 }
 

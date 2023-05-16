@@ -10,6 +10,7 @@ import { Col, Row } from "react-bootstrap";
 import { followersStore } from "../../../Redux/followersState";
 import { NavLink } from "react-router-dom";
 import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
+import notify from "../../../Services/notifyService";
 
 function FollowedVacations(): JSX.Element {
 
@@ -30,16 +31,21 @@ function FollowedVacations(): JSX.Element {
     }, [])
 
     async function handleFollowedVacations() {
-        const followedVacations: FollowerModel[] = await followerService.getFollowerByUserId(authStore.getState().user.id)
-        const vacations: VacationsModel[] = []
-        for (let vacation of followedVacations) {
-            const userFollowedVacation: VacationsModel = await vacationService.getOneVacation(vacation.vacationID)
-            vacations.push(userFollowedVacation)
+        try {
+            const followedVacations: FollowerModel[] = await followerService.getFollowerByUserId(authStore.getState().user.id)
+            const vacations: VacationsModel[] = []
+            for (let vacation of followedVacations) {
+                const userFollowedVacation: VacationsModel = await vacationService.getOneVacation(vacation.vacationID)
+                vacations.push(userFollowedVacation)
+            }
+            if (vacations.length === 0) {
+                setFollowedVacations(null)
+            }
+            else setFollowedVacations(vacations)
         }
-        if (vacations.length === 0) {
-            setFollowedVacations(null)
+        catch (err) {
+            notify.error(err)
         }
-        else setFollowedVacations(vacations)
     }
 
     return (
