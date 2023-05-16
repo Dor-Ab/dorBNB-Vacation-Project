@@ -5,23 +5,26 @@ import { followersStore } from "../../../Redux/followersState";
 import { authStore } from "../../../Redux/authState";
 import followerService from "../../../Services/followersService";
 import notify from "../../../Services/notifyService";
+import FollowerModel from "../../../Models/followerModel";
+import VacationCard from "../../HomeArea/VacationCard/VacationCard";
+import vacationService from "../../../Services/vacationService";
 
 function FollowedVacations(): JSX.Element {
 
-    const [followedVacations, setFollowedVacations] = useState<any[]>([])
+    const [followedVacations, setFollowedVacations] = useState<FollowerModel[]>([])
+    const [vacations, setVacation] = useState<VacationsModel[]>([])
 
     useEffect(() => {
-        const followers = followerService.getFollowers()
-            .then(f => {
-                const userFollowing = f.filter(f => f.userID === authStore.getState().user.id)
-                setFollowedVacations(userFollowing)
-            })
-            .catch(err => notify.error(err))
+
     }, [])
+
+    async function handleFollowedVacations() {
+        const followed = await followerService.getFollowerByUserId(authStore.getState().user.id)
+    }
 
     return (
         <div className="FollowedVacations">
-            {followedVacations.map(f => <span>hey</span>)}
+
         </div>
     );
 }

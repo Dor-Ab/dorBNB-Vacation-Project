@@ -18,6 +18,17 @@ class FollowerService {
         return followers
     }
 
+    public async getFollowerByUserId(userId: number): Promise<FollowerModel[]> {
+        const followers = followersStore.getState().followers
+        let follower = followers.filter(f => f.userID === userId)
+
+        if (follower.length === 0) {
+            const response = await axios.get(appConfig.followersUrl + userId)
+            follower = response.data
+        }
+        return follower
+    }
+
     public async addFollower(follower: FollowerModel) {
         const response = await axios.post(appConfig.followersUrl, follower)
         const addedFollower = response.data
