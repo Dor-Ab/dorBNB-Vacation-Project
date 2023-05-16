@@ -19,10 +19,10 @@ router.get("/followers", async (request: Request, response: Response, next: Next
     }
 })
 
-router.get("/followers/:id([0-9]+)", async (request: Request, response: Response, next: NextFunction) => {
+router.get("/followers/:userId([0-9]+)", async (request: Request, response: Response, next: NextFunction) => {
     try {
-        const id = +request.params.id
-        const followerInfo = await followersLogic.getOneFollowerInfo(id)
+        const userID = +request.params.userId
+        const followerInfo = await followersLogic.getFollowerByUserId(userID)
         response.json(followerInfo)
     }
     catch (err: any) {
@@ -34,7 +34,7 @@ router.get("/specific-follower/:userId/:vacationId", async (request: Request, re
     try {
         const userId = +request.params.userId
         const vacationId = +request.params.vacationId
-        const specificFollower = await followersLogic.getSpecificVacationByUserIdAndVacationId(userId, vacationId)
+        const specificFollower = await followersLogic.isUserFollowingVacation(userId, vacationId)
         response.json(specificFollower)
     }
     catch (err: any) {
@@ -45,7 +45,7 @@ router.get("/specific-follower/:userId/:vacationId", async (request: Request, re
 router.get("/followers-by-vacation/:vacationId", async (request: Request, response: Response, next: NextFunction) => {
     try {
         const vacationId = +request.params.vacationId
-        const specificFollower = await followersLogic.getFollowersForVacation(vacationId)
+        const specificFollower = await followersLogic.getFollowersForVacationByVacationId(vacationId)
         response.json(specificFollower)
     }
     catch (err: any) {

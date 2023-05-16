@@ -6,8 +6,14 @@ import { ErrorModel, ResourceNotFoundErrorModel, ValidationErrorModel } from "..
 async function getFollowers(): Promise<FollowerModel[]> {
     const sql = `
     SELECT
-        *
+        users.userFirstName AS 'firstName',
+        users.userLastName AS 'lastName',
+        vacations.vacationDestination AS 'destination', 
+        users.userID ,
+        vacations.vacationID 
     FROM followers
+        JOIN users ON followers.userID = users.userID 
+        JOIN vacations ON followers.vacationID = vacations.vacationID;
     `
 
     const followers = await dal.execute(sql)
@@ -15,7 +21,7 @@ async function getFollowers(): Promise<FollowerModel[]> {
     return followers
 }
 
-async function getOneFollowerInfo(id: number): Promise<FollowerModel> {
+async function getFollowerByUserId(userId: number): Promise<FollowerModel> {
     const sql = `
     SELECT
         users.userFirstName AS 'firstName',
@@ -29,12 +35,12 @@ async function getOneFollowerInfo(id: number): Promise<FollowerModel> {
     WHERE followers.userID = ?
     `
 
-    const followerInfo = await dal.execute(sql, [id])
+    const followerInfo = await dal.execute(sql, [userId])
 
     return followerInfo
 }
 
-async function getSpecificVacationByUserIdAndVacationId(userId: number, vacationId: number): Promise<boolean> {
+async function isUserFollowingVacation(userId: number, vacationId: number): Promise<boolean> {
     const sql = `
     SELECT * FROM followers 
     WHERE userID = ?
@@ -47,13 +53,21 @@ async function getSpecificVacationByUserIdAndVacationId(userId: number, vacation
     return true
 }
 
-async function getFollowersForVacation(id: number): Promise<FollowerModel[]> {
+async function getFollowersForVacationByVacationId(vacationId: number): Promise<FollowerModel[]> {
     const sql = `
-    SELECT * FROM followers
-    WHERE vacationID = ?
+    SELECT         
+        users.userFirstName AS 'firstName',
+        users.userLastName AS 'lastName',
+        vacations.vacationDestination AS 'destination', 
+        users.userID ,
+        vacations.vacationID 
+    FROM followers
+        JOIN users ON followers.userID = users.userID 
+        JOIN vacations ON followers.vacationID = vacations.vacationID
+    WHERE followers.vacationID = ?
     `
 
-    const followersArray = await dal.execute(sql, [id])
+    const followersArray = await dal.execute(sql, [vacationId])
 
     return followersArray
 }
@@ -79,7 +93,25 @@ async function addFollower(follower: FollowerModel) {
 
     if (info.affectedRows === 0) throw new ErrorModel("Something went wrong", 400)
 
-    return follower
+    const followerInfoSql = `
+    SELECT
+        users.userFirstName AS 'firstName',
+        users.userLastName AS 'lastName',
+        vacations.vacationDestination AS 'destination', 
+        users.userID ,
+        vacations.vacationID 
+    FROM followers
+        JOIN users ON followers.userID = users.userID 
+        JOIN vacations ON followers.vacationID = vacations.vacationID
+    WHERE followers.userID = ?
+    AND vacations.vacationID = ?
+    `
+
+    const followerInfoContainer = await dal.execute(followerInfoSql, [follower.userID, follower.vacationID])
+
+    const followerInfo = followerInfoContainer[0]
+
+    return followerInfo
 }
 
 async function removeFollower(userId: number, vacationId: number): Promise<void> {
@@ -96,9 +128,9 @@ async function removeFollower(userId: number, vacationId: number): Promise<void>
 
 export default {
     getFollowers,
-    getOneFollowerInfo,
+    getFollowerByUserId,
     addFollower,
     removeFollower,
-    getFollowersForVacation,
-    getSpecificVacationByUserIdAndVacationId
+    getFollowersForVacationByVacationId,
+    isUserFollowingVacation
 }

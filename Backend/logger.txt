@@ -218,3 +218,45 @@
 ----------------------------
 15.5.2023, 13:18:38 	 id 1 not exist
 ----------------------------
+16.5.2023, 14:59:22 	 Already exist
+----------------------------
+16.5.2023, 15:14:28 	 Route /api/followers/undefined not exist
+----------------------------
+16.5.2023, 15:24:34 	 ER_NON_UNIQ_ERROR: Column 'vacationID' in where clause is ambiguous
+----------------------------
+16.5.2023, 15:30:28 	 ER_NON_UNIQ_ERROR: Column 'userID' in where clause is ambiguous
+----------------------------
+16.5.2023, 15:37:41 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 15:37:44 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 15:38:27 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 16:05:49 	 id 1 not exist
+----------------------------
+16.5.2023, 16:06:29 	 id 1 not exist
+----------------------------
+16.5.2023, 16:06:29 	 id 1 not exist
+----------------------------
+16.5.2023, 16:06:29 	 id 1 not exist
+----------------------------
+16.5.2023, 16:12:12 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 16:13:07 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 16:15:05 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 16:15:22 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 16:15:36 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 16:20:31 	 id 1 not exist
+----------------------------
+16.5.2023, 16:21:05 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 16:22:38 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 16:23:06 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+16.5.2023, 19:11:31 	 Route /api/vacations/undefined not exist
+----------------------------

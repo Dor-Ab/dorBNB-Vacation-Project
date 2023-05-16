@@ -6,15 +6,16 @@ import fsPromise from "fs/promises"
 
 async function getAllVacations(): Promise<VacationsModel[]> {
     const sql = `
-    SELECT
+    SELECT 
         vacationID AS id,
         vacationDestination AS destination,
         vacationDescription AS description,
         DATE_FORMAT(vacationStartDate,'%d/%m/%Y') AS startDate,
         DATE_FORMAT(vacationEndDate,'%d/%m/%Y') AS endDate,
         vacationPrice AS price,
-        vacationPhotoName AS photoName
-    FROM vacations
+        vacationPhotoName AS photoName 
+    FROM vacations  
+        ORDER BY vacations.vacationStartDate ASC;
     `
     const vacations = await dal.execute(sql)
     return vacations
