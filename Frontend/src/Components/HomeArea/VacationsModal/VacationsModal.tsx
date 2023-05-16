@@ -21,10 +21,10 @@ function VacationsModal(props: VacationsModalProps): JSX.Element {
     const [heartState, setHeartState] = useState<boolean>(false)
     const [heart, setHeart] = useState(<Heart />)
 
-    const userId = authStore.getState().user.id
+    const user = authStore.getState().user
 
     useEffect(() => {
-        followerService.getSpecificVacationByUserIdAndVacationId(userId, props.vacation.id)
+        followerService.getSpecificVacationByUserIdAndVacationId(user.id, props.vacation.id)
             .then(result => handleLikedVacation(result))
             .catch(err => notify.error(err))
     }, [])
@@ -42,7 +42,10 @@ function VacationsModal(props: VacationsModalProps): JSX.Element {
 
     async function handleButtonFav() {
         const follower = new FollowerModel()
-        follower.userID = userId
+        follower.destination = props.vacation.destination
+        follower.firstName = user.firstName
+        follower.lastName = user.lastName
+        follower.userID = user.id
         follower.vacationID = props.vacation.id
 
         try {

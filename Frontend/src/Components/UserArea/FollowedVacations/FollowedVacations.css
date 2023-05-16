@@ -1,3 +1,26 @@
 .FollowedVacations {
-	
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+.FollowedVacations>.row {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.FollowedVacations>.row>a {
+    transition: all 0.2s;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.FollowedVacations>.row>a:hover {
+    transform: scale(1.1);
 }

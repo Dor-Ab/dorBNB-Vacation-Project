@@ -2,4 +2,9 @@
     display: grid;
     place-content: center;
     overflow: hidden;
+
+}
+
+.Home>.row {
+    padding: 1rem;
 }

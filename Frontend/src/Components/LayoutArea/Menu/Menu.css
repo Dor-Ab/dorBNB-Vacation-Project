@@ -48,3 +48,21 @@
 .Menu>.searchRow>input:-moz-placeholder {
     text-align: center;
 }
+
+.Menu>.navs {
+    padding: 1rem;
+}
+
+.Menu>.navs>a {
+    transition: all 0.2s;
+    text-decoration: none;
+    color: #eb8f51;
+    font-weight: bold;
+    background-color: #252525;
+    border-radius: 0.5rem;
+}
+
+.Menu>.navs>a:hover {
+    color: white;
+    background-color: #353535;
+}

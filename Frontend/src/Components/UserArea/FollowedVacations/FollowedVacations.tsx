@@ -1,30 +1,60 @@
 import { useEffect, useState } from "react";
 import "./FollowedVacations.css";
 import VacationsModel from "../../../Models/vacationModel";
-import { followersStore } from "../../../Redux/followersState";
 import { authStore } from "../../../Redux/authState";
 import followerService from "../../../Services/followersService";
-import notify from "../../../Services/notifyService";
 import FollowerModel from "../../../Models/followerModel";
-import VacationCard from "../../HomeArea/VacationCard/VacationCard";
 import vacationService from "../../../Services/vacationService";
+import VacationCard from "../../HomeArea/VacationCard/VacationCard";
+import { Col, Row } from "react-bootstrap";
+import { followersStore } from "../../../Redux/followersState";
+import { NavLink } from "react-router-dom";
+import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
 
 function FollowedVacations(): JSX.Element {
 
-    const [followedVacations, setFollowedVacations] = useState<FollowerModel[]>([])
-    const [vacations, setVacation] = useState<VacationsModel[]>([])
+    useVerifyLoggedIn()
+
+    const [followedVacations, setFollowedVacations] = useState<VacationsModel[]>(null)
 
     useEffect(() => {
+        handleFollowedVacations()
 
+        const unsubscribe = followersStore.subscribe(() => {
+            handleFollowedVacations()
+        })
+
+        return () => {
+            unsubscribe()
+        }
     }, [])
 
     async function handleFollowedVacations() {
-        const followed = await followerService.getFollowerByUserId(authStore.getState().user.id)
+        const followedVacations: FollowerModel[] = await followerService.getFollowerByUserId(authStore.getState().user.id)
+        const vacations: VacationsModel[] = []
+        for (let vacation of followedVacations) {
+            const userFollowedVacation: VacationsModel = await vacationService.getOneVacation(vacation.vacationID)
+            vacations.push(userFollowedVacation)
+        }
+        if (vacations.length === 0) {
+            setFollowedVacations(null)
+        }
+        else setFollowedVacations(vacations)
     }
 
     return (
         <div className="FollowedVacations">
+            <h2>Followed Vacations</h2>
+            <Row className="row">
+                {followedVacations ? followedVacations.map(oneVacation => <Col key={oneVacation.id}><VacationCard vacation={oneVacation} /></Col>) :
+                    <>
+                        <h5>Wow, so empty</h5>
+                        <p>Seems like you dont have any followed vacations</p>
+                        <NavLink to={"/vacations"}>Browse our vacations</NavLink>
+                    </>
+                }
 
+            </Row>
         </div>
     );
 }
