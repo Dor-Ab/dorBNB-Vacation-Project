@@ -260,3 +260,9 @@
 ----------------------------
 16.5.2023, 19:11:31 	 Route /api/vacations/undefined not exist
 ----------------------------
+17.5.2023, 12:52:48 	 Incorrect email or password.
+----------------------------
+17.5.2023, 12:52:51 	 Incorrect email or password.
+----------------------------
+17.5.2023, 12:52:56 	 Incorrect email or password.
+----------------------------
