@@ -7,7 +7,7 @@ import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 
 function Header(): JSX.Element {
-    
+
     const [name, setName] = useState<string>("")
     const [loggedIn, setLoggedIn] = useState<boolean>(false)
     const [loggedOut, setLoggedOut] = useState<boolean>(true)
@@ -52,19 +52,20 @@ function Header(): JSX.Element {
     // Return true if time is between 05:00 - 12:00
     function isMorning(): boolean {
         const now = new Date()
-        return now.getHours() > 5 && now.getHours() <= 12
+        return now.getHours() >= 5 && now.getHours() < 12
     }
 
     // Return true if time is between 12:00 - 18:00
     function isAfterNoon(): boolean {
         const now = new Date()
-        return now.getHours() > 12 && now.getHours() <= 18
+        console.log(now.getHours())
+        return now.getHours() >= 12 && now.getHours() < 18
     }
 
     // Return true if time is between 18:00 - 20:00
     function isEvening(): boolean {
         const now = new Date()
-        return now.getHours() > 18 && now.getHours() <= 20;
+        return now.getHours() >= 18 && now.getHours() < 20;
     }
 
     // Return true if time is between 20:00 - 05:00

@@ -1,0 +1,12 @@
+.CurrentVacations {
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+.CurrentVacations>.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}

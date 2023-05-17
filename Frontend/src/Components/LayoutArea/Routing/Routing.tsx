@@ -8,6 +8,7 @@ import PageNotFound from "../PageNotFound/PageNotFound";
 import VacationsDetails from "../../HomeArea/VacationsDetails/VacationsDetails";
 import FollowedVacations from "../../UserArea/FollowedVacations/FollowedVacations";
 import FutureVacations from "../../UserArea/FutureVacations/FutureVacations";
+import CurrentVacations from "../../UserArea/CurrentVacations/CurrentVacations";
 
 function Routing(): JSX.Element {
 
@@ -22,6 +23,7 @@ function Routing(): JSX.Element {
                 <Route path="/" element={<Navigate to="/vacations" />} />
                 <Route path="/followed-vacations" element={<FollowedVacations />} />
                 <Route path="/future-vacations" element={<FutureVacations />} />
+                <Route path="/current-vacations" element={<CurrentVacations />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
         </div>

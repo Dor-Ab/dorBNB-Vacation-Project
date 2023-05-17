@@ -51,6 +51,7 @@ function Menu(): JSX.Element {
                     <Row className="navs">
                         <NavLink to='/followed-vacations'>Followed Vacations</NavLink>
                         <NavLink to="/future-vacations">Future Vacations</NavLink>
+                        <NavLink to="/current-vacations">Current Vacations</NavLink>
                     </Row>
                 </>
             }
