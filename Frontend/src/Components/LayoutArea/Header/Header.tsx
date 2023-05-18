@@ -58,7 +58,6 @@ function Header(): JSX.Element {
     // Return true if time is between 12:00 - 18:00
     function isAfterNoon(): boolean {
         const now = new Date()
-        console.log(now.getHours())
         return now.getHours() >= 12 && now.getHours() < 18
     }
 

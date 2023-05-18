@@ -43,7 +43,7 @@ function FutureVacations(): JSX.Element {
         <div className="FutureVacations">
             <h2>Future Vacations</h2>
             <Row className="row">
-                {futureVacations && futureVacations.map(v => <Col> <VacationCard key={v.id} vacation={v} /></Col>)}
+                {futureVacations && futureVacations.map(v => <Col key={v.id}> <VacationCard vacation={v} /></Col>)}
             </Row>
 
         </div>

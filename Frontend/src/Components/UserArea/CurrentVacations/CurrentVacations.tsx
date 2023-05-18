@@ -46,7 +46,7 @@ function CurrentVacations(): JSX.Element {
         <div className="CurrentVacations">
             <h2>Current Vacations</h2>
             <Row className="row">
-                {currentVacations && currentVacations.map(v => <Col> <VacationCard key={v.id} vacation={v} /></Col>)}
+                {currentVacations && currentVacations.map(v => <Col key={v.id}> <VacationCard vacation={v} /></Col>)}
             </Row>
         </div>
     );

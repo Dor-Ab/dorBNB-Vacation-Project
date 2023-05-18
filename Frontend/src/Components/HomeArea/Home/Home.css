@@ -8,3 +8,15 @@
 .Home>.row {
     padding: 1rem;
 }
+
+.Home>.row>.loadMore>button {
+    transition: all 0.2s;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.Home>.row>.loadMore>button:hover {
+    transform: scale(1.1);
+}
