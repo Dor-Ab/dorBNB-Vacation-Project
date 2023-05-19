@@ -2,13 +2,13 @@
     margin: 0.5rem;
 }
 
-.VacationsDetails>h2 {
+.VacationsDetails>.row>.col>h2 {
     display: inline-block;
     padding: 0.5rem;
     border-radius: 0.5rem;
     font-weight: bold;
     text-decoration: underline;
-    background-color: white;
+    background-color: #eb8f51;
 }
 
 
@@ -22,4 +22,22 @@
 .VacationsDetails>img:hover {
     transform: scale(1.1);
     filter: drop-shadow(30px 45px 40px #000);
+}
+
+.VacationsDetails>.row>.col>button {
+    transition: all 0.2s;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    font-size: min(2vw, 1rem);
+    font-weight: bold;
+    border: none;
+    width: min(7vw, 4rem);
+    min-width: 3rem;
+}
+
+.VacationsDetails>.row>.col>button:hover {
+    background-color: bisque;
+    transform: scale(1.1);
 }

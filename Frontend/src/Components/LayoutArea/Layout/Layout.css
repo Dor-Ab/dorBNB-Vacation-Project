@@ -21,6 +21,7 @@
     grid-column: span 5;
     background-color: #dadada;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .Layout>aside {
