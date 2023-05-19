@@ -29,10 +29,11 @@ class FollowerService {
         return follower
     }
 
-    public async addFollower(follower: FollowerModel) {
+    public async addFollower(follower: FollowerModel): Promise<boolean> {
         const response = await axios.post(appConfig.followersUrl, follower)
         const addedFollower = response.data
         followersStore.dispatch({ type: FollowersActionType.AddFollower, payload: addedFollower })
+        return true
     }
 
     public async removeFollower(follower: FollowerModel): Promise<void> {
