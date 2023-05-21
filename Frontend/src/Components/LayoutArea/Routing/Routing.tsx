@@ -9,8 +9,19 @@ import VacationsDetails from "../../HomeArea/VacationsDetails/VacationsDetails";
 import FollowedVacations from "../../UserArea/FollowedVacations/FollowedVacations";
 import FutureVacations from "../../UserArea/FutureVacations/FutureVacations";
 import CurrentVacations from "../../UserArea/CurrentVacations/CurrentVacations";
+import { authStore } from "../../../Redux/authState";
+import { ReactNode } from "react";
 
 function Routing(): JSX.Element {
+
+    function handleMainRoute() {
+        const user = authStore.getState().user
+
+        if (user) return <Navigate to="/vacations" />
+
+        else return < Navigate to="/login" />
+
+    }
 
     return (
         <div className="Routing">
@@ -20,7 +31,7 @@ function Routing(): JSX.Element {
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/logout" element={<Logout />} />
-                <Route path="/" element={<Navigate to="/vacations" />} />
+                <Route path="/" element={handleMainRoute()} />
                 <Route path="/followed-vacations" element={<FollowedVacations />} />
                 <Route path="/future-vacations" element={<FutureVacations />} />
                 <Route path="/current-vacations" element={<CurrentVacations />} />

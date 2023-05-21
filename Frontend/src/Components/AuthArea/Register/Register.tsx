@@ -4,8 +4,11 @@ import UserModel from "../../../Models/userModel";
 import authService from "../../../Services/authService";
 import { useNavigate } from "react-router-dom";
 import notify from "../../../Services/notifyService";
+import useVerifyLoggedOut from "../../../Utils/useVerifyLoggedOut";
 
 function Register(): JSX.Element {
+
+    useVerifyLoggedOut("register")
 
     const { register, handleSubmit } = useForm<UserModel>({})
     const navTo = useNavigate()

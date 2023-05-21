@@ -5,8 +5,10 @@ import notify from "../../../Services/notifyService";
 import authService from "../../../Services/authService";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import useVerifyLoggedOut from "../../../Utils/useVerifyLoggedOut";
 
 function Login(): JSX.Element {
+    useVerifyLoggedOut("login")
 
     const { register, handleSubmit } = useForm<CredentialsModel>()
     const navTo = useNavigate()
