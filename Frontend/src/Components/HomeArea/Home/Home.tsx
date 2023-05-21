@@ -34,6 +34,7 @@ function Home(): JSX.Element {
             visibleVacationCount,
             visibleVacationCount + 5
         )
+
         // Create new vacations array - with 5 more and send it to display
         const newDisplayedVacations = [...displayedVacations, ...additionalVacations]
         setDisplayedVacations(newDisplayedVacations)
@@ -41,7 +42,7 @@ function Home(): JSX.Element {
         // Changing the count for the next click
         const newCount = visibleVacationCount + 5
         setVisibleVacationCount(newCount)
-    };
+    }
 
     return (
         <div className="Home">
@@ -68,4 +69,4 @@ function Home(): JSX.Element {
     );
 }
 
-export default Home;
+export default Home
