@@ -4,20 +4,22 @@ import { Image, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { authStore } from "../../../Redux/authState";
+import UserModel from "../../../Models/userModel";
+import { RoleModel } from "../../../Models/roleModel";
 
 function Menu(): JSX.Element {
 
     const [placeholder, setPlaceholder] = useState<string>("🔍")
     const [isSearch, setIsSearch] = useState<boolean>(false)
-    const [userToken, setUserToken] = useState<string | null>(null)
+    const [user, setUser] = useState<UserModel>(null)
 
     useEffect(() => {
-        const token = authStore.getState().token
-        setUserToken(token)
+        const user = authStore.getState().user
+        setUser(user)
 
         const unsubscribe = authStore.subscribe(() => {
-            const token = authStore.getState().token
-            setUserToken(token)
+            const user = authStore.getState().user
+            setUser(user)
         })
 
         return () => {
@@ -43,7 +45,7 @@ function Menu(): JSX.Element {
                     <Image fluid src={logo} />
                 </NavLink>
             </Row>
-            {userToken &&
+            {user && user.role === RoleModel.User &&
                 <>
                     <Row className="searchRow">
                         <input type="text" placeholder={placeholder} onFocus={changePlaceholder} onBlur={changePlaceholder} />

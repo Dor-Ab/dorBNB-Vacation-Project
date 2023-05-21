@@ -11,6 +11,8 @@ import FollowerModel from "../../../Models/followerModel";
 import { authStore } from "../../../Redux/authState";
 import followerService from "../../../Services/followersService";
 import { Col, Row } from "react-bootstrap";
+import UserModel from "../../../Models/userModel";
+import { RoleModel } from "../../../Models/roleModel";
 
 function VacationsDetails(): JSX.Element {
 
@@ -22,14 +24,18 @@ function VacationsDetails(): JSX.Element {
     const [heartState, setHeartState] = useState<boolean>(false)
     const [heart, setHeart] = useState(<Heart />)
 
+    const [user, setUser] = useState<UserModel>()
+
     useEffect(() => {
+        const currentUser = authStore.getState().user
+        setUser(currentUser)
         vacationService.getOneVacation(vacationId)
             .then(vacation => setVacation(vacation))
             .catch(err => notify.error(err))
-        isUserFollowing()
+        if (currentUser.role === RoleModel.User) isUserFollowing(currentUser)
     }, [])
 
-    async function isUserFollowing() {
+    async function isUserFollowing(user: UserModel) {
         try {
             const isFollowing = await followerService.getSpecificVacationByUserIdAndVacationId(user.id, vacationId)
             handleLikedVacation(isFollowing)
@@ -49,7 +55,7 @@ function VacationsDetails(): JSX.Element {
         }
     }
 
-    const user = authStore.getState().user
+    // const user = authStore.getState().user
 
     async function handleButtonFav() {
         const follower = new FollowerModel()
@@ -82,7 +88,11 @@ function VacationsDetails(): JSX.Element {
             {vacation && <>
                 <Row className="row">
                     <Col className="col">
-                        <button onClick={handleButtonFav}>{heart}</button>
+                        {/* If user is admin - follow button won't show */}
+                        {user && user.role === RoleModel.User &&
+                            <button onClick={handleButtonFav}>{heart}</button>
+
+                        }
                     </Col>
                     <Col className="col">
                         <h2>{vacation.destination}</h2>
