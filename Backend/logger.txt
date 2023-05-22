@@ -78,3 +78,33 @@
 ----------------------------
 22.5.2023, 12:03:26 	 connect ECONNREFUSED ::1:3306
 ----------------------------
+22.5.2023, 12:30:06 	 Invalid Token
+----------------------------
+22.5.2023, 12:30:16 	 Invalid Token
+----------------------------
+22.5.2023, 12:31:54 	 Invalid Token
+----------------------------
+22.5.2023, 12:53:02 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\weed man.jpg'
+----------------------------
+22.5.2023, 12:53:13 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\weed man.jpg'
+----------------------------
+22.5.2023, 13:01:20 	 "photo" is required
+----------------------------
+22.5.2023, 13:01:31 	 "destination" is required
+----------------------------
+22.5.2023, 13:01:36 	 "destination" is not allowed to be empty
+----------------------------
+22.5.2023, 13:01:43 	 "description" is required
+----------------------------
+22.5.2023, 13:02:33 	 "description" length must be at least 10 characters long
+----------------------------
+22.5.2023, 13:03:02 	 "photo" must be of type object
+----------------------------
+22.5.2023, 13:03:46 	 "photo" is required
+----------------------------
+22.5.2023, 13:51:26 	 "destination" is not allowed to be empty
+----------------------------
+22.5.2023, 13:51:41 	 "photo" is required
+----------------------------
+22.5.2023, 14:03:15 	 "description" length must be at least 10 characters long
+----------------------------

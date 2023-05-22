@@ -2,7 +2,8 @@ import { OkPacket } from "mysql";
 import dal from "../2-Utils/dal";
 import { ResourceNotFoundErrorModel, ValidationErrorModel } from "../4-Models/error-model";
 import VacationsModel from "../4-Models/vacations-model";
-import fsPromise from "fs/promises"
+import { v4 as uuid } from "uuid";
+
 
 async function getAllVacations(): Promise<VacationsModel[]> {
     const sql = `
@@ -45,8 +46,14 @@ async function addVacation(vacation: VacationsModel): Promise<VacationsModel> {
     const errors = vacation.validate()
     if (errors) throw new ValidationErrorModel(errors)
 
+    const extension = vacation.photo.name.substring(vacation.photo.name.lastIndexOf("."))
+    vacation.photoName = uuid() + extension
+    await vacation.photo.mv("./src/1-Assets/Images/Vacations Images/" + vacation.photoName)
+    delete vacation.photo
+
     const sql = `
-    INSERT INTO vacations(vacationDestination,vacationDescription,vacationStartDate,vacationEndDate,vacationPrice,vacationPhotoName) 
+    INSERT INTO vacations(vacationDestination,vacationDescription,
+        vacationStartDate,vacationEndDate,vacationPrice,vacationPhotoName) 
     VALUES(?,?,?,?,?,?)
     `
     const info: OkPacket = await dal.execute(sql, [vacation.destination, vacation.description, vacation.startDate, vacation.endDate, vacation.price, vacation.photoName])

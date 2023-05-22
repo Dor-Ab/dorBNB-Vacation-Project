@@ -7,6 +7,7 @@ import authController from "./6-Controllers/auth-controller"
 import followersController from "./6-Controllers/followers-controller"
 import cors from "cors"
 import expressRateLimit from "express-rate-limit"
+import expressFileUpload from "express-fileupload"
 
 const server = express()
 
@@ -17,6 +18,7 @@ const server = express()
 
 server.use(cors({ origin: appConfig.frontEndUrl }))
 server.use(express.json())
+server.use(expressFileUpload());
 
 server.use("/api", authController)
 server.use("/api", vacationsController)

@@ -42,8 +42,11 @@ router.get("/vacations/images/:id", async (request: Request, response: Response,
 
 router.post("/vacations", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
     try {
+
+        request.body.photo = request.files?.photo
+
         const vacation = await vacationsLogic.addVacation(new VacationsModel(request.body))
-        response.json(vacation)
+        response.status(201).json(vacation)
     }
     catch (err: any) {
         next(err)
