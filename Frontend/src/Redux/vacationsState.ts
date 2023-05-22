@@ -6,7 +6,8 @@ export class VacationsState {
 }
 
 export enum VacationsActionType {
-    FetchVacations
+    FetchVacations,
+    AddVacations
 }
 
 export interface VacationsAction {
@@ -20,6 +21,9 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
     switch (action.type) {
         case VacationsActionType.FetchVacations:
             newState.vacations = action.payload
+            break
+        case VacationsActionType.AddVacations:
+            newState.vacations.push(action.payload)
             break
     }
 

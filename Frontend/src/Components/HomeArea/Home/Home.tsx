@@ -60,7 +60,7 @@ function Home(): JSX.Element {
                         </Col>
 
                         <Col className="addVacation" xs={"4"} sm="4">
-                            <NavLink to={""}>Add New Vacation</NavLink>
+                            <NavLink to={"/add-vacation"}>Add New Vacation</NavLink>
                         </Col>
                     </>}
 

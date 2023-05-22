@@ -27,6 +27,32 @@ class VacationsService {
         }
         return vacation
     }
+
+    public async addVacation(vacation: VacationsModel): Promise<void> {
+        const formData = new FormData()
+
+        formData.append("destination", vacation.destination)
+        formData.append("description", vacation.description)
+        formData.append("startDate", vacation.startDate)
+        formData.append("endDate", vacation.endDate)
+        formData.append("price", vacation.price.toString())
+        formData.append("photo", vacation.photo[0])
+
+        const response = await axios.post<VacationsModel>(appConfig.vacationsUrl, formData)
+        const addedVacation = response.data
+
+        const dateStart = new Date(vacation.startDate);
+        const formattedDateStart = dateStart.toLocaleDateString('en-GB');
+        addedVacation.startDate = formattedDateStart
+
+        const dateEnd = new Date(vacation.endDate);
+        const formattedDateEnd = dateEnd.toLocaleDateString('en-GB');
+        addedVacation.endDate = formattedDateEnd
+
+
+        vacationsStore.dispatch({ type: VacationsActionType.AddVacations, payload: addedVacation })
+    }
+
 }
 
 const vacationService = new VacationsService()
