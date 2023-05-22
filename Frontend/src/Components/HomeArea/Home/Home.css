@@ -2,7 +2,6 @@
     display: grid;
     place-content: center;
     overflow: hidden;
-
 }
 
 .Home>.row {
@@ -19,4 +18,35 @@
 
 .Home>.row>.loadMore>button:hover {
     transform: scale(1.1);
+}
+
+.Home>.row>.loadMore>button:active {
+    background-color: #eb9a64;
+}
+
+.Home>.row>.addVacation {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.Home>.row>.addVacation>a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    font-weight: bold;
+    padding: 0.3rem;
+    white-space: nowrap;
+    font-size: min(2vw, 1rem);
+}
+
+.Home>.row>.addVacation>a:hover {
+    transform: scale(1.1);
+}
+
+.Home>.row>.addVacation>a:active {
+    background-color: #eb9a64;
 }

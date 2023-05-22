@@ -6,6 +6,9 @@ import vacationService from "../../../Services/vacationService";
 import notify from "../../../Services/notifyService";
 import VacationsModel from "../../../Models/vacationModel";
 import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
+import { authStore } from "../../../Redux/authState";
+import { RoleModel } from "../../../Models/roleModel";
+import { NavLink } from "react-router-dom";
 
 function Home(): JSX.Element {
     useVerifyLoggedIn()
@@ -46,7 +49,20 @@ function Home(): JSX.Element {
 
     return (
         <div className="Home">
-            <h2>Our Vacations</h2>
+            <Row className="row">
+                <Col xs="2">
+                </Col>
+
+                <Col xs="6" sm="6">
+                    <h2>Our Vacations</h2>
+                </Col>
+
+                <Col className="addVacation" xs={"4"} sm="4">
+                    {authStore.getState().user.role === RoleModel.Admin &&
+                        <NavLink to={""}>Add New Vacation</NavLink>
+                    }
+                </Col>
+            </Row>
             <Row className="row">
                 {/* Displaying the filterd vacations - not all at first */}
                 {displayedVacations.map((vacation) => (

@@ -58,6 +58,7 @@
     filter: brightness(1.5);
     -webkit-text-stroke: 0.09px white;
     background-color: rgba(0, 0, 0, 0.568);
+    backdrop-filter: blur(3px);
 }
 
 .VacationCard .vacationDescription {
@@ -67,6 +68,7 @@
     overflow-y: auto;
     display: flex;
     justify-content: center;
+    backdrop-filter: blur(3px);
 }
 
 .VacationCard:hover .vacationDescription {

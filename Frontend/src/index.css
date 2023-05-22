@@ -11,6 +11,33 @@ body,
   font-family: 'Exo 2', sans-serif;
 }
 
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.Layout>* {
+  scrollbar-width: 0.7rem;
+  scrollbar-color: #eb8f51;
+}
+
+/* Chrome, Edge, and Safari */
+.Layout>*::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.Layout>*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.Layout>*::-webkit-scrollbar-thumb {
+  background-color: #dc9e74;
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.Layout>*::-webkit-scrollbar-thumb:hover {
+  background-color: #eb8f51;
+}
+
 .myForm {
   margin: 1rem;
   padding: 1rem;
