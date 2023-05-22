@@ -10,3 +10,18 @@
     justify-content: center;
     padding: 1rem;
 }
+
+.CurrentVacations>.row>a {
+    transition: all 0.2s;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.CurrentVacations>.row>a:hover {
+    transform: scale(1.1);
+}

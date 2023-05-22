@@ -45,13 +45,15 @@ function Menu(): JSX.Element {
                     <Image fluid src={logo} />
                 </NavLink>
             </Row>
-            {user && user.role === RoleModel.User &&
+            {user &&
                 <>
                     <Row className="searchRow">
                         <input type="text" placeholder={placeholder} onFocus={changePlaceholder} onBlur={changePlaceholder} />
                     </Row>
                     <Row className="navs">
-                        <NavLink to='/followed-vacations'>Followed Vacations</NavLink>
+                        {user.role === RoleModel.User &&
+                            <NavLink to='/followed-vacations'>Followed Vacations</NavLink>
+                        }
                         <NavLink to="/future-vacations">Future Vacations</NavLink>
                         <NavLink to="/current-vacations">Current Vacations</NavLink>
                     </Row>

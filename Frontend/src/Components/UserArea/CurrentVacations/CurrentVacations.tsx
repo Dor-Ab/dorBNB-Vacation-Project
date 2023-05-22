@@ -7,6 +7,7 @@ import "./CurrentVacations.css";
 import { Row, Col } from "react-bootstrap";
 import VacationCard from "../../HomeArea/VacationCard/VacationCard";
 import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
+import { NavLink } from "react-router-dom";
 
 function CurrentVacations(): JSX.Element {
 
@@ -49,7 +50,14 @@ function CurrentVacations(): JSX.Element {
         <div className="CurrentVacations">
             <h2>Current Vacations</h2>
             <Row className="row">
-                {currentVacations && currentVacations.map(v => <Col key={v.id}> <VacationCard vacation={v} /></Col>)}
+                {currentVacations && currentVacations.length !== 0 ? currentVacations.map(v => <Col key={v.id}> <VacationCard vacation={v} /></Col>) :
+                    <>
+                        <h5>Wow, so empty</h5>
+                        <p>Seems like we dont have any current vacations</p>
+                        <p>Stay tuned</p>
+                        <NavLink to={"/vacations"}>Browse our vacations</NavLink>
+                    </>
+                }
             </Row>
         </div>
     );

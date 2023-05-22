@@ -7,6 +7,7 @@ import VacationCard from "../../HomeArea/VacationCard/VacationCard";
 import { Col, Row } from "react-bootstrap";
 import { vacationsStore } from "../../../Redux/vacationsState";
 import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
+import { NavLink } from "react-router-dom";
 
 function FutureVacations(): JSX.Element {
 
@@ -46,7 +47,14 @@ function FutureVacations(): JSX.Element {
         <div className="FutureVacations">
             <h2>Future Vacations</h2>
             <Row className="row">
-                {futureVacations && futureVacations.map(v => <Col key={v.id}> <VacationCard vacation={v} /></Col>)}
+                {futureVacations && futureVacations.length !== 0 ? futureVacations.map(v => <Col key={v.id}> <VacationCard vacation={v} /></Col>) :
+                    <>
+                        <h5>Wow, so empty</h5>
+                        <p>Seems like we dont have any future vacations</p>
+                        <p>Stay tuned</p>
+                        <NavLink to={"/vacations"}>Browse our vacations</NavLink>
+                    </>
+                }
             </Row>
 
         </div>
