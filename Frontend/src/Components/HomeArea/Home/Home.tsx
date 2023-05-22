@@ -50,18 +50,26 @@ function Home(): JSX.Element {
     return (
         <div className="Home">
             <Row className="row">
-                <Col xs="2">
-                </Col>
+                {authStore.getState().user.role === RoleModel.Admin &&
+                    <>
+                        <Col xs="2">
+                        </Col>
 
-                <Col xs="6" sm="6">
-                    <h2>Our Vacations</h2>
-                </Col>
+                        <Col xs="6" sm="6">
+                            <h2>Our Vacations (admin)</h2>
+                        </Col>
 
-                <Col className="addVacation" xs={"4"} sm="4">
-                    {authStore.getState().user.role === RoleModel.Admin &&
-                        <NavLink to={""}>Add New Vacation</NavLink>
-                    }
-                </Col>
+                        <Col className="addVacation" xs={"4"} sm="4">
+                            <NavLink to={""}>Add New Vacation</NavLink>
+                        </Col>
+                    </>}
+
+                {authStore.getState().user.role === RoleModel.User &&
+                    <>
+                        <Col>
+                            <h2>Our Vacations</h2>
+                        </Col>
+                    </>}
             </Row>
             <Row className="row">
                 {/* Displaying the filterd vacations - not all at first */}

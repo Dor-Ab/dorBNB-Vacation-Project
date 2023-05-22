@@ -68,3 +68,8 @@
     color: white;
     background-color: #353535;
 }
+
+.Menu>.navs>a.active {
+    color: white;
+    background-color: #353535;
+}
