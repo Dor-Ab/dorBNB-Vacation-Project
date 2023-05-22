@@ -3,10 +3,11 @@ import vacationsLogic from "../5-Logic/vacations-logic";
 import VacationsModel from "../4-Models/vacations-model";
 import verifyAdmin from "../3-Middleware/verify-admin";
 import path from "path";
+import verifyLoggedIn from "../3-Middleware/verify-loggedIn";
 
 const router = express.Router()
 
-router.get("/vacations", async (request: Request, response: Response, next: NextFunction) => {
+router.get("/vacations", verifyLoggedIn, async (request: Request, response: Response, next: NextFunction) => {
     try {
         const vacations = await vacationsLogic.getAllVacations()
         response.json(vacations)
@@ -16,7 +17,7 @@ router.get("/vacations", async (request: Request, response: Response, next: Next
     }
 })
 
-router.get("/vacations/:id([0-9]+)", async (request: Request, response: Response, next: NextFunction) => {
+router.get("/vacations/:id([0-9]+)", verifyLoggedIn, async (request: Request, response: Response, next: NextFunction) => {
     try {
         const id = +request.params.id
         const vacation = await vacationsLogic.getOneVacation(id)
