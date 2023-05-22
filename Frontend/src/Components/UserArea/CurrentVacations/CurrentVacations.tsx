@@ -6,8 +6,11 @@ import vacationService from "../../../Services/vacationService";
 import "./CurrentVacations.css";
 import { Row, Col } from "react-bootstrap";
 import VacationCard from "../../HomeArea/VacationCard/VacationCard";
+import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
 
 function CurrentVacations(): JSX.Element {
+
+    useVerifyLoggedIn()
 
     const [currentVacations, setCurrentVacations] = useState<VacationsModel[]>(null)
 

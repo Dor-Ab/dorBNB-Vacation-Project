@@ -11,14 +11,17 @@ import { followersStore } from "../../../Redux/followersState";
 import { NavLink } from "react-router-dom";
 import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
 import notify from "../../../Services/notifyService";
+import UserModel from "../../../Models/userModel";
 
 function FollowedVacations(): JSX.Element {
 
     useVerifyLoggedIn()
 
     const [followedVacations, setFollowedVacations] = useState<VacationsModel[]>(null)
+    const [user, setUser] = useState<UserModel>()
 
     useEffect(() => {
+        setUser(authStore.getState().user)
         handleFollowedVacations()
 
         const unsubscribe = followersStore.subscribe(() => {
@@ -32,16 +35,18 @@ function FollowedVacations(): JSX.Element {
 
     async function handleFollowedVacations() {
         try {
-            const followedVacations: FollowerModel[] = await followerService.getFollowerByUserId(authStore.getState().user.id)
-            const vacations: VacationsModel[] = []
-            for (let vacation of followedVacations) {
-                const userFollowedVacation: VacationsModel = await vacationService.getOneVacation(vacation.vacationID)
-                vacations.push(userFollowedVacation)
+            if (user) {
+                const followedVacations: FollowerModel[] = await followerService.getFollowerByUserId(user.id)
+                const vacations: VacationsModel[] = []
+                for (let vacation of followedVacations) {
+                    const userFollowedVacation: VacationsModel = await vacationService.getOneVacation(vacation.vacationID)
+                    vacations.push(userFollowedVacation)
+                }
+                if (vacations.length === 0) {
+                    setFollowedVacations(null)
+                }
+                else setFollowedVacations(vacations)
             }
-            if (vacations.length === 0) {
-                setFollowedVacations(null)
-            }
-            else setFollowedVacations(vacations)
         }
         catch (err) {
             notify.error(err)

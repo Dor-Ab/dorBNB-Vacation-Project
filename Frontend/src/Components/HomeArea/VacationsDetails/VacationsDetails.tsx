@@ -32,7 +32,9 @@ function VacationsDetails(): JSX.Element {
         vacationService.getOneVacation(vacationId)
             .then(vacation => setVacation(vacation))
             .catch(err => notify.error(err))
-        if (currentUser.role === RoleModel.User) isUserFollowing(currentUser)
+        if (user) {
+            if (user.role === RoleModel.User) isUserFollowing(user)
+        }
     }, [])
 
     async function isUserFollowing(user: UserModel) {

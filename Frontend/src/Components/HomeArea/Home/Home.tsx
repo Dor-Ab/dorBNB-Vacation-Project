@@ -50,7 +50,7 @@ function Home(): JSX.Element {
     return (
         <div className="Home">
             <Row className="row">
-                {authStore.getState().user.role === RoleModel.Admin &&
+                {authStore.getState().user && authStore.getState().user.role === RoleModel.Admin &&
                     <>
                         <Col xs="2">
                         </Col>
@@ -64,7 +64,7 @@ function Home(): JSX.Element {
                         </Col>
                     </>}
 
-                {authStore.getState().user.role === RoleModel.User &&
+                {authStore.getState().user && authStore.getState().user.role === RoleModel.User &&
                     <>
                         <Col>
                             <h2>Our Vacations</h2>

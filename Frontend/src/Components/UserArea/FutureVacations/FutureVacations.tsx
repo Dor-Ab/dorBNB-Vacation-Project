@@ -6,8 +6,11 @@ import notify from "../../../Services/notifyService";
 import VacationCard from "../../HomeArea/VacationCard/VacationCard";
 import { Col, Row } from "react-bootstrap";
 import { vacationsStore } from "../../../Redux/vacationsState";
+import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
 
 function FutureVacations(): JSX.Element {
+
+    useVerifyLoggedIn()
 
     const [futureVacations, setFutureVacations] = useState<VacationsModel[]>(null)
 
