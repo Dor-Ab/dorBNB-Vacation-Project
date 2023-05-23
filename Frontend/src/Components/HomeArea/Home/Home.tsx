@@ -9,41 +9,56 @@ import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
 import { authStore } from "../../../Redux/authState";
 import { RoleModel } from "../../../Models/roleModel";
 import { NavLink } from "react-router-dom";
+import { vacationsStore } from "../../../Redux/vacationsState";
 
 function Home(): JSX.Element {
     useVerifyLoggedIn()
 
     const [vacations, setVacations] = useState<VacationsModel[]>([])
     const [displayedVacations, setDisplayedVacations] = useState<VacationsModel[]>([])
-    const [visibleVacationCount, setVisibleVacationCount] = useState(5)
+    const [visibleVacationCount, setVisibleVacationCount] = useState(10)
 
     useEffect(() => {
         // Getting all vacations 
         vacationService
             .getAllVacations()
-            .then((v) => {
+            .then(v => {
                 // Storing all vacations
                 setVacations(v)
 
-                // Displaying    only some vacations by number slice - at first 5 vacations
+                // Displaying    only some vacations by number slice - at first 10 vacations
                 setDisplayedVacations(v.slice(0, visibleVacationCount))
             })
             .catch(err => notify.error(err))
+
+        const unsubscribe = vacationsStore.subscribe(() => {
+            const counter = visibleVacationCount
+            setVisibleVacationCount(counter)
+            vacationService.getAllVacations()
+                .then(v => {
+                    setVacations(v)
+                    setDisplayedVacations(v.slice(0, counter))
+                })
+        })
+
+        return () => {
+            unsubscribe()
+        }
     }, [])
 
     function loadMoreVacations() {
-        // Getting the next 5 vacations 
+        // Getting the next 10 vacations 
         const additionalVacations = vacations.slice(
             visibleVacationCount,
-            visibleVacationCount + 5
+            visibleVacationCount + 10
         )
 
-        // Create new vacations array - with 5 more and send it to display
+        // Create new vacations array - with 10 more and send it to display
         const newDisplayedVacations = [...displayedVacations, ...additionalVacations]
         setDisplayedVacations(newDisplayedVacations)
 
         // Changing the count for the next click
-        const newCount = visibleVacationCount + 5
+        const newCount = visibleVacationCount + 10
         setVisibleVacationCount(newCount)
     }
 

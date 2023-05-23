@@ -3,7 +3,7 @@ import VacationsModel from "../../../Models/vacationModel";
 import "./VacationCard.css";
 import VacationsModal from "../VacationsModal/VacationsModal";
 import appConfig from "../../../Utils/appConfig";
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { PersonHeart } from "react-bootstrap-icons";
 import { useEffect, useState } from "react";
 import followerService from "../../../Services/followersService";
@@ -12,6 +12,7 @@ import { FollowersActionType, followersStore } from "../../../Redux/followersSta
 import { authStore } from "../../../Redux/authState";
 import { RoleModel } from "../../../Models/roleModel";
 import AdminModal from "../../AdminArea/AdminModal/AdminModal";
+import DeleteVacation from "../../AdminArea/DeleteVacation/DeleteVacation";
 
 
 interface VacationCardProps {
@@ -70,7 +71,15 @@ function VacationCard(props: VacationCardProps): JSX.Element {
 
                 {/* Render admin modal button if user role is admin */}
                 {authStore.getState().user.role === RoleModel.Admin &&
-                    < AdminModal vacation={props.vacation} />}
+                    <Row>
+                        <Col xs="3">
+                            <DeleteVacation vacation={props.vacation} />
+                        </Col>
+                        <Col xs="9" className="adminModal">
+                            < AdminModal vacation={props.vacation} />
+                        </Col>
+                    </Row>
+                }
             </Row>
         </div>
     );

@@ -7,7 +7,8 @@ export class VacationsState {
 
 export enum VacationsActionType {
     FetchVacations,
-    AddVacations
+    AddVacations,
+    DeleteVacation
 }
 
 export interface VacationsAction {
@@ -24,6 +25,12 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
             break
         case VacationsActionType.AddVacations:
             newState.vacations.push(action.payload)
+            break
+        case VacationsActionType.DeleteVacation:
+            const indexToDelete = newState.vacations.findIndex(v => v.id === action.payload.id)
+            if (indexToDelete >= 0) {
+                newState.vacations.splice(indexToDelete, 1)
+            }
             break
     }
 

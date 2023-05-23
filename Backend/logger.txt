@@ -108,3 +108,57 @@
 ----------------------------
 22.5.2023, 14:03:15 	 "description" length must be at least 10 characters long
 ----------------------------
+23.5.2023, 13:01:00 	 Invalid Token
+----------------------------
+23.5.2023, 13:01:02 	 Invalid Token
+----------------------------
+23.5.2023, 13:01:19 	 id 18 not exist
+----------------------------
+23.5.2023, 13:51:49 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 13:52:34 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 13:55:43 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 13:55:45 	 "price" must be greater than or equal to 10
+----------------------------
+23.5.2023, 13:57:16 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 13:59:56 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 15:21:27 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 15:21:34 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 15:53:06 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 15:54:36 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 15:56:44 	 "photo" is required
+----------------------------
+23.5.2023, 15:58:26 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 16:02:25 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\08798787'
+----------------------------
+23.5.2023, 16:02:25 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\2023-04-30'
+----------------------------
+23.5.2023, 16:02:25 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\2023-04-30'
+----------------------------
+23.5.2023, 16:02:33 	 ENOENT: no such file or directory, stat 'C:\Users\mycom\Desktop\Fullstack 4578 29\Projects\Project 3\Backend\src\1-Assets\Images\Vacations Images\2023-04-30'
+----------------------------
+23.5.2023, 16:07:21 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 16:07:43 	 "price" must be greater than or equal to 10
+----------------------------
+23.5.2023, 16:10:37 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 16:10:55 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 16:12:43 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 16:12:48 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 16:27:33 	 "description" length must be at least 10 characters long
+----------------------------
+23.5.2023, 16:27:50 	 "description" length must be at least 10 characters long
+----------------------------

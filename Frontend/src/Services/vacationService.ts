@@ -47,10 +47,15 @@ class VacationsService {
 
         const dateEnd = new Date(vacation.endDate);
         const formattedDateEnd = dateEnd.toLocaleDateString('en-GB');
-        addedVacation.endDate = formattedDateEnd
+        addedVacation.startDate = formattedDateEnd
 
 
         vacationsStore.dispatch({ type: VacationsActionType.AddVacations, payload: addedVacation })
+    }
+
+    public async deleteVacation(vacation: VacationsModel): Promise<void> {
+        await axios.delete(appConfig.vacationsUrl + vacation.id)
+        vacationsStore.dispatch({ type: VacationsActionType.DeleteVacation, payload: vacation })
     }
 
 }

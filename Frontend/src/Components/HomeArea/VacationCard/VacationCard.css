@@ -78,6 +78,10 @@
     background-color: rgba(0, 0, 0, 0.568);
 }
 
+.VacationCard>.modalBtnContainer>*>.adminModal {
+    display: flex;
+}
+
 .VacationCard>.modalBtnContainer button {
     transition: all 0.2s;
     background-color: white;
