@@ -1,6 +1,8 @@
+import Popup from "reactjs-popup";
 import VacationsModel from "../../../Models/vacationModel";
 import vacationService from "../../../Services/vacationService";
 import "./DeleteVacation.css";
+import { useState } from "react";
 
 interface DeleteVacationProps {
     vacation: VacationsModel
@@ -9,14 +11,17 @@ interface DeleteVacationProps {
 function DeleteVacation(props: DeleteVacationProps): JSX.Element {
 
     async function deleteVacation() {
-        // console.log(props.vacation)
         await vacationService.deleteVacation(props.vacation)
     }
 
     return (
-        <button onClick={deleteVacation} className="DeleteVacation">
-            ❌
-        </button>
+        <div className="DeleteVacation">
+            <Popup className="popup" trigger={<button>❌</button>} modal>
+                <h2>WAIT</h2>
+                <p>Are you sure you want do delete {props.vacation.destination} vacation?</p>
+                <button className="closeBtn" onClick={deleteVacation}>Yeh, i'm sure</button>
+            </Popup>
+        </div>
     );
 }
 
