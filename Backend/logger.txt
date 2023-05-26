@@ -162,3 +162,67 @@
 ----------------------------
 23.5.2023, 16:27:50 	 "description" length must be at least 10 characters long
 ----------------------------
+24.5.2023, 20:56:58 	 Route /api/vacations/NaN not exist
+----------------------------
+24.5.2023, 20:57:24 	 Route /api/vacations/NaN not exist
+----------------------------
+24.5.2023, 21:35:19 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:37:03 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:37:17 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:37:33 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:38:12 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:39:04 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:39:15 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:44:36 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:45:14 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:45:39 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:46:59 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:47:22 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:50:37 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:50:41 	 "photo" must be of type object
+----------------------------
+24.5.2023, 21:51:28 	 "photo" is required
+----------------------------
+24.5.2023, 21:54:53 	 Route /api/vacations/images/3 not exist
+----------------------------
+24.5.2023, 21:59:59 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE vacationID = 3' at line 7
+----------------------------
+26.5.2023, 7:55:29 	 "photo" must be of type object
+----------------------------
+26.5.2023, 7:56:10 	 "photo" must be of type object
+----------------------------
+26.5.2023, 7:56:57 	 "photo" must be of type object
+----------------------------
+26.5.2023, 8:03:48 	 "startDate" is required
+----------------------------
+26.5.2023, 8:14:08 	 Route /api/vacations/images/3 not exist
+----------------------------
+26.5.2023, 8:14:32 	 Route /api/vacations/images/3 not exist
+----------------------------
+26.5.2023, 8:14:32 	 Route /api/vacations/images/60 not exist
+----------------------------
+26.5.2023, 8:16:37 	 Route /api/vacations/images/3 not exist
+----------------------------
+26.5.2023, 8:16:37 	 Route /api/vacations/images/60 not exist
+----------------------------
+26.5.2023, 8:17:05 	 Route /api/vacations/images/60 not exist
+----------------------------
+26.5.2023, 8:29:12 	 Route /api/vacations/images/62 not exist
+----------------------------
+26.5.2023, 9:03:06 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+26.5.2023, 9:04:21 	 "description" length must be at least 10 characters long
+----------------------------

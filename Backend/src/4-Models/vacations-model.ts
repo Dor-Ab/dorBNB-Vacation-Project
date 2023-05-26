@@ -29,8 +29,8 @@ class VacationsModel {
         startDate: Joi.string().required(),
         endDate: Joi.string().required(),
         price: Joi.number().required().min(10),
-        photoName: Joi.string().optional().min(5),
-        photo: Joi.object().required()
+        photoName: Joi.string().optional(),
+        photo: Joi.object().optional()
     })
 
     public validate(): string {
