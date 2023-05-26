@@ -8,6 +8,7 @@ export class VacationsState {
 export enum VacationsActionType {
     FetchVacations,
     AddVacations,
+    UpdateVacation,
     DeleteVacation
 }
 
@@ -25,6 +26,12 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
             break
         case VacationsActionType.AddVacations:
             newState.vacations.push(action.payload)
+            break
+        case VacationsActionType.UpdateVacation:
+            const indexToUpdate = newState.vacations.findIndex(v => v.id === action.payload.id)
+            if (indexToUpdate >= 0) {
+                newState.vacations[indexToUpdate] = action.payload
+            }
             break
         case VacationsActionType.DeleteVacation:
             const indexToDelete = newState.vacations.findIndex(v => v.id === action.payload.id)

@@ -47,7 +47,7 @@ class VacationsService {
 
         const dateEnd = new Date(vacation.endDate);
         const formattedDateEnd = dateEnd.toLocaleDateString('en-GB');
-        addedVacation.startDate = formattedDateEnd
+        addedVacation.endDate = formattedDateEnd
 
 
         vacationsStore.dispatch({ type: VacationsActionType.AddVacations, payload: addedVacation })
@@ -56,6 +56,30 @@ class VacationsService {
     public async deleteVacation(vacation: VacationsModel): Promise<void> {
         await axios.delete(appConfig.vacationsUrl + vacation.id)
         vacationsStore.dispatch({ type: VacationsActionType.DeleteVacation, payload: vacation })
+    }
+
+    public async updateVacation(vacation: VacationsModel): Promise<void> {
+        const formData = new FormData()
+        formData.append("destination", vacation.destination)
+        formData.append("description", vacation.description)
+        formData.append("startDate", vacation.startDate)
+        formData.append("endDate", vacation.endDate)
+        formData.append("price", vacation.price.toString())
+        formData.append("photoName", vacation.photoName)
+        formData.append("photo", vacation.photo[0])
+
+        const response = await axios.put<VacationsModel>(appConfig.vacationsUrl + vacation.id, formData)
+        const updatedVacation = response.data
+
+        const dateStart = new Date(vacation.startDate)
+        const formattedDateStart = dateStart.toLocaleDateString('en-GB');
+        updatedVacation.startDate = formattedDateStart
+
+        const dateEnd = new Date(vacation.endDate);
+        const formattedDateEnd = dateEnd.toLocaleDateString('en-GB');
+        updatedVacation.endDate = formattedDateEnd
+
+        vacationsStore.dispatch({ type: VacationsActionType.UpdateVacation, payload: updatedVacation })
     }
 
 }

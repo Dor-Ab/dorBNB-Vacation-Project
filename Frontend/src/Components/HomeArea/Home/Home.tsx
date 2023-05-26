@@ -32,12 +32,10 @@ function Home(): JSX.Element {
             .catch(err => notify.error(err))
 
         const unsubscribe = vacationsStore.subscribe(() => {
-            const counter = visibleVacationCount
-            setVisibleVacationCount(counter)
             vacationService.getAllVacations()
                 .then(v => {
                     setVacations(v)
-                    setDisplayedVacations(v.slice(0, counter))
+                    setDisplayedVacations(v.slice(0, visibleVacationCount))
                 })
         })
 

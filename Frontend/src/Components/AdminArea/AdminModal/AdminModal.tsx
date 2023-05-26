@@ -20,6 +20,7 @@ function AdminModal(props: AdminModalProps): JSX.Element {
                 <Row className="modalRow">
                     <Col className="col btnsCol">
                         <NavLink to={`/vacations/details/${props.vacation.id}`}>Open</NavLink>
+                        <NavLink to={`/edit-vacation/${props.vacation.id}`}>Edit</NavLink>
                     </Col>
                     <Col className="col">
                         <Image src={appConfig.vacationImagesUrl + props.vacation.id} />
