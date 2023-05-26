@@ -47,6 +47,10 @@ async function addVacation(vacation: VacationsModel): Promise<VacationsModel> {
     const errors = vacation.validate()
     if (errors) throw new ValidationErrorModel(errors)
 
+    const now = new Date()
+    if (new Date(vacation.startDate) < now) throw new ValidationErrorModel("Past dates can't be used")
+    if (vacation.startDate > vacation.endDate) throw new ValidationErrorModel("End date can't be bigger then start date")
+
     const extension = vacation.photo.name.substring(vacation.photo.name.lastIndexOf("."))
     vacation.photoName = uuid() + extension
     await vacation.photo.mv("./src/1-Assets/Images/Vacations Images/" + vacation.photoName)

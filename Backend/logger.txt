@@ -226,3 +226,55 @@
 ----------------------------
 26.5.2023, 9:04:21 	 "description" length must be at least 10 characters long
 ----------------------------
+26.5.2023, 9:27:20 	 "description" length must be at least 10 characters long
+----------------------------
+26.5.2023, 9:27:22 	 "price" must be less than or equal to 10000
+----------------------------
+26.5.2023, 9:29:52 	 "price" must be less than or equal to 10000
+----------------------------
+26.5.2023, 9:29:56 	 End date is bigger then start date.
+----------------------------
+26.5.2023, 9:31:05 	 End date can't be bigger then start date
+----------------------------
+26.5.2023, 9:31:26 	 End date can't be bigger then start date
+----------------------------
+26.5.2023, 9:32:43 	 End date can't be bigger then start date
+----------------------------
+26.5.2023, 9:32:57 	 End date can't be bigger then start date
+----------------------------
+26.5.2023, 9:33:19 	 End date can't be bigger then start date
+----------------------------
+26.5.2023, 9:33:35 	 End date can't be bigger then start date
+----------------------------
+26.5.2023, 9:33:53 	 End date can't be bigger then start date
+----------------------------
+26.5.2023, 9:34:05 	 End date can't be bigger then start date
+----------------------------
+26.5.2023, 9:35:42 	 Past date can't be used.
+----------------------------
+26.5.2023, 9:35:52 	 End date can't be bigger then start date
+----------------------------
+26.5.2023, 9:37:03 	 "description" length must be at least 10 characters long
+----------------------------
+26.5.2023, 9:37:06 	 "description" length must be at least 10 characters long
+----------------------------
+26.5.2023, 9:37:09 	 Past date can't be used
+----------------------------
+26.5.2023, 9:37:22 	 Past dates can't be used
+----------------------------
+26.5.2023, 9:37:30 	 End date can't be bigger then start date
+----------------------------
+26.5.2023, 9:37:38 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+26.5.2023, 9:49:24 	 "description" length must be at least 10 characters long
+----------------------------
+26.5.2023, 9:52:31 	 id 71 not exist
+----------------------------
+26.5.2023, 9:55:59 	 "description" length must be at least 10 characters long
+----------------------------
+26.5.2023, 9:56:01 	 "price" must be less than or equal to 10000
+----------------------------
+26.5.2023, 9:56:05 	 "price" must be less than or equal to 10000
+----------------------------
+26.5.2023, 9:56:09 	 End date can't be bigger then start date
+----------------------------
