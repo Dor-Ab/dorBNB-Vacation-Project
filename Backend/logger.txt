@@ -298,3 +298,5 @@
 ----------------------------
 26.5.2023, 13:07:45 	 "destination" is not allowed to be empty
 ----------------------------
+26.5.2023, 13:32:13 	 Start date can't be bigger then end date
+----------------------------

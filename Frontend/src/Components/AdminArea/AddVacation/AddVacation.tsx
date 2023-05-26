@@ -9,8 +9,7 @@ import { Col, Row } from "react-bootstrap";
 
 function AddVacation(): JSX.Element {
 
-    const { register, handleSubmit } = useForm<VacationsModel>
-        ()
+    const { register, handleSubmit } = useForm<VacationsModel>()
     const [userImage, setUserImage] = useState<File>()
     const [userImageUrl, setUserImageUrl] = useState<string>()
 
