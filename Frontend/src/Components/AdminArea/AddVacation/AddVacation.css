@@ -1,3 +1,72 @@
-.AddVacation {
-	
+.AddVacation>.row>.col {
+    display: grid;
+    place-content: center;
+}
+
+.AddVacation>.row>.col>form>input[type=file] {
+    display: none;
+}
+
+.AddVacation>.row>.col>form>.photoContainer {
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.AddVacation>.row>.col>form>.photoContainer>.addVacationImageLabel {
+    transition: all 0.2s;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: #252525;
+    color: #eb8f51;
+}
+
+.AddVacation>.row>.col>form>.photoContainer>.deleteUserImage {
+    transition: all 0.2s;
+    border-radius: 0.2rem;
+    background-color: #252525;
+}
+
+.AddVacation>.row>.col>form>.photoContainer>.addVacationImageLabel:hover {
+    color: white;
+    background-color: #353535;
+}
+
+.AddVacation>.row>.col>form>.photoContainer>.deleteUserImage>span {
+    transition: all 0.2s;
+}
+
+.AddVacation>.row>.col>form>.photoContainer>.deleteUserImage>span:hover {
+    filter: drop-shadow(0px 0px 3px white);
+}
+
+.AddVacation>.row>.col>form>.photoContainer>*:active {
+    transform: scale(0.7);
+}
+
+.AddVacation>.row>.col>.emulatedVacationCard {
+    transition: all 0.2s;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    min-height: 15rem;
+    min-width: 10rem;
+    max-width: 12rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.AddVacation>.row>.col>.emulatedVacationCard>.row>h3,
+.AddVacation>.row>.col>.emulatedVacationCard>.row>p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.568);
+    backdrop-filter: blur(3px);
 }

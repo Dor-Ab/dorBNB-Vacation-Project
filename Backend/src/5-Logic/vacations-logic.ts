@@ -49,7 +49,7 @@ async function addVacation(vacation: VacationsModel): Promise<VacationsModel> {
 
     const now = new Date()
     if (new Date(vacation.startDate) < now) throw new ValidationErrorModel("Past dates can't be used")
-    if (vacation.startDate > vacation.endDate) throw new ValidationErrorModel("End date can't be bigger then start date")
+    if (vacation.startDate > vacation.endDate) throw new ValidationErrorModel("Start date can't be bigger then end date")
 
     const extension = vacation.photo.name.substring(vacation.photo.name.lastIndexOf("."))
     vacation.photoName = uuid() + extension
@@ -71,6 +71,10 @@ async function addVacation(vacation: VacationsModel): Promise<VacationsModel> {
 async function updateVacation(vacation: VacationsModel): Promise<VacationsModel> {
     const errors = vacation.validate()
     if (errors) throw new ValidationErrorModel(errors)
+
+    const now = new Date()
+    if (vacation.startDate > vacation.endDate) throw new ValidationErrorModel("Start date can't be bigger then end date")
+
 
     if (vacation.photo) {
         if (fs.existsSync("./src/1-Assets/Images/Vacations Images/" + vacation.photoName)) {

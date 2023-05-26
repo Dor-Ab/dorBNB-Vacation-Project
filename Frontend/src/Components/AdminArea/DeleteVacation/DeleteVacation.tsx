@@ -3,6 +3,7 @@ import VacationsModel from "../../../Models/vacationModel";
 import vacationService from "../../../Services/vacationService";
 import "./DeleteVacation.css";
 import { useState } from "react";
+import notify from "../../../Services/notifyService";
 
 interface DeleteVacationProps {
     vacation: VacationsModel
@@ -11,7 +12,12 @@ interface DeleteVacationProps {
 function DeleteVacation(props: DeleteVacationProps): JSX.Element {
 
     async function deleteVacation() {
-        await vacationService.deleteVacation(props.vacation)
+        try {
+            await vacationService.deleteVacation(props.vacation)
+            notify.success(`${props.vacation.destination} deleted`)
+        } catch (err) {
+            notify.error(err)
+        }
     }
 
     return (

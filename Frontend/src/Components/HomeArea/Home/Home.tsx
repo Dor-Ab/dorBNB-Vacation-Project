@@ -35,6 +35,7 @@ function Home(): JSX.Element {
             vacationService.getAllVacations()
                 .then(v => {
                     setVacations(v)
+                    setVisibleVacationCount(10)
                     setDisplayedVacations(v.slice(0, visibleVacationCount))
                 })
         })
