@@ -46,6 +46,7 @@ async function getOneVacation(id: number): Promise<VacationsModel> {
 async function addVacation(vacation: VacationsModel): Promise<VacationsModel> {
     const errors = vacation.validate()
     if (errors) throw new ValidationErrorModel(errors)
+    if (!vacation.photo) throw new ValidationErrorModel("Image is required")
 
     const now = new Date()
     if (new Date(vacation.startDate) < now) throw new ValidationErrorModel("Past dates can't be used")
@@ -72,7 +73,7 @@ async function updateVacation(vacation: VacationsModel): Promise<VacationsModel>
     const errors = vacation.validate()
     if (errors) throw new ValidationErrorModel(errors)
 
-    const now = new Date()
+
     if (vacation.startDate > vacation.endDate) throw new ValidationErrorModel("Start date can't be bigger then end date")
 
 

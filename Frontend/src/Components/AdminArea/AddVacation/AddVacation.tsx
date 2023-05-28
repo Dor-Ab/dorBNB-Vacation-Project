@@ -59,26 +59,40 @@ function AddVacation(): JSX.Element {
                         <h3>New Vacation</h3>
 
                         <label>Destination:</label>
-                        <input type="text" onClick={() => setIsUserTyping(true)} onInput={(e) => setEmulatedVacationHead(e.currentTarget.value)} {...register("destination")} />
+                        <input type="text"
+                            onClick={() => setIsUserTyping(true)}
+                            onInput={(e) => setEmulatedVacationHead(e.currentTarget.value)}
+                            {...register("destination")} />
 
                         <label>Description:</label>
-                        <textarea {...register("description")} onInput={(e) => setEmulatedVacationText(e.currentTarget.value)}></textarea>
+                        <textarea
+                            onInput={(e) => setEmulatedVacationText(e.currentTarget.value)}
+                            {...register("description")} ></textarea>
 
                         <label>Start Date:</label>
-                        <input type="date" {...register("startDate")} onInput={(e) => setEmulatedVacationStart(e.currentTarget.value)} />
+                        <input type="date"
+                            onInput={(e) => setEmulatedVacationStart(e.currentTarget.value)}
+                            {...register("startDate")} />
 
                         <label>End Date:</label>
-                        <input type="date" {...register("endDate")} onInput={(e) => setEmulatedVacationEnd(e.currentTarget.value)} />
+                        <input type="date"
+                            onInput={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
+                            {...register("endDate")} />
 
                         <label>Price:</label>
-                        <input type="number" {...register("price")} onInput={(e) => setEmulatedVacationPrice(e.currentTarget.value)} />
+                        <input type="number"
+                            onInput={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
+                            {...register("price")} />
 
 
                         <div className="photoContainer">
                             <label className="addVacationImageLabel" htmlFor="addVacationImage">Add Image</label>
-                            <button type="button" className="deleteUserImage" onClick={deleteEmultedVacation}><span>❌</span></button>
+                            <button type="reset" className="deleteUserImage"
+                                onClick={deleteEmultedVacation}>
+                                <span>❌</span>
+                            </button>
                         </div>
-                        <input type="file" id="addVacationImage" onInputCapture={(e) => handleImageChange(e)} accept="image/*" required {...register("photo")} />
+                        <input type="file" id="addVacationImage" onInputCapture={(e) => handleImageChange(e)} accept="image/*" {...register("photo")} />
 
                         <button>Add Vacation</button>
                     </form >

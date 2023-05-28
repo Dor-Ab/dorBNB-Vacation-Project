@@ -300,3 +300,45 @@
 ----------------------------
 26.5.2023, 13:32:13 	 Start date can't be bigger then end date
 ----------------------------
+26.5.2023, 15:04:00 	 "price" must be less than or equal to 10000
+----------------------------
+26.5.2023, 15:04:56 	 "price" must be less than or equal to 10000
+----------------------------
+26.5.2023, 15:05:03 	 Past dates can't be used
+----------------------------
+26.5.2023, 15:05:23 	 Start date can't be bigger then end date
+----------------------------
+26.5.2023, 15:16:26 	 "price" must be less than or equal to 10000
+----------------------------
+26.5.2023, 15:16:32 	 Past dates can't be used
+----------------------------
+28.5.2023, 16:48:58 	 "destination" is not allowed to be empty
+----------------------------
+28.5.2023, 16:53:16 	 Past dates can't be used
+----------------------------
+28.5.2023, 16:53:24 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:53:30 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:54:15 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:54:46 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:55:00 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:55:10 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:55:19 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:55:33 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:55:45 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:55:55 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:57:27 	 Cannot read properties of undefined (reading 'name')
+----------------------------
+28.5.2023, 16:58:45 	 Image is required
+----------------------------
+28.5.2023, 16:59:09 	 Image is required
+----------------------------

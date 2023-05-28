@@ -16,7 +16,7 @@
     gap: 0.2rem;
 }
 
-.EditVacation>.row>.col>form>.photoContainer>.addVacationImageLabel {
+.EditVacation>.row>.col>form>.photoContainer>.editVacationImageLabel {
     transition: all 0.2s;
     border-radius: 0.2rem;
     padding: 0.2rem;
@@ -32,7 +32,7 @@
     background-color: #252525;
 }
 
-.EditVacation>.row>.col>form>.photoContainer>.addVacationImageLabel:hover {
+.EditVacation>.row>.col>form>.photoContainer>.editVacationImageLabel:hover {
     color: white;
     background-color: #353535;
 }

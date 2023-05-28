@@ -44,7 +44,7 @@ router.post("/vacations", verifyAdmin, async (request: Request, response: Respon
     try {
 
         request.body.photo = request.files?.photo
-
+        
         const vacation = await vacationsLogic.addVacation(new VacationsModel(request.body))
         response.status(201).json(vacation)
     }
