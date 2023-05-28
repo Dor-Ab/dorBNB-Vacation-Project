@@ -25,7 +25,7 @@ function DeleteVacation(props: DeleteVacationProps): JSX.Element {
             <Popup className="popup" trigger={<button>❌</button>} modal>
                 <h2>WAIT</h2>
                 <p>Are you sure you want do delete {props.vacation.destination} vacation?</p>
-                <button className="closeBtn" onClick={deleteVacation}>Yeh, i'm sure</button>
+                <button className="closeBtn" onFocus={deleteVacation}>Yeh, i'm sure</button>
             </Popup>
         </div>
     );

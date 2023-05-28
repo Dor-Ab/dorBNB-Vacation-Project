@@ -74,7 +74,7 @@ function VacationsModal(props: VacationsModalProps): JSX.Element {
                 <p>{props.vacation.description}</p>
                 <Row className="modalRow">
                     <Col className="col btnsCol">
-                        <button onClick={handleButtonFav}>{heart}</button>
+                        <button onFocus={handleButtonFav}>{heart}</button>
                         <NavLink to={`/vacations/details/${props.vacation.id}`}>Open</NavLink>
                     </Col>
                     <Col className="col">

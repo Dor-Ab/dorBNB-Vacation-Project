@@ -92,7 +92,7 @@ function VacationsDetails(): JSX.Element {
                     <Col className="col">
                         {/* If user is admin - follow button won't show */}
                         {user && user.role === RoleModel.User &&
-                            <button onClick={handleButtonFav}>{heart}</button>
+                            <button onFocus={handleButtonFav}>{heart}</button>
 
                         }
                     </Col>

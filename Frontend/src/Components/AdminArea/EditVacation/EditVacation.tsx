@@ -12,7 +12,11 @@ function EditVacation(): JSX.Element {
 
     const { register, handleSubmit, setValue } = useForm<VacationsModel>()
     const params = useParams()
-    const navTo = useNavigate()
+    const navigate = useNavigate()
+    const navTo = (placeToGo: string) => {
+        navigate(placeToGo)
+        window.location.reload()
+    }
     const generalVacationId = +params.vacationId
 
     const [userImage, setUserImage] = useState<File>()
@@ -81,11 +85,11 @@ function EditVacation(): JSX.Element {
             <Row className=".row">
                 <Col className=".col">
                     <form className="myForm" onSubmit={handleSubmit(send)}>
-                        <h3>New Vacation</h3>
+                        <h3>Edit Vacation</h3>
 
                         <label>Destination:</label>
-                        <input type="text"
-                            onClick={(e) => {
+                        <input type="text" autoComplete="off"
+                            onFocus={(e) => {
                                 setIsUserTyping(true)
                                 setEmulatedVacationHead(e.currentTarget.value)
                             }}
@@ -94,26 +98,26 @@ function EditVacation(): JSX.Element {
 
                         <label>Description:</label>
                         <textarea
-                            onClick={(e) => setEmulatedVacationText(e.currentTarget.value)}
+                            onFocus={(e) => setEmulatedVacationText(e.currentTarget.value)}
                             onInput={(e) => setEmulatedVacationText(e.currentTarget.value)}
                             {...register("description")}></textarea>
 
                         <label>Start Date:</label>
                         <input type="date"
 
-                            onClick={(e) => setEmulatedVacationStart(e.currentTarget.value)}
+                            onFocus={(e) => setEmulatedVacationStart(e.currentTarget.value)}
                             onInput={(e) => setEmulatedVacationStart(e.currentTarget.value)}
                             {...register("startDate")} />
 
                         <label>End Date:</label>
                         <input type="date"
-                            onClick={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
+                            onFocus={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
                             onInput={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
                             {...register("endDate")} />
 
                         <label>Price:</label>
-                        <input type="number"
-                            onClick={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
+                        <input type="number" autoComplete="off"
+                            onFocus={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
                             onInput={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
                             {...register("price")} />
 

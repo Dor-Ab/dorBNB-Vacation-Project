@@ -59,29 +59,33 @@ function AddVacation(): JSX.Element {
                         <h3>New Vacation</h3>
 
                         <label>Destination:</label>
-                        <input type="text"
-                            onClick={() => setIsUserTyping(true)}
+                        <input type="text" autoComplete="off"
+                            onFocus={() => setIsUserTyping(true)}
                             onInput={(e) => setEmulatedVacationHead(e.currentTarget.value)}
                             {...register("destination")} />
 
                         <label>Description:</label>
                         <textarea
                             onInput={(e) => setEmulatedVacationText(e.currentTarget.value)}
+                            onFocus={(e) => setEmulatedVacationText(e.currentTarget.value)}
                             {...register("description")} ></textarea>
 
                         <label>Start Date:</label>
                         <input type="date"
                             onInput={(e) => setEmulatedVacationStart(e.currentTarget.value)}
+                            onFocus={(e) => setEmulatedVacationStart(e.currentTarget.value)}
                             {...register("startDate")} />
 
                         <label>End Date:</label>
                         <input type="date"
                             onInput={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
+                            onFocus={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
                             {...register("endDate")} />
 
                         <label>Price:</label>
-                        <input type="number"
+                        <input type="number" autoComplete="off"
                             onInput={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
+                            onFocus={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
                             {...register("price")} />
 
 

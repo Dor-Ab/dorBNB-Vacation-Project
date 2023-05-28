@@ -99,7 +99,7 @@ function Home(): JSX.Element {
             {visibleVacationCount < vacations.length && (
                 <Row className="row">
                     <Col className="loadMore">
-                        <button onClick={loadMoreVacations}>Load More</button>
+                        <button onFocus={loadMoreVacations}>Load More</button>
                     </Col>
                 </Row>
             )}
