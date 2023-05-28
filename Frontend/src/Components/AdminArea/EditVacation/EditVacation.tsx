@@ -58,7 +58,6 @@ function EditVacation(): JSX.Element {
 
     async function send(vacation: VacationsModel) {
         try {
-            console.log(vacation)
             await vacationService.updateVacation(vacation)
             navTo("/vacations")
             notify.success(`${vacation.destination} updated`)
@@ -89,41 +88,55 @@ function EditVacation(): JSX.Element {
 
                         <label>Destination:</label>
                         <input type="text" autoComplete="off"
-                            onFocus={(e) => {
+                            onClick={(e) => {
                                 setIsUserTyping(true)
                                 setEmulatedVacationHead(e.currentTarget.value)
                             }}
                             onInput={(e) => setEmulatedVacationHead(e.currentTarget.value)}
-                            {...register("destination")} />
+                            {...register("destination")} required />
 
                         <label>Description:</label>
                         <textarea
-                            onFocus={(e) => setEmulatedVacationText(e.currentTarget.value)}
+                            onClick={(e) => {
+                                setIsUserTyping(true)
+                                setEmulatedVacationText(e.currentTarget.value)
+                            }}
                             onInput={(e) => setEmulatedVacationText(e.currentTarget.value)}
-                            {...register("description")}></textarea>
+                            {...register("description")} required></textarea>
 
                         <label>Start Date:</label>
                         <input type="date"
 
-                            onFocus={(e) => setEmulatedVacationStart(e.currentTarget.value)}
+                            onClick={(e) => {
+                                setIsUserTyping(true)
+                                setEmulatedVacationStart(e.currentTarget.value)
+                            }}
                             onInput={(e) => setEmulatedVacationStart(e.currentTarget.value)}
-                            {...register("startDate")} />
+                            {...register("startDate")} required />
 
                         <label>End Date:</label>
                         <input type="date"
-                            onFocus={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
+                            onClick={(e) => {
+                                setIsUserTyping(true)
+                                setEmulatedVacationEnd(e.currentTarget.value)
+                            }}
                             onInput={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
-                            {...register("endDate")} />
+                            {...register("endDate")} required />
 
                         <label>Price:</label>
                         <input type="number" autoComplete="off"
-                            onFocus={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
+                            onClick={(e) => {
+                                setIsUserTyping(true)
+                                setEmulatedVacationPrice(e.currentTarget.value)
+                            }}
                             onInput={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
-                            {...register("price")} />
+                            {...register("price")} required />
 
 
                         <div className="photoContainer">
-                            <label className="editVacationImageLabel" htmlFor="editVacationImage">Add Image</label>
+                            <label className="editVacationImageLabel" htmlFor="editVacationImage"
+                                onClick={() => setIsUserTyping(true)}
+                            >Add Image</label>
 
                             <button type="reset" className="deleteUserImage"
                                 onClick={deleteEmultedVacation}>
@@ -131,7 +144,10 @@ function EditVacation(): JSX.Element {
                             </button>
 
                         </div>
-                        <input type="file" id="editVacationImage" onInputCapture={(e) => handleImageChange(e)} accept="image/*" {...register("photo")} />
+                        <input type="file" id="editVacationImage"
+                            accept="image/*"
+                            onInputCapture={(e) => handleImageChange(e)}
+                            {...register("photo")} />
 
                         <button>Edit Vacation</button>
                     </form >

@@ -13,6 +13,7 @@ import { authStore } from "../../../Redux/authState";
 import { ReactNode } from "react";
 import AddVacation from "../../AdminArea/AddVacation/AddVacation";
 import EditVacation from "../../AdminArea/EditVacation/EditVacation";
+import VacationsReports from "../../AdminArea/VacationsReports/VacationsReports";
 
 function Routing(): JSX.Element {
 
@@ -39,6 +40,7 @@ function Routing(): JSX.Element {
                 <Route path="/current-vacations" element={<CurrentVacations />} />
                 <Route path="/add-vacation" element={<AddVacation />} />
                 <Route path="/edit-vacation/:vacationId" element={<EditVacation />} />
+                <Route path="/vacations-reports" element={<VacationsReports />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
         </div>

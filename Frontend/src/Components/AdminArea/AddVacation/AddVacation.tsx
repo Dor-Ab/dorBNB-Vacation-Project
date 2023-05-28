@@ -60,32 +60,32 @@ function AddVacation(): JSX.Element {
 
                         <label>Destination:</label>
                         <input type="text" autoComplete="off"
-                            onFocus={() => setIsUserTyping(true)}
+                            onClick={() => setIsUserTyping(true)}
                             onInput={(e) => setEmulatedVacationHead(e.currentTarget.value)}
                             {...register("destination")} />
 
                         <label>Description:</label>
                         <textarea
                             onInput={(e) => setEmulatedVacationText(e.currentTarget.value)}
-                            onFocus={(e) => setEmulatedVacationText(e.currentTarget.value)}
+                            onClick={(e) => setEmulatedVacationText(e.currentTarget.value)}
                             {...register("description")} ></textarea>
 
                         <label>Start Date:</label>
                         <input type="date"
                             onInput={(e) => setEmulatedVacationStart(e.currentTarget.value)}
-                            onFocus={(e) => setEmulatedVacationStart(e.currentTarget.value)}
+                            onClick={(e) => setEmulatedVacationStart(e.currentTarget.value)}
                             {...register("startDate")} />
 
                         <label>End Date:</label>
                         <input type="date"
                             onInput={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
-                            onFocus={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
+                            onClick={(e) => setEmulatedVacationEnd(e.currentTarget.value)}
                             {...register("endDate")} />
 
                         <label>Price:</label>
                         <input type="number" autoComplete="off"
                             onInput={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
-                            onFocus={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
+                            onClick={(e) => setEmulatedVacationPrice(e.currentTarget.value)}
                             {...register("price")} />
 
 

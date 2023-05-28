@@ -344,3 +344,97 @@
 ----------------------------
 28.5.2023, 17:07:09 	 "destination" is not allowed to be empty
 ----------------------------
+28.5.2023, 17:36:20 	 "destination" is not allowed to be empty
+----------------------------
+28.5.2023, 17:36:29 	 Image is required
+----------------------------
+28.5.2023, 17:43:28 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+----------------------------
+28.5.2023, 17:46:08 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+----------------------------
+28.5.2023, 17:46:23 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+----------------------------
+28.5.2023, 17:47:35 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+----------------------------
+28.5.2023, 17:47:40 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+----------------------------
+28.5.2023, 17:47:46 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+----------------------------
+28.5.2023, 17:47:51 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+----------------------------
+28.5.2023, 17:47:56 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+----------------------------
+28.5.2023, 17:48:01 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+----------------------------
+28.5.2023, 17:49:02 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_3` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`))
+----------------------------
+28.5.2023, 17:49:07 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_3` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`))
+----------------------------
+28.5.2023, 17:49:16 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`dorbnb`.`followers`, CONSTRAINT `followers_ibfk_3` FOREIGN KEY (`vacationID`) REFERENCES `vacations` (`vacationID`))
+----------------------------
+28.5.2023, 18:39:43 	 Invalid Token
+----------------------------
+28.5.2023, 18:40:44 	 Invalid Token
+----------------------------
+28.5.2023, 18:40:55 	 Invalid Token
+----------------------------
+28.5.2023, 18:41:10 	 Invalid Token
+----------------------------
+28.5.2023, 18:41:30 	 Invalid Token
+----------------------------
+28.5.2023, 18:41:55 	 Invalid Token
+----------------------------
+28.5.2023, 18:55:42 	 Route /api/vacations/images/95 not exist
+----------------------------
+28.5.2023, 18:55:44 	 Route /api/vacations/images/95 not exist
+----------------------------
+28.5.2023, 19:24:33 	 Route /api/vacations/images/96 not exist
+----------------------------
+28.5.2023, 19:24:35 	 Route /api/vacations/images/96 not exist
+----------------------------
+28.5.2023, 19:24:44 	 Route /api/vacations/images/96 not exist
+----------------------------
+28.5.2023, 19:24:50 	 EPERM: operation not permitted, unlink './src/1-Assets/Images/Vacations Images/'
+----------------------------
+28.5.2023, 19:25:20 	 Image is required
+----------------------------
+28.5.2023, 19:25:23 	 Past dates can't be used
+----------------------------
+28.5.2023, 19:56:48 	 Invalid Token
+----------------------------
+28.5.2023, 19:56:49 	 Invalid Token
+----------------------------
+28.5.2023, 19:56:51 	 Invalid Token
+----------------------------
+28.5.2023, 19:57:20 	 Invalid Token
+----------------------------
+28.5.2023, 19:57:22 	 Invalid Token
+----------------------------
+28.5.2023, 19:57:42 	 "firstName" is not allowed to be empty
+----------------------------
+28.5.2023, 19:57:46 	 Invalid Token
+----------------------------
+28.5.2023, 19:59:13 	 Invalid Token
+----------------------------
+28.5.2023, 19:59:13 	 Invalid Token
+----------------------------
+28.5.2023, 19:59:14 	 Invalid Token
+----------------------------
+28.5.2023, 19:59:14 	 Invalid Token
+----------------------------
+28.5.2023, 19:59:14 	 Invalid Token
+----------------------------
+28.5.2023, 19:59:14 	 Invalid Token
+----------------------------
+28.5.2023, 19:59:23 	 Invalid Token
+----------------------------
+28.5.2023, 19:59:30 	 Invalid Token
+----------------------------
+28.5.2023, 19:59:36 	 Invalid Token
+----------------------------
+28.5.2023, 19:59:51 	 Invalid Token
+----------------------------
+28.5.2023, 20:00:02 	 Invalid Token
+----------------------------
+28.5.2023, 20:02:27 	 Invalid Token
+----------------------------

@@ -26,7 +26,7 @@ function Home(): JSX.Element {
                 // Storing all vacations
                 setVacations(v)
 
-                // Displaying    only some vacations by number slice - at first 10 vacations
+                // Displaying only some vacations by number slice - at first 10 vacations
                 setDisplayedVacations(v.slice(0, visibleVacationCount))
             })
             .catch(err => notify.error(err))
@@ -99,7 +99,7 @@ function Home(): JSX.Element {
             {visibleVacationCount < vacations.length && (
                 <Row className="row">
                     <Col className="loadMore">
-                        <button onFocus={loadMoreVacations}>Load More</button>
+                        <button onClick={loadMoreVacations}>Load More</button>
                     </Col>
                 </Row>
             )}

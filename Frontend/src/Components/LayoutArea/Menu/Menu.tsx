@@ -48,11 +48,14 @@ function Menu(): JSX.Element {
             {user &&
                 <>
                     <Row className="searchRow">
-                        <input type="text" placeholder={placeholder} onFocus={changePlaceholder} onBlur={changePlaceholder} />
+                        <input type="text" placeholder={placeholder} onClick={changePlaceholder} onBlur={changePlaceholder} />
                     </Row>
                     <Row className="navs">
                         {user.role === RoleModel.User &&
                             <NavLink to='/followed-vacations'>Followed Vacations</NavLink>
+                        }
+                        {user.role === RoleModel.Admin &&
+                            <NavLink to="/vacations-reports">Vacations Reports</NavLink>
                         }
                         <NavLink to="/future-vacations">Future Vacations</NavLink>
                         <NavLink to="/current-vacations">Current Vacations</NavLink>
