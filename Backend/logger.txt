@@ -538,3 +538,275 @@
 ----------------------------
 30.5.2023, 18:21:24 	 Incorrect email or password.
 ----------------------------
+30.5.2023, 21:18:45 	 "password" length must be at least 8 characters long
+----------------------------
+30.5.2023, 21:18:48 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:18:48 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:18:48 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:18:48 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:18:49 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:18:49 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:18:49 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:18:49 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:18:49 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:19:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:19:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:19:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:19:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:19:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:19:36 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:19:36 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:19:36 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:19:36 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:21:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:21:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:21:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:21:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:21:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:21:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:21:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:21:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:21:35 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:24:55 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:24:56 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:24:56 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:24:56 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:24:56 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:24:56 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:24:56 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:24:56 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:24:56 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:12 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:13 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:13 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:13 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:13 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:13 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:13 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:13 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:13 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:20 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:20 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:20 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:20 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:20 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:20 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:20 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:20 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:20 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:25:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:11 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:11 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:11 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:11 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:11 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:11 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:12 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:12 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:12 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:18 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:18 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:18 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:18 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:18 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:18 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:18 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:18 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:18 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:27:34 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:29:51 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:29:51 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:29:51 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:29:51 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:29:51 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:29:51 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:29:51 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:29:51 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:29:51 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:30:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:30:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:30:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:30:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:30:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:30:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:30:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:30:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:30:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:28 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:28 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:28 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:28 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:28 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:28 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:28 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:28 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:28 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:38 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:38 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:38 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:38 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:38 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:38 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:38 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:38 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:32:38 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:37:21 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:37:21 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:37:21 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:37:21 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:37:21 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:37:22 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:37:22 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:37:22 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+30.5.2023, 21:37:22 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------

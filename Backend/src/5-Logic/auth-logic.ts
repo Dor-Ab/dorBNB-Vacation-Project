@@ -37,6 +37,8 @@ async function register(user: UserModel): Promise<string> {
 
     if (info.affectedRows === 0) throw new ErrorModel("Something didn't work,please try again.", 400)
 
+    user.id = info.insertId
+
     const token = secure.getNewToken(user)
 
     return token
