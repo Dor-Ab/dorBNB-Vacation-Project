@@ -1,3 +1,27 @@
 .VacationsReports {
-	
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+.VacationsReports>.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.VacationsReports>.row>a {
+    transition: all 0.2s;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.VacationsReports>.row>a:hover {
+    transform: scale(1.1);
 }

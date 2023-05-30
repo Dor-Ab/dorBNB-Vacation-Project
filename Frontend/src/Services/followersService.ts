@@ -55,13 +55,13 @@ class FollowerService {
         return follower
     }
 
-    public async getFollowersForVacation(id: number): Promise<FollowerModel[]> {
+    public async getFollowersForVacation(vacationId: number): Promise<FollowerModel[]> {
 
         let followers = followersStore.getState().followers
-        let vacationFollowers = followers.filter(f => f.vacationID === id)
+        let vacationFollowers = followers.filter(f => f.vacationID === vacationId)
 
         if (vacationFollowers.length === 0) {
-            const response = await axios.get(appConfig.followerForVacation + id)
+            const response = await axios.get(appConfig.followerForVacation + vacationId)
             vacationFollowers = response.data
         }
 
