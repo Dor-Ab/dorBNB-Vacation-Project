@@ -1,17 +1,13 @@
-.VacationsReports {
-    display: grid;
-    place-content: center;
-    overflow: hidden;
-}
-
-.VacationsReports>.row {
+.VacationsReports>.barChart {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
     padding: 1rem;
+    margin-top: 3rem;
 }
 
-.VacationsReports>.row>a {
+.VacationsReports>.barChart>a {
     transition: all 0.2s;
     width: fit-content;
     text-decoration: none;
@@ -22,6 +18,32 @@
     font-weight: bold;
 }
 
-.VacationsReports>.row>a:hover {
+.VacationsReports>.barChart>a:hover {
+    transform: scale(1.1);
+}
+
+.VacationsReports>.VacationsReportsHead {
+    margin-top: 1rem;
+}
+
+.VacationsReports>.VacationsReportsHead>.csvCol {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.VacationsReports>.VacationsReportsHead>.csvCol>.csvBtn {
+    transition: all 0.2s;
+    padding: 0.2rem;
+    text-decoration: none;
+    color: black;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.VacationsReports>.VacationsReportsHead>.csvCol>.csvBtn:hover {
     transform: scale(1.1);
 }

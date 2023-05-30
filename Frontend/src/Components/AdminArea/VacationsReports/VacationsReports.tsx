@@ -5,8 +5,9 @@ import notify from "../../../Services/notifyService";
 import FollowerModel from "../../../Models/followerModel";
 import useVerifyAdmin from "../../../Utils/useVerifyAdmin";
 import { Bar, BarChart, Tooltip, XAxis, YAxis } from "recharts";
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { CSVLink } from "react-csv";
 
 function VacationsReports(): JSX.Element {
 
@@ -46,12 +47,23 @@ function VacationsReports(): JSX.Element {
 
     return (
         <div className="VacationsReports">
-            <h2>Vacation Reports are:</h2>
-            <Row className="row">
+            <Row className="VacationsReportsHead">
+                <Col className="csvCol">
+                    {data && data.length !== 0 &&
+                        <CSVLink className="csvBtn" data={data}>CSV File</CSVLink>
+                    }
+                </Col>
+                <Col>
+                    <h2>Vacation Reports are:</h2>
+                </Col>
+                <Col></Col>
+            </Row>
+
+            <Row className="barChart">
                 {data && data.length !== 0 &&
                     <>
                         <BarChart
-                            width={700}
+                            width={600}
                             height={300}
                             data={data}
                             margin={{
