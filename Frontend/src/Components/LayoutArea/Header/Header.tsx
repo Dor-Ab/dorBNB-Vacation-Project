@@ -70,7 +70,7 @@ function Header(): JSX.Element {
     // Return true if time is between 20:00 - 05:00
     function isNight(): boolean {
         const now = new Date()
-        return now.getHours() > 20 || now.getHours() <= 5
+        return now.getHours() >= 20 || now.getHours() <= 5
     }
 
     // Change background of auth btns only when hmburger exist:

@@ -8,6 +8,7 @@ import VacationCard from "../../HomeArea/VacationCard/VacationCard";
 import { Col, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import useVerifyLoggedIn from "../../../Utils/useVerifyLoggedIn";
+import { vacationsStore } from "../../../Redux/vacationsState";
 
 
 function Search(): JSX.Element {
@@ -25,6 +26,19 @@ function Search(): JSX.Element {
                 setSearchVacations(filterd)
             })
             .catch(err => notify.error(err))
+
+        const unsubscribe = vacationsStore.subscribe(() => {
+            vacationService.getAllVacations()
+                .then(v => {
+                    const filterd = v.filter(v => v.destination.includes(searchValue) || v.destination.toLowerCase().includes(searchValue))
+                    setSearchVacations(filterd)
+                })
+                .catch(err => notify.error(err))
+        })
+
+        return () => {
+            unsubscribe()
+        }
     }, [searchValue])
 
     return (
