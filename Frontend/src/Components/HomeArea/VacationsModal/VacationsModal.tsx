@@ -21,6 +21,8 @@ function VacationsModal(props: VacationsModalProps): JSX.Element {
     const [heartState, setHeartState] = useState<boolean>(false)
     const [heart, setHeart] = useState(<Heart />)
 
+    const [open, setOpen] = useState<boolean>(false)
+
     const user = authStore.getState().user
 
     useEffect(() => {
@@ -68,7 +70,7 @@ function VacationsModal(props: VacationsModalProps): JSX.Element {
 
     return (
         <div className="VacationsModal">
-            <Popup trigger={<button>See More</button>} modal>
+            <Popup trigger={<button>See More</button>} modal open={open} onOpen={() => setOpen(true)}>
                 <h2>{props.vacation.destination}</h2>
                 <p>{props.vacation.startDate} - {props.vacation.endDate}</p>
                 <p>{props.vacation.description}</p>
@@ -80,7 +82,8 @@ function VacationsModal(props: VacationsModalProps): JSX.Element {
                     <Col className="col">
                         <Image src={appConfig.vacationImagesUrl + props.vacation.id} />
                     </Col>
-                    <Col>
+                    <Col className="col btnsCol">
+                        <button onClick={() => setOpen(false)}>Exit</button>
                     </Col>
                 </Row>
                 <p>{props.vacation.price}$</p>
