@@ -1,4 +1,4 @@
-.popup-content .closeBtn {
+.popup-content>button {
     transition: all 0.2s;
     background-color: #eb8f51;
     border-radius: 0.5rem;
@@ -6,9 +6,15 @@
     white-space: nowrap;
     font-size: min(2vw, 1rem);
     border: none;
+    margin-right: 0.2rem;
+    margin-left: 0.4rem;
 }
 
-.popup-content .closeBtn:hover {
+.popup-content>button:hover {
     background-color: bisque;
     transform: scale(1.1);
+}
+
+.popup-content>.closeBtn {
+    font-weight: bolder;
 }

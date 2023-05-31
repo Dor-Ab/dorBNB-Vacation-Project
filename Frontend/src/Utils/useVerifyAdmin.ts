@@ -10,9 +10,15 @@ function useVerifyAdmin() {
 
     useEffect(() => {
 
-        if (authStore.getState().user.role !== RoleModel.Admin) {
-            navTo("/vacations")
-            notify.error("You are not an admin !")
+        if (authStore.getState().user) {
+            if (authStore.getState().user.role !== RoleModel.Admin) {
+                navTo("/vacations")
+                notify.error("You are not an admin !")
+            }
+        }
+        else {
+            navTo("/login")
+            notify.error("You are not logged in !")
         }
 
     }, [])
