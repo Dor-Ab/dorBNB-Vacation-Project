@@ -1,8 +1,8 @@
 import "./Menu.css";
 import logo from "../../../Assets/Images/logo-no-background.png"
 import { Image, Row } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { SyntheticEvent, useEffect, useState } from "react";
 import { authStore } from "../../../Redux/authState";
 import UserModel from "../../../Models/userModel";
 import { RoleModel } from "../../../Models/roleModel";
@@ -12,6 +12,8 @@ function Menu(): JSX.Element {
     const [placeholder, setPlaceholder] = useState<string>("🔍")
     const [isSearch, setIsSearch] = useState<boolean>(false)
     const [user, setUser] = useState<UserModel>(null)
+
+    const navTo = useNavigate()
 
     useEffect(() => {
         const user = authStore.getState().user
@@ -27,14 +29,24 @@ function Menu(): JSX.Element {
         }
     }, [])
 
-    function changePlaceholder() {
+    function changePlaceholder(e: SyntheticEvent) {
         if (isSearch) {
+            (e.target as HTMLInputElement).value = ""
             setPlaceholder("🔎")
             setIsSearch(false)
         }
         else {
             setPlaceholder("Search...")
             setIsSearch(true)
+        }
+    }
+
+    function handleSearch(e: SyntheticEvent) {
+        if ((e.target as HTMLInputElement).value) {
+            navTo("/search/" + (e.target as HTMLInputElement).value)
+        }
+        else {
+            navTo("/vacations")
         }
     }
 
@@ -48,7 +60,7 @@ function Menu(): JSX.Element {
             {user &&
                 <>
                     <Row className="searchRow">
-                        <input type="text" placeholder={placeholder} onClick={changePlaceholder} onBlur={changePlaceholder} />
+                        <input type="text" placeholder={placeholder} onFocus={e => changePlaceholder(e)} onBlur={e => changePlaceholder(e)} onInput={e => handleSearch(e)} />
                     </Row>
                     <Row className="navs">
                         {user.role === RoleModel.User &&

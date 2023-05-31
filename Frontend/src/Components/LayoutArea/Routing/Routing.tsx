@@ -14,6 +14,7 @@ import { ReactNode } from "react";
 import AddVacation from "../../AdminArea/AddVacation/AddVacation";
 import EditVacation from "../../AdminArea/EditVacation/EditVacation";
 import VacationsReports from "../../AdminArea/VacationsReports/VacationsReports";
+import Search from "../../UserArea/Search/Search";
 
 function Routing(): JSX.Element {
 
@@ -30,6 +31,7 @@ function Routing(): JSX.Element {
         <div className="Routing">
             <Routes>
                 <Route path="/vacations" element={<Home />} />
+                <Route path="/search/:searchValue" element={<Search />} />
                 <Route path="/vacations/details/:vacationId" element={<VacationsDetails />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
