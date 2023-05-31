@@ -104,6 +104,8 @@
 }
 
 .VacationCard>.followersCount {
+    text-decoration: none;
+    color: black;
     transition: all 0.2s;
     transform: scale(0.5);
     position: absolute;

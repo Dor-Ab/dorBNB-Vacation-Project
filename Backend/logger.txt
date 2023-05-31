@@ -852,3 +852,15 @@
 ----------------------------
 31.5.2023, 20:03:48 	 Invalid Token
 ----------------------------
+31.5.2023, 20:47:03 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+31.5.2023, 20:58:45 	 Route /api/vacations/images/ not exist
+----------------------------
+31.5.2023, 20:58:47 	 Route /api/vacations/images// not exist
+----------------------------
+31.5.2023, 20:58:50 	 Route /api/vacations/images/ not exist
+----------------------------
+31.5.2023, 21:09:42 	 Route /api/vacations/undefined not exist
+----------------------------
+31.5.2023, 21:12:02 	 Incorrect email or password.
+----------------------------

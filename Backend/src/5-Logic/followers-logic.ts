@@ -25,6 +25,7 @@ async function getFollowers(): Promise<FollowerModel[]> {
 async function getFollowerByUserId(userId: number): Promise<FollowerModel> {
     const sql = `
     SELECT
+        followers.followerID,
         users.userFirstName AS 'firstName',
         users.userLastName AS 'lastName',
         vacations.vacationDestination AS 'destination', 
@@ -56,7 +57,8 @@ async function isUserFollowingVacation(userId: number, vacationId: number): Prom
 
 async function getFollowersForVacationByVacationId(vacationId: number): Promise<FollowerModel[]> {
     const sql = `
-    SELECT         
+    SELECT      
+        followers.followerID,   
         users.userFirstName AS 'firstName',
         users.userLastName AS 'lastName',
         vacations.vacationDestination AS 'destination', 
@@ -96,6 +98,7 @@ async function addFollower(follower: FollowerModel) {
 
     const followerInfoSql = `
     SELECT
+        followers.followerID,
         users.userFirstName AS 'firstName',
         users.userLastName AS 'lastName',
         vacations.vacationDestination AS 'destination', 

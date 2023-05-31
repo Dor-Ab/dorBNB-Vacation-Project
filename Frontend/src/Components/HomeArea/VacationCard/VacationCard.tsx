@@ -54,11 +54,19 @@ function VacationCard(props: VacationCardProps): JSX.Element {
 
     return (
         <div className="VacationCard" style={{ backgroundImage: `url(${appConfig.vacationImagesUrl}${props.vacation.id})` }}>
-            <div className="followersCount">
-                <span className="count">{followersCount}</span>
-                <span className="icon">{<PersonHeart />}</span>
-                <span className="text">Followers</span>
-            </div>
+
+            {authStore.getState().user && authStore.getState().user.role === RoleModel.User ?
+                <div className="followersCount">
+                    <span className="count">{followersCount}</span>
+                    <span className="icon">{<PersonHeart />}</span>
+                    <span className="text">Followers</span>
+                </div> :
+                <NavLink to={`/vacation-followers/${props.vacation.id}`} className="followersCount">
+                    <span className="count">{followersCount}</span>
+                    <span className="icon">{<PersonHeart />}</span>
+                    <span className="text">Followers</span>
+                </NavLink>
+            }
             <Row className="row">
                 <h3 className="vacationHead">{props.vacation.destination}</h3>
                 <p className="vacationDescription">{props.vacation.description}</p>

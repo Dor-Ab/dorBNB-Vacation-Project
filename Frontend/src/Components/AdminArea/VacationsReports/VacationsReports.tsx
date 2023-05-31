@@ -85,7 +85,7 @@ function VacationsReports(): JSX.Element {
                     <>
                         <h5>Wow, so empty</h5>
                         <p>Seems like no one followed a vacation</p>
-                        <NavLink to={"/vacations"}>Go to Home</NavLink>
+                        <NavLink to={"/vacations"}>Go Home</NavLink>
                     </>
                 }
             </Row>

@@ -1,0 +1,21 @@
+.VacationFollowers>.row>.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.VacationFollowers>.row>.col>a {
+    transition: all 0.2s;
+    padding: 0.2rem;
+    text-decoration: none;
+    color: black;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.VacationFollowers>.row>.col>a:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,27 @@
+.FollowerCard {
+    margin: 1rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    width: min(35vw, 30rem);
+    min-width: 15rem;
+}
+
+.FollowerCard>.row>.followerDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.FollowerCard>.row>.followerPhotoContainer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.FollowerCard>.row>.followerPhotoContainer>img {
+    width: min(10vw, 7rem);
+    min-width: 5rem;
+    border-radius: 0.5rem;
+}
