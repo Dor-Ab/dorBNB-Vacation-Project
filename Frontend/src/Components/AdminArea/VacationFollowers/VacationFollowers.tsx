@@ -9,8 +9,10 @@ import VacationsModel from "../../../Models/vacationModel";
 import vacationService from "../../../Services/vacationService";
 import { Col, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import useVerifyAdmin from "../../../Utils/useVerifyAdmin";
 
 function VacationFollowers(): JSX.Element {
+    useVerifyAdmin()
 
     const [followers, setFollowers] = useState<FollowerModel[]>()
     const [vacation, setVacation] = useState<VacationsModel>()
@@ -20,7 +22,6 @@ function VacationFollowers(): JSX.Element {
         followerService.getFollowersForVacation(vacationId)
             .then(followers => {
                 setFollowers(followers)
-                console.log(followers)
             })
             .catch(err => notify.error(err))
         vacationService.getOneVacation(vacationId)

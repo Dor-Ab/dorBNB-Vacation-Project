@@ -4,10 +4,13 @@ import VacationsModel from "../../../Models/vacationModel";
 import vacationService from "../../../Services/vacationService";
 import { useNavigate } from "react-router-dom";
 import notify from "../../../Services/notifyService";
-import { ChangeEvent, FormEvent, SyntheticEvent, useEffect, useState } from "react";
+import { SyntheticEvent, useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
+import useVerifyAdmin from "../../../Utils/useVerifyAdmin";
 
 function AddVacation(): JSX.Element {
+
+    useVerifyAdmin()
 
     const { register, handleSubmit } = useForm<VacationsModel>()
     const [userImage, setUserImage] = useState<File>()

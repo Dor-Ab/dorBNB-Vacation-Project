@@ -7,8 +7,11 @@ import { SyntheticEvent, useEffect, useState } from "react";
 import notify from "../../../Services/notifyService";
 import { Row, Col } from "react-bootstrap";
 import appConfig from "../../../Utils/appConfig";
+import useVerifyAdmin from "../../../Utils/useVerifyAdmin";
 
 function EditVacation(): JSX.Element {
+
+    useVerifyAdmin()
 
     const { register, handleSubmit, setValue } = useForm<VacationsModel>()
     const params = useParams()

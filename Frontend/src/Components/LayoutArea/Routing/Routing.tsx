@@ -31,20 +31,53 @@ function Routing(): JSX.Element {
     return (
         <div className="Routing">
             <Routes>
+
+                {/* Main Routes */}
+                {/* Home - All Vacations Displayed */}
                 <Route path="/vacations" element={<Home />} />
+
+                {/* Search Box - Live Route Changing - Display Only Searched VSacations */}
                 <Route path="/search/:searchValue" element={<Search />} />
+                {/* --------------------------------------------------- */}
+
+                {/* Vacations Routes */}
+                {/* Single Vacation Details Route */}
                 <Route path="/vacations/details/:vacationId" element={<VacationsDetails />} />
+
+                {/* Followed Vacation Route (Only For Users - Not Admin) */}
+                <Route path="/followed-vacations" element={<FollowedVacations />} />
+
+                {/* Future Vacations Route */}
+                <Route path="/future-vacations" element={<FutureVacations />} />
+
+                {/* Current Vacations Route */}
+                <Route path="/current-vacations" element={<CurrentVacations />} />
+                {/* ------------------------------------------------------------------------- */}
+
+                {/* Admin Only Vacations Routes - (Not For Regular Users) */}
+                {/* Admin Add Vacation Route*/}
+                <Route path="/add-vacation" element={<AddVacation />} />
+
+                {/* Admin Edit Vacation Route*/}
+                <Route path="/edit-vacation/:vacationId" element={<EditVacation />} />
+
+                {/* Admin Vacation Reports Route*/}
+                <Route path="/vacations-reports" element={<VacationsReports />} />
+
+                {/* Admin Followers For Vacation Route*/}
+                <Route path="/vacation-followers/:vacationId" element={<VacationFollowers />} />
+                {/* ----------------------------------------------------------------------- */}
+
+                {/* Auth Route */}
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/logout" element={<Logout />} />
+                {/* ----------------------------------------------- */}
+
+                {/* Default Route */}
                 <Route path="/" element={handleMainRoute()} />
-                <Route path="/followed-vacations" element={<FollowedVacations />} />
-                <Route path="/future-vacations" element={<FutureVacations />} />
-                <Route path="/current-vacations" element={<CurrentVacations />} />
-                <Route path="/add-vacation" element={<AddVacation />} />
-                <Route path="/edit-vacation/:vacationId" element={<EditVacation />} />
-                <Route path="/vacations-reports" element={<VacationsReports />} />
-                <Route path="/vacation-followers/:vacationId" element={<VacationFollowers />} />
+
+                {/* Catch All Route */}
                 <Route path="*" element={<PageNotFound />} />
             </Routes>
         </div>
