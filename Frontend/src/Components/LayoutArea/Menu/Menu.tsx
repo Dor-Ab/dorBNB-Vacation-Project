@@ -11,7 +11,7 @@ function Menu(): JSX.Element {
 
     const [placeholder, setPlaceholder] = useState<string>("🔍")
     const [isSearch, setIsSearch] = useState<boolean>(false)
-    const [user, setUser] = useState<UserModel>(null)
+    const [user, setUser] = useState<UserModel>()
 
     const navTo = useNavigate()
 
@@ -53,9 +53,17 @@ function Menu(): JSX.Element {
     return (
         <div className="Menu">
             <Row className="logoRow">
-                <NavLink to={"vacations"}>
+                {
+                    user &&
+                    <>
+                        <NavLink to={"vacations"}>
+                            <Image fluid src={logo} />
+                        </NavLink>
+                    </>
+                }
+                {!user &&
                     <Image fluid src={logo} />
-                </NavLink>
+                }
             </Row>
             {user &&
                 <>

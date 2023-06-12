@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import VacationsModel from "../../../Models/vacationModel";
 import "./EditVacation.css";
 import vacationService from "../../../Services/vacationService";
-import { SyntheticEvent, useEffect, useState } from "react";
+import { SyntheticEvent, useEffect, useId, useState } from "react";
 import notify from "../../../Services/notifyService";
 import { Row, Col } from "react-bootstrap";
 import appConfig from "../../../Utils/appConfig";
@@ -12,6 +12,7 @@ import useVerifyAdmin from "../../../Utils/useVerifyAdmin";
 function EditVacation(): JSX.Element {
 
     useVerifyAdmin()
+    const imageId = useId()
 
     const { register, handleSubmit, setValue } = useForm<VacationsModel>()
     const params = useParams()
@@ -137,7 +138,7 @@ function EditVacation(): JSX.Element {
 
 
                         <div className="photoContainer">
-                            <label className="editVacationImageLabel" htmlFor="editVacationImage"
+                            <label className="editVacationImageLabel" htmlFor={imageId}
                                 onClick={() => setIsUserTyping(true)}
                             >Add Image</label>
 
@@ -147,7 +148,7 @@ function EditVacation(): JSX.Element {
                             </button>
 
                         </div>
-                        <input type="file" id="editVacationImage"
+                        <input type="file" id={imageId}
                             accept="image/*"
                             onInputCapture={(e) => handleImageChange(e)}
                             {...register("photo")} />

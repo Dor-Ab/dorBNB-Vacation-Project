@@ -12,6 +12,13 @@
     padding: 1rem;
 }
 
+.Menu>.logoRow>img {
+    margin: auto;
+    width: min(40vw, 20rem);
+    min-width: 8rem;
+    padding: 1rem;
+}
+
 .Menu>.logoRow>a>img:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 0.9rem 0.75rem #313131);

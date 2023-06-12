@@ -4,13 +4,14 @@ import VacationsModel from "../../../Models/vacationModel";
 import vacationService from "../../../Services/vacationService";
 import { useNavigate } from "react-router-dom";
 import notify from "../../../Services/notifyService";
-import { SyntheticEvent, useEffect, useState } from "react";
+import { SyntheticEvent, useEffect, useState, useId } from "react";
 import { Col, Row } from "react-bootstrap";
 import useVerifyAdmin from "../../../Utils/useVerifyAdmin";
 
 function AddVacation(): JSX.Element {
 
     useVerifyAdmin()
+    const imageId = useId()
 
     const { register, handleSubmit } = useForm<VacationsModel>()
     const [userImage, setUserImage] = useState<File>()
@@ -93,13 +94,13 @@ function AddVacation(): JSX.Element {
 
 
                         <div className="photoContainer">
-                            <label className="addVacationImageLabel" htmlFor="addVacationImage">Add Image</label>
+                            <label className="addVacationImageLabel" htmlFor={imageId}>Add Image</label>
                             <button type="reset" className="deleteUserImage"
                                 onClick={deleteEmultedVacation}>
                                 <span>❌</span>
                             </button>
                         </div>
-                        <input type="file" id="addVacationImage" onInputCapture={(e) => handleImageChange(e)} accept="image/*" {...register("photo")} />
+                        <input type="file" id={imageId} onInputCapture={(e) => handleImageChange(e)} accept="image/*" {...register("photo")} />
 
                         <button>Add Vacation</button>
                     </form >
