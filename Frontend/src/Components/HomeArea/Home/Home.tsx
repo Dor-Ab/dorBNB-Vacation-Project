@@ -10,6 +10,7 @@ import { authStore } from "../../../Redux/authState";
 import { RoleModel } from "../../../Models/roleModel";
 import { NavLink } from "react-router-dom";
 import { vacationsStore } from "../../../Redux/vacationsState";
+import Loader from "../../SharedArea/Loader/Loader";
 
 function Home(): JSX.Element {
     useVerifyLoggedIn()
@@ -85,24 +86,28 @@ function Home(): JSX.Element {
                         </Col>
                     </>}
             </Row>
-            <Row className="row">
-                {/* Displaying the filterd vacations - not all at first */}
-                {displayedVacations.map((vacation) => (
-                    <Col key={vacation.id}>
-                        <VacationCard vacation={vacation} />
-                    </Col>
-                ))}
-            </Row>
+            {
+                vacations.length !== 0 ? <>
+                    <Row className="row">
+                        {/* Displaying the filterd vacations - not all at first */}
+                        {displayedVacations.map((vacation) => (
+                            <Col key={vacation.id}>
+                                <VacationCard vacation={vacation} />
+                            </Col>
+                        ))}
+                    </Row>
 
-            {/* Showing load more btn only if displayed vacations count (visibleVacationCount)
-             is smaller then all vacations array length (vacations.length) */}
-            {visibleVacationCount < vacations.length && (
-                <Row className="row">
-                    <Col className="loadMore">
-                        <button onClick={loadMoreVacations}>Load More</button>
-                    </Col>
-                </Row>
-            )}
+                    {/* Showing load more btn only if displayed vacations count (visibleVacationCount)
+                            is smaller then all vacations array length (vacations.length) */}
+                    {visibleVacationCount < vacations.length && (
+                        <Row className="row">
+                            <Col className="loadMore">
+                                <button onClick={loadMoreVacations}>Load More</button>
+                            </Col>
+                        </Row>
+                    )} </>
+                    : <Loader />
+            }
         </div>
     );
 }

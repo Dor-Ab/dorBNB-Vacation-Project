@@ -18,7 +18,7 @@ const server = express()
 
 server.use(cors({ origin: appConfig.frontEndUrl }))
 server.use(express.json())
-server.use(expressFileUpload());
+server.use(expressFileUpload())
 
 server.use("/api", authController)
 server.use("/api", vacationsController)

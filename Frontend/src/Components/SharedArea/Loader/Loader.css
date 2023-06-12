@@ -1,0 +1,10 @@
+.Loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Loader>img {
+    width: min(10vw, 7rem);
+    min-width: 3rem;
+}
