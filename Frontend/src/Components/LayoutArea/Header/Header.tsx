@@ -91,17 +91,18 @@ function Header(): JSX.Element {
     return (
         <div className="Header">
             <Row className="row">
-                <Col className="greetingCol" xs={"9"} sm={"9"}>
+                <Col className="greetingCol" xs={"8"}>
                     {isMorning() && <h2>Good Morning{name}🌞</h2>}
                     {isAfterNoon() && <h2>Good Afternoon{name}😀</h2>}
                     {isEvening() && <h2>Lovely Evening{name}🌙</h2>}
                     {isNight() && <h2>Good Night{name}🌙💤</h2>}
                 </Col>
-                <Col className="authBtns" xs={"2"}>
+
+                <Col className="authBtns" xs={"3"}>
                     <Navbar collapseOnSelect expand="sm" bg="none" variant="light">
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" id="clicker" onFocus={isClicked} onBlur={isBlur} />
                         <Navbar.Collapse id="responsive-navbar-nav" className={`${darkBackground}`}>
-                            <Nav className={`mr-auto`} >
+                            <Nav className={`mr-auto`} >    
                                 {loggedIn &&
                                     <NavLink className={"link"} to={"/logout"}>Logout</NavLink>
                                 }

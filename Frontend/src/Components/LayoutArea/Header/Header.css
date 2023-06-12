@@ -3,12 +3,18 @@
 
 }
 
-.Header .row {
+.Header>.row {
     height: 100%;
     margin: auto;
 }
 
-.Header h2 {
+.Header>.row>.greetingCol {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.Header>.row>.greetingCol>h2 {
     text-align: start;
     max-width: fit-content;
     background-color: rgb(250, 235, 215);
@@ -18,10 +24,10 @@
     padding-bottom: 0.3rem;
     font-weight: bold;
     white-space: nowrap;
-    font-size: min(5vw, 2rem)
+    font-size: min(3vw, 2rem);
 }
 
-.Header .authBtns {
+.Header>.row>.authBtns {
     margin: auto 1rem auto auto;
     display: flex;
     flex-direction: row;
@@ -30,7 +36,7 @@
     z-index: 999;
 }
 
-.Header .authBtns .link {
+.Header>.row>.authBtns .link {
     transition: all 0.2s;
     border-radius: 0.5rem;
     padding: 0.5rem;
