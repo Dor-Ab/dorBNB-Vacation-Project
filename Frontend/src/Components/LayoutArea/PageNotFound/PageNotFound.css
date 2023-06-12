@@ -1,3 +1,136 @@
 .PageNotFound {
-	
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.PageNotFound>h2 {
+    font-size: min(8vw, 5rem);
+    font-weight: bolder;
+    animation: glitch 2s infinite steps(1);
+    grid-column: 2;
+}
+
+.PageNotFound>p {
+    grid-column: 2;
+}
+
+.PageNotFound>.ufo404 {
+    font-size: min(3vw, 1rem);
+    grid-column: 2;
+}
+
+.PageNotFound>.msg404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(8vw, 5rem);
+    grid-column: 2;
+}
+
+.PageNotFound>.msg404>div {
+    animation: jumpingO 0.5s infinite ease-out alternate-reverse;
+}
+
+
+.PageNotFound>.ufoShip {
+    display: flex;
+    justify-content: right;
+    margin-right: -3rem;
+    grid-column: 3;
+    animation: flyingShip 3s infinite steps(50);
+    animation-delay: 2s;
+}
+
+.PageNotFound>.ufoShip>span {
+    transform: scale(4);
+}
+
+.PageNotFound>a {
+    transition: all 0.2s;
+    padding: 0.2rem;
+    text-decoration: none;
+    color: black;
+    background-color: #eb8f51;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    font-weight: bold;
+    grid-column: 2;
+}
+
+.PageNotFound>a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+@keyframes jumpingO {
+    to {
+        color: rgb(57, 252, 57);
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes glitch {
+    5% {
+        transform: translateX(0px);
+    }
+
+    85% {
+        transform: translateX(15px);
+        filter: drop-shadow(-4px -5px green);
+    }
+
+    88% {
+        color: white;
+        transform: translateX(-5px);
+        filter: drop-shadow(4px 5px red);
+    }
+
+    90% {
+        color: black;
+    }
+}
+
+@keyframes flyingShip {
+    0% {
+        transform: translateX(0rem);
+    }
+
+    25% {
+        transform: translateX(-2rem);
+    }
+
+    30% {
+        transform: rotate(-15deg) translateX(-4rem) translateY(1rem);
+    }
+
+    40% {
+        transform: translateX(-6rem) translateY(5rem);
+
+    }
+
+    50% {
+        transform: translateX(-5rem) translateY(3rem);
+    }
+
+    60% {
+        transform: rotate(15deg) translateX(-5rem) translateY(1rem);
+    }
+
+    70% {
+        transform: translateX(-3rem) translateY(-2rem);
+    }
+
+    80% {
+        transform: translateX(0rem) translateY(0rem);
+    }
+
+    90% {
+        transform: translateX(1em) translateY(1rem);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+        margin-right: -2rem;
+    }
 }
