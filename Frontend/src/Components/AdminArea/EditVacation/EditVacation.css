@@ -46,7 +46,7 @@
 }
 
 .EditVacation>.row>.col>form>.photoContainer>*:active {
-    transform: scale(0.7);
+    transform: scale(0.9);
 }
 
 .EditVacation>.row>.col>.emulatedVacationCard {

@@ -16,19 +16,24 @@ function Weather(props: WeatherProps): JSX.Element {
     const [user, setUser] = useState<UserModel | null>()
 
     useEffect(() => {
+        setUser(authStore.getState().user)
+
         weatherService.getWeather(props.city)
             .then(w => setWeather(w))
             .catch(err => notify.error(err))
-        setUser(authStore.getState().user)
 
         const unsubscribe = authStore.subscribe(() => {
             setUser(authStore.getState().user)
+
+            weatherService.getWeather(props.city)
+                .then(w => setWeather(w))
+                .catch(err => notify.error(err))
         })
 
         return () => {
             unsubscribe()
         }
-    })
+    }, [])
 
     return (
         <div className="Weather" style={{ backgroundImage: `url(${weather?.current.condition.icon})` }}>

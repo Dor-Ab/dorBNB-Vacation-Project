@@ -59,7 +59,12 @@
     border-radius: 1rem;
 }
 
-.Header>.row>.col>.row {
+.Header>.row>.weather {
+    height: 100%;
+    overflow: hidden;
+}
+
+.Header>.row>.weather>.row {
     height: 95%;
     display: flex;
     flex-wrap: wrap;

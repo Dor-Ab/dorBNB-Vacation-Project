@@ -1,7 +1,5 @@
 .Menu {
     height: 100%;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .Menu>.logoRow>a>img {

@@ -7,6 +7,7 @@
     background-color: white;
     box-shadow: 3px 10px 10px 3px #252525;
     animation: followerCardInit 0.5s forwards;
+    color: black;
 }
 
 .FollowerCard>.row>.followerDetails {

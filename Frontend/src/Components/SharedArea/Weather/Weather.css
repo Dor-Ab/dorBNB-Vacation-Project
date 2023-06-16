@@ -15,6 +15,7 @@
     padding-left: 0.5rem;
     animation: weatherInit 2s forwards;
     color: black;
+    max-width: 7rem;
 }
 
 .Weather>.Loader {

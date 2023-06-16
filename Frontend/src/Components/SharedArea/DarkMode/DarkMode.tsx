@@ -5,18 +5,18 @@ import "./DarkMode.css";
 function DarkMode(): JSX.Element {
 
     const [darkMode, setDarkMode] = useState<boolean>(false)
-    const [btnContent, setBtnContent] = useState<string>("🌙")
+    const [btnContent, setBtnContent] = useState<string>("Dark Mode")
 
     useEffect(() => {
         const isDark = localStorage.getItem("darkMode")
         if (isDark) {
             setDarkMode(true)
-            setBtnContent("🌞")
+            setBtnContent("Light Mode")
             darkModeStore.dispatch({ type: DarkModeActionType.DarkMode, payload: true })
         }
         else {
             setDarkMode(false)
-            setBtnContent("🌙")
+            setBtnContent("Dark Mode")
             darkModeStore.dispatch({ type: DarkModeActionType.LightMode, payload: false })
         }
     })
@@ -24,19 +24,19 @@ function DarkMode(): JSX.Element {
     function darkModeBtnHandle() {
         if (darkMode) {
             darkModeStore.dispatch({ type: DarkModeActionType.LightMode, payload: false })
-            setBtnContent("🌙")
+            setBtnContent("Dark Mode")
             localStorage.removeItem("darkMode")
         }
         else {
             darkModeStore.dispatch({ type: DarkModeActionType.DarkMode, payload: true })
-            setBtnContent("🌞")
+            setBtnContent("Light Mode")
             localStorage.setItem("darkMode", "true")
         }
 
     }
 
     return (
-        <button className="DarkMode" onClick={darkModeBtnHandle}>{btnContent}</button>
+        <button title={btnContent} className="DarkMode" onClick={darkModeBtnHandle}>{btnContent}</button>
     );
 }
 

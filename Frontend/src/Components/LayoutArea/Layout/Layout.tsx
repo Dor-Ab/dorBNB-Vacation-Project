@@ -27,11 +27,11 @@ function Layout(): JSX.Element {
     })
 
     function darkMain() {
-        if (darkMode) return { backgroundColor: "#454545", color: "white" }
+        if (darkMode) return { backgroundColor: "#343434", color: "white" }
     }
 
     function darkHeaderFooter() {
-        if (darkMode) return { backgroundColor: " #252525", color: "white" }
+        if (darkMode) return { backgroundColor: "#202124", color: "white" }
     }
 
     return (
