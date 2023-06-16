@@ -1,0 +1,24 @@
+.Weather {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: min(6vh, 3rem);
+    border-radius: 1rem;
+    background-color: #ef9f6a;
+    font-weight: bold;
+    overflow: hidden;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.Weather>.Loader {
+    transform: scale(0.5);
+}
+
+.Weather>.Loader>img {
+    width: 0.5rem;
+}

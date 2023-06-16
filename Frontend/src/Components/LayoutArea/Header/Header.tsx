@@ -4,6 +4,7 @@ import { authStore } from "../../../Redux/authState";
 import { Col, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import Weather from "../../SharedArea/Weather/Weather";
 
 
 function Header(): JSX.Element {
@@ -91,18 +92,35 @@ function Header(): JSX.Element {
     return (
         <div className="Header">
             <Row className="row">
-                <Col className="greetingCol" xs={"8"}>
-                    {isMorning() && <h2>Good Morning{name}🌞</h2>}
-                    {isAfterNoon() && <h2>Good Afternoon{name}😀</h2>}
-                    {isEvening() && <h2>Lovely Evening{name}🌙</h2>}
-                    {isNight() && <h2>Good Night{name}🌙💤</h2>}
+                <Col className="greetingCol col" xs={"7"} sm={"5"} lg={"5"}>
+                    {isMorning() && <h2>Good Morning{name}</h2>}
+                    {isAfterNoon() && <h2>Good Afternoon{name}</h2>}
+                    {isEvening() && <h2>Lovely Evening{name}</h2>}
+                    {isNight() && <h2>Good Night{name}</h2>}
                 </Col>
 
-                <Col className="authBtns" xs={"3"}>
+                <Col className="weather d-none d-sm-block col" sm={"2"} md={"3"} lg={"4"}>
+                    <Row className="row">
+                        <Col className="col d-none d-sm-block" sm={"1"} md={"6"} lg={"4"}>
+                            <Weather city="Jerusalem" />
+                        </Col>
+
+                        <Col className="col d-none d-md-block" md={"6"} lg={"4"}>
+                            <Weather city="New York" />
+                        </Col>
+
+                        <Col className="col d-none d-lg-block" lg={"4"}>
+                            <Weather city="Paris" />
+                        </Col>
+
+                    </Row>
+                </Col>
+
+                <Col className="authBtns col" xs={"3"} sm={"4"} md={"3"} lg={"2"}>
                     <Navbar collapseOnSelect expand="sm" bg="none" variant="light">
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" id="clicker" onFocus={isClicked} onBlur={isBlur} />
                         <Navbar.Collapse id="responsive-navbar-nav" className={`${darkBackground}`}>
-                            <Nav className={`mr-auto`} >    
+                            <Nav className={`mr-auto`} >
                                 {loggedIn &&
                                     <NavLink className={"link"} to={"/logout"}>Logout</NavLink>
                                 }

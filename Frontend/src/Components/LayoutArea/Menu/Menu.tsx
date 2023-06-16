@@ -65,6 +65,7 @@ function Menu(): JSX.Element {
                     <Image fluid src={logo} />
                 }
             </Row>
+
             {user &&
                 <>
                     <Row className="searchRow">
