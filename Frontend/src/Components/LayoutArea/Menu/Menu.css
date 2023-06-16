@@ -28,12 +28,6 @@
     transform: scale(1);
 }
 
-/* .Menu>.searchRow {
-    margin: auto;
-    width: 3rem;
-    height: 3rem;
-} */
-
 .Menu>.searchRow>input {
     transition: all 0.3s;
     margin: auto;

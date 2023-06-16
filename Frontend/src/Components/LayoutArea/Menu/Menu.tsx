@@ -6,6 +6,7 @@ import { SyntheticEvent, useEffect, useState } from "react";
 import { authStore } from "../../../Redux/authState";
 import UserModel from "../../../Models/userModel";
 import { RoleModel } from "../../../Models/roleModel";
+import DarkMode from "../../SharedArea/DarkMode/DarkMode";
 
 function Menu(): JSX.Element {
 
@@ -83,6 +84,7 @@ function Menu(): JSX.Element {
                     </Row>
                 </>
             }
+            <DarkMode />
         </div>
     );
 }

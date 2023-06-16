@@ -1,0 +1,5 @@
+.DarkMode {
+    border-radius: 1rem;
+    transition: all 0.2s;
+    background-color: #252525;
+}

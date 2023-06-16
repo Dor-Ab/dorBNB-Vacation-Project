@@ -26,6 +26,7 @@
     font-weight: bold;
     white-space: nowrap;
     font-size: min(3vw, 2rem);
+    color: black;
 }
 
 .Header>.row>.authBtns {

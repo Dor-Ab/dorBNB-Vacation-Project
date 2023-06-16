@@ -31,7 +31,7 @@ body,
 .Layout>*::-webkit-scrollbar-thumb {
   background-color: #dc9e74;
   border-radius: 10px;
-  border: 2px solid;
+  border: 2px solid black;
 }
 
 .Layout>*::-webkit-scrollbar-thumb:hover {
@@ -52,6 +52,7 @@ body,
   box-shadow: 1px 2px 4px 2px grey;
   width: min(20vw, 14rem);
   min-width: 9rem;
+  color: black;
 }
 
 .myForm>button {

@@ -3,7 +3,7 @@ import "./Header.css";
 import { authStore } from "../../../Redux/authState";
 import { Col, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import Weather from "../../SharedArea/Weather/Weather";
 
 
