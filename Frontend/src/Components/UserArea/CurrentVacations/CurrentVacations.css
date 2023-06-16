@@ -2,6 +2,7 @@
     display: grid;
     place-content: center;
     overflow: hidden;
+    animation: currentVacationsInit 0.5s forwards;
 }
 
 .CurrentVacations>.row {
@@ -24,4 +25,16 @@
 
 .CurrentVacations>.row>a:hover {
     transform: scale(1.1);
+}
+
+@keyframes currentVacationsInit {
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0rem);
+        opacity: 100;
+    }
 }

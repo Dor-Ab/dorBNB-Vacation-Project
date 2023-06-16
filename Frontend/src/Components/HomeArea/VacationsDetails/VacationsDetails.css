@@ -1,5 +1,6 @@
 .VacationsDetails {
     margin: 0.5rem;
+    animation: vacationsDetailsInit 0.5s forwards;
 }
 
 .VacationsDetails>.row>.col>h2 {
@@ -40,4 +41,16 @@
 .VacationsDetails>.row>.col>button:hover {
     background-color: bisque;
     transform: scale(1.1);
+}
+
+@keyframes vacationsDetailsInit {
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0rem);
+        opacity: 100;
+    }
 }

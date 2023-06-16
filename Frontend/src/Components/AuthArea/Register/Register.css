@@ -1,1 +1,15 @@
-.Register {}
+.Register>form {
+    animation: registerInit 1s forwards;
+}
+
+@keyframes registerInit {
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0rem);
+        opacity: 100;
+    }
+}

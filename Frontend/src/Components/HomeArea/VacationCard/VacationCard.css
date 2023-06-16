@@ -12,6 +12,7 @@
     background-position: center center;
     background-size: cover;
     filter: brightness(0.7);
+    animation: cardInit 0.5s forwards;
 }
 
 .VacationCard:hover {
@@ -162,4 +163,16 @@
     right: 25%;
     bottom: 0.2rem;
     display: flex;
+}
+
+@keyframes cardInit {
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0rem);
+        opacity: 100;
+    }
 }

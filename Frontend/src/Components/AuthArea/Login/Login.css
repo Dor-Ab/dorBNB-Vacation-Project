@@ -8,3 +8,19 @@
     justify-content: center;
     align-items: center;
 }
+
+.Login>form {
+    animation: loginInit 1s forwards;
+}
+
+@keyframes loginInit {
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0rem);
+        opacity: 100;
+    }
+}

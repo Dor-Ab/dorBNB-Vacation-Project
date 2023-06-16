@@ -13,6 +13,7 @@
     overflow: hidden;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+    animation: weatherInit 2s forwards;
 }
 
 .Weather>.Loader {
@@ -21,4 +22,16 @@
 
 .Weather>.Loader>img {
     width: 0.5rem;
+}
+
+@keyframes weatherInit {
+    from {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0rem);
+        opacity: 100;
+    }
 }

@@ -35,7 +35,7 @@ function VacationsDetails(): JSX.Element {
         if (user) {
             if (user.role === RoleModel.User) isUserFollowing(user)
         }
-    }, [])
+    }, [user])
 
     async function isUserFollowing(user: UserModel) {
         try {

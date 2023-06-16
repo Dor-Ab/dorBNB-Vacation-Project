@@ -92,25 +92,25 @@
 }
 
 @keyframes flyingShip {
-    0% {
+    10% {
         transform: translateX(0rem);
     }
 
     25% {
-        transform: translateX(-2rem);
+        transform: translateX(-8rem);
     }
 
     30% {
-        transform: rotate(-15deg) translateX(-4rem) translateY(1rem);
+        transform: rotate(-15deg) translateX(-10rem) translateY(1rem);
     }
 
     40% {
-        transform: translateX(-6rem) translateY(5rem);
+        transform: translateX(-9rem) translateY(5rem);
 
     }
 
     50% {
-        transform: translateX(-5rem) translateY(3rem);
+        transform: translateX(-7rem) translateY(3rem);
     }
 
     60% {
@@ -125,12 +125,7 @@
         transform: translateX(0rem) translateY(0rem);
     }
 
-    90% {
+    82% {
         transform: translateX(1em) translateY(1rem);
-    }
-
-    100% {
-        transform: translateX(0) translateY(0);
-        margin-right: -2rem;
     }
 }

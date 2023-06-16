@@ -47,3 +47,19 @@
 .VacationsReports>.VacationsReportsHead>.csvCol>.csvBtn:hover {
     transform: scale(1.1);
 }
+
+.VacationsReports {
+    animation: reportsInit 0.5s forwards;
+}
+
+@keyframes reportsInit {
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0rem);
+        opacity: 100;
+    }
+}

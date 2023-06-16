@@ -101,12 +101,12 @@ function Header(): JSX.Element {
 
                 <Col className="weather d-none d-sm-block col" sm={"2"} md={"3"} lg={"4"}>
                     <Row className="row">
-                        <Col className="col d-none d-sm-block" sm={"1"} md={"6"} lg={"4"}>
+                        <Col className="col d-none d-sm-block" sm={"12"} md={"6"} lg={"4"}>
                             <Weather city="Jerusalem" />
                         </Col>
 
                         <Col className="col d-none d-md-block" md={"6"} lg={"4"}>
-                            <Weather city="New York" />
+                            <Weather city="London" />
                         </Col>
 
                         <Col className="col d-none d-lg-block" lg={"4"}>
