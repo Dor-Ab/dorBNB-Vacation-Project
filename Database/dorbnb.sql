@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2023 at 10:51 AM
+-- Generation Time: Jun 17, 2023 at 07:53 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -91,15 +91,15 @@ CREATE TABLE `vacations` (
 --
 
 INSERT INTO `vacations` (`vacationID`, `vacationDestination`, `vacationDescription`, `vacationStartDate`, `vacationEndDate`, `vacationPrice`, `vacationPhotoName`) VALUES
-(1, 'Jerusalem', 'Have fun in the holy city while feeling like home !\r\n\r\nBlah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah ', '2023-04-17', '2023-04-30', 4000, 'jerus.jpg'),
-(2, 'Tel Avivo', 'Want to enjoy in the craziest city in the world? welcome to Tel Aviv, we have everything that you want - parties, beaches, bars and clubs!', '2023-05-18', '2023-05-28', 10000, 'tel-aviv.jpg'),
+(1, 'Jerusalem', 'Have fun in the holy city while feeling like home !\r\n\r\nBlah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah ', '2023-04-17', '2023-04-30', 4000, '8b9d40fd-4803-4bff-a472-d4ec0701bee0.jpg'),
+(2, 'Tel Avivo', 'Want to enjoy in the craziest city in the world? welcome to Tel Aviv, we have everything that you want - parties, beaches, bars and clubs!', '2023-05-18', '2023-05-28', 10000, 'e40748a1-6264-49d9-a9b6-7fd985f81e69.jpg'),
 (3, 'Amsterdam', 'We have weed man', '2023-04-10', '2023-04-20', 5000, '545a5ff5-bc28-4eb7-a833-c38eab727142.jpg'),
-(9, 'Rome', 'Colosseum and pizza in the most beautiful city of all.\r\nCome and visit us grazy', '2023-06-23', '2023-06-30', 1500, 'rome.jpg'),
-(11, 'Los Angeles', 'Californiaaaaaa\r\nin the cityyyy\r\nsome more words of tupac ', '2023-05-17', '2023-05-20', 3499, 'la.jpg'),
-(12, 'Paris', 'Have the best vacation on the city of love. \r\nEat macaroons and frogs legs and some other more bullshit come on', '2023-10-24', '2023-10-28', 3048, 'paris.jpg'),
-(13, 'Berlin', 'auctungggggg shnaitsss vruhterbuher shloomer kchroocher loom', '2023-09-10', '2023-09-25', 2347, 'beriln.jpg'),
-(14, 'Venice', 'spaghetti bologna risotto cannelloni tomato Versace    ', '2023-08-24', '2023-09-02', 4545, 'venice.jpg'),
-(15, 'Phuket', 'ming ma mong min i dont know what to say about Thailand lady boy or shit ', '2024-03-01', '2024-04-01', 3213, 'phuket.jpg'),
+(9, 'Rome', 'Colosseum and pizza in the most beautiful city of all.\r\nCome and visit us grazy', '2023-06-23', '2023-06-30', 1500, '031d5f4b-c8c1-4788-b387-a8b44c552a82.jpg'),
+(11, 'Los Angeles', 'Californiaaaaaa\r\nin the cityyyy\r\nsome more words of tupac ', '2023-05-17', '2023-05-20', 3499, 'd54eb113-66c7-4456-b495-8328a8a2cd15.jpg'),
+(12, 'Paris', 'Have the best vacation on the city of love. \r\nEat macaroons and frogs legs and some other more bullshit come on', '2023-10-24', '2023-10-28', 3048, 'c615c0cf-ff6e-4d56-a4eb-40ef4a2a051d.jpg'),
+(13, 'Berlin', 'auctungggggg shnaitsss vruhterbuher shloomer kchroocher loom', '2023-09-10', '2023-09-25', 2347, '03665d87-a46f-4b99-a21c-7c52c55c03de.jpg'),
+(14, 'Venice', 'spaghetti bologna risotto cannelloni tomato Versace    ', '2023-08-24', '2023-09-02', 4545, '1bea719c-f392-4dbd-8b9c-1f7814d5c15e.jpg'),
+(15, 'Phuket', 'ming ma mong min i dont know what to say about Thailand lady boy or shit ', '2024-03-01', '2024-04-01', 3213, '5b266b4a-e87a-41c1-b53a-d499f76f6223.jpg'),
 (102, 'Barcelona', 'Barcaaaa messi soccer vamos vamos', '2023-07-01', '2023-07-02', 1323, '0604366f-e597-4aec-9129-c7fbf216a80b.jpg'),
 (103, 'New York', 'Concrete jungle where dreams are made offfff thers nothing you cant dooooo now you in new yorkkkk', '2023-10-09', '2023-10-20', 5000, '4f678417-692e-4bb3-b481-e3a7dee8bb49.jpeg'),
 (104, 'Morocco!', 'Shesh besh and arak ayalim', '2023-06-28', '2023-07-01', 321, 'fcce8096-3db8-41a4-999d-9fbdef1e4a29.jpg');
