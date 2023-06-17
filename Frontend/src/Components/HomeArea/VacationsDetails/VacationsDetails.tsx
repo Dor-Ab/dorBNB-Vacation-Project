@@ -57,8 +57,6 @@ function VacationsDetails(): JSX.Element {
         }
     }
 
-    // const user = authStore.getState().user
-
     async function handleButtonFav() {
         const follower = new FollowerModel()
         follower.destination = vacation.destination
