@@ -44,13 +44,18 @@ function VacationsReports(): JSX.Element {
         }
     }
 
+    function handleCSVDownload(): string {
+        const now = new Date().toLocaleDateString()
+        return `${now} - dorBNB Vacations Reports.csv`
+    }
+
 
     return (
         <div className="VacationsReports">
             <Row className="VacationsReportsHead">
                 <Col className="csvCol">
                     {data && data.length !== 0 &&
-                        <CSVLink className="csvBtn" data={data}>CSV File</CSVLink>
+                        <CSVLink className="csvBtn" data={data} filename={handleCSVDownload()}>CSV File</CSVLink>
                     }
                 </Col>
                 <Col>

@@ -1,0 +1,12 @@
+19.6.2023, 15:40:15 	 Image is required
+----------------------------
+19.6.2023, 15:40:34 	 connect ECONNREFUSED ::1:3306
+----------------------------
+19.6.2023, 15:40:55 	 UNKNOWN_CODE_PLEASE_REPORT: Table 'dorbnb.vacations' doesn't exist in engine
+----------------------------
+19.6.2023, 15:41:16 	 UNKNOWN_CODE_PLEASE_REPORT: Table 'dorbnb.vacations' doesn't exist in engine
+----------------------------
+19.6.2023, 16:13:01 	 Image is required
+----------------------------
+19.6.2023, 16:13:04 	 Image is required
+----------------------------
